@@ -13,7 +13,6 @@ public class User {
     private String userName;
     private String bDate;
 
-
     @Builder
     public static User fromUpdate(Update update) {
         return User.builder().chatId(update.getMessage().getChatId())

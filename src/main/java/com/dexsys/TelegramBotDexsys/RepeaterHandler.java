@@ -39,7 +39,6 @@ public class RepeaterHandler extends TelegramLongPollingBot {
 
                     sendMsg(inputMessage.getChatId(), inputMessage.getText());
                     System.out.println(printUserList());
-
                 }
         } catch (TelegramApiException e) {
             log.error("RepeaterHandler: " + e.toString());
@@ -48,7 +47,6 @@ public class RepeaterHandler extends TelegramLongPollingBot {
 
 
     public synchronized void setButtons(SendMessage sendMessage) {
-        // Создаем клавиуатуру
         ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
         sendMessage.setReplyMarkup(replyKeyboardMarkup);
         replyKeyboardMarkup.setSelective(true);
@@ -61,11 +59,11 @@ public class RepeaterHandler extends TelegramLongPollingBot {
         replyKeyboardMarkup.setKeyboard(keyboard);
     }
 
-    //крч тут создается новый репозиторий с мапой и пользователем
     public synchronized void setBDay(long chatId, String userName, String text) throws TelegramApiException {
         UserRepository userRepository = (UserRepository) ctx.getBean("userRepository");
         userRepository.getUserMap().get(userName).setBDate(text);
     }
+
     public synchronized void sendMsg(long chatId, String text) throws TelegramApiException {
         //creating blank message to be send
         SendMessage outputMessage = new SendMessage();
