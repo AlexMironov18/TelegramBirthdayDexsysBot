@@ -2,22 +2,22 @@ package com.dexsys.TelegramBotDexsys;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.telegram.telegrambots.ApiContextInitializer;
+import org.telegram.telegrambots.meta.TelegramBotsApi;
+import org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException;
+
 
 @SpringBootApplication
 @Slf4j
+@EnableAutoConfiguration
 public class TelegramBotDexsysApplication {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws TelegramApiRequestException {
 		SpringApplication.run(TelegramBotDexsysApplication.class, args);
-		log.info("Loggs");
-		ModelGetSet modelGetSet = new ModelGetSet();
-		modelGetSet.getName();
-
-		ModelCounstructors modelCounstructors = new ModelCounstructors("LastName", 835345);
-		System.out.println(modelCounstructors.getLastName() + " " +
-				modelCounstructors.getPhoneNumber());
+		ApiContextInitializer.init();
+		TelegramBotsApi botsApi = new TelegramBotsApi();
+		botsApi.registerBot(new RepeaterHandler());
 	}
 }
