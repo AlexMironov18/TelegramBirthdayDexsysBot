@@ -1,6 +1,6 @@
 package com.dexsys.TelegramBotDexsys.Gateways;
 
-import com.dexsys.TelegramBotDexsys.Entities.User;
+import com.dexsys.TelegramBotDexsys.UseCase.Entities.User;
 import com.dexsys.TelegramBotDexsys.UseCase.IRepository;
 import lombok.AllArgsConstructor;
 import lombok.Data;
