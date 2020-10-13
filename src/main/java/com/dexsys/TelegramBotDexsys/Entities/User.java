@@ -1,6 +1,5 @@
-package com.dexsys.TelegramBotDexsys;
+package com.dexsys.TelegramBotDexsys.Entities;
 
-import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import org.telegram.telegrambots.meta.api.objects.Update;
