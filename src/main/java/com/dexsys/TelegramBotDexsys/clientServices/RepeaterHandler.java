@@ -1,4 +1,4 @@
-package com.dexsys.TelegramBotDexsys.сontrollers;
+package com.dexsys.TelegramBotDexsys.clientServices;
 
 import com.dexsys.TelegramBotDexsys.repositories.IRepository;
 import com.dexsys.TelegramBotDexsys.services.ITelegramService;

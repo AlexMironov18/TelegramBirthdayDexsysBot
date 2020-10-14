@@ -1,6 +1,6 @@
 package com.dexsys.TelegramBotDexsys.services.implementation;
 
-import com.dexsys.TelegramBotDexsys.сontrollers.RepeaterHandler;
+import com.dexsys.TelegramBotDexsys.clientServices.RepeaterHandler;
 import com.dexsys.TelegramBotDexsys.repositories.UserRepository;
 import com.dexsys.TelegramBotDexsys.repositories.IRepository;
 import com.dexsys.TelegramBotDexsys.services.ITelegramService;
