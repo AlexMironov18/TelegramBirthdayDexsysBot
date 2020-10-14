@@ -52,12 +52,12 @@ public class RepeaterHandler extends TelegramLongPollingBot {
     }
 
     @Override
-    public String getBotUsername() {
+    public final String getBotUsername() {
         return "BDayDexsysBot";
     }
 
     @Override
-    public String getBotToken() {
+    public final String getBotToken() {
         return "1086644086:AAFKbh2qwM6oEl0-bCCxAITus0VfvhiU9SY";
     }
 }
