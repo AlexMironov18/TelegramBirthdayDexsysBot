@@ -1,7 +1,10 @@
-package com.dexsys.TelegramBotDexsys.UseCase;
+package com.dexsys.TelegramBotDexsys.services.implementation;
 
-import com.dexsys.TelegramBotDexsys.Controllers.RepeaterHandler;
-import com.dexsys.TelegramBotDexsys.Gateways.UserRepository;
+import com.dexsys.TelegramBotDexsys.сontrollers.RepeaterHandler;
+import com.dexsys.TelegramBotDexsys.repositories.UserRepository;
+import com.dexsys.TelegramBotDexsys.repositories.IRepository;
+import com.dexsys.TelegramBotDexsys.services.ITelegramService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.telegram.telegrambots.meta.TelegramBotsApi;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
@@ -12,7 +15,6 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
 import javax.annotation.PostConstruct;
 
-import static com.dexsys.TelegramBotDexsys.TelegramBotDexsysApplication.ctx;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,12 +23,18 @@ import java.util.List;
 @Service
 public class TelegramService implements ITelegramService {
 
+    @Autowired
+    private IRepository userRepository;
+
+    @Autowired
+    private RepeaterHandler handler;
+
     @Override
     @PostConstruct
     public void setup() {
         TelegramBotsApi botsApi = new TelegramBotsApi();
         try {
-            botsApi.registerBot(new RepeaterHandler());
+            botsApi.registerBot(handler);
         } catch (TelegramApiException e) {
             e.printStackTrace();
         }
@@ -35,7 +43,6 @@ public class TelegramService implements ITelegramService {
     //setting birthdate of the user
     @Override
     public synchronized void setBDay(long chatId, String userName, String text) throws TelegramApiException {
-        IRepository userRepository = (UserRepository) ctx.getBean("userRepository");
         ((UserRepository) userRepository).getUserMap().get(userName).setBDate(text);
     }
 
@@ -50,6 +57,7 @@ public class TelegramService implements ITelegramService {
     }
 
     //adding keyboard
+    @Override
     public synchronized void setButtons(SendMessage sendMessage) {
         ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
         sendMessage.setReplyMarkup(replyKeyboardMarkup);

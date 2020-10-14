@@ -1,4 +1,4 @@
-package com.dexsys.TelegramBotDexsys.UseCase.Entities;
+package com.dexsys.TelegramBotDexsys.services.entities;
 
 import lombok.Builder;
 import lombok.Data;

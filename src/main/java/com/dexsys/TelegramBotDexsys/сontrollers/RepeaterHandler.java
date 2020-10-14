@@ -1,43 +1,50 @@
-package com.dexsys.TelegramBotDexsys.Controllers;
+package com.dexsys.TelegramBotDexsys.сontrollers;
 
-import com.dexsys.TelegramBotDexsys.UseCase.TelegramService;
-import com.dexsys.TelegramBotDexsys.Gateways.UserRepository;
-import com.dexsys.TelegramBotDexsys.UseCase.ITelegramService;
+import com.dexsys.TelegramBotDexsys.repositories.IRepository;
+import com.dexsys.TelegramBotDexsys.services.ITelegramService;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Message;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
-import static com.dexsys.TelegramBotDexsys.TelegramBotDexsysApplication.ctx;
 
-
+@Component
 @Slf4j
 public class RepeaterHandler extends TelegramLongPollingBot {
 
+    @Autowired
+    private IRepository userRepository;
+    @Autowired
+    private ITelegramService telegramService;
+
     //if true, means the command to set a BirthDate was sent
     private boolean toSetBDate = false;
+
     @Override
     public void onUpdateReceived(Update update) {
         //adding user who did the update to repository (if he's not in the rep yet)
-        ctx.getBean(UserRepository.class).addUserToRepository(update);
+        userRepository.addUserToRepository(update);
         try {
             if (update.hasMessage() && update.getMessage().hasText()) {
                 //creating message from update(i.e. request from user)
                 Message inputMessage = update.getMessage();
+
                     //handling setting a birthdate
                     if (toSetBDate) {
-                        ctx.getBean(TelegramService.class).setBDay(inputMessage.getChatId(), inputMessage.getFrom().getUserName(), inputMessage.getText());
+                        telegramService.setBDay(inputMessage.getChatId(), inputMessage.getFrom().getUserName(), inputMessage.getText());
                         toSetBDate = false;
                     } else if (inputMessage.getText().equals("Ввести дату рождения")) {
                         toSetBDate = true;
                     }
+
                     //default behavior
-                    ITelegramService action = ctx.getBean(TelegramService.class);
-                    SendMessage outputMessage = action.sendMsg(inputMessage.getChatId(), inputMessage.getText());
-                    ((TelegramService) action).setButtons(outputMessage);
+                    SendMessage outputMessage = telegramService.sendMsg(inputMessage.getChatId(), inputMessage.getText());
+                    telegramService.setButtons(outputMessage);
                     execute(outputMessage);
-                    System.out.println(ctx.getBean(UserRepository.class).printUserList());
+                    System.out.println(userRepository.printUserList());
                 }
         } catch (TelegramApiException e) {
             log.error("RepeaterHandler: " + e.toString());

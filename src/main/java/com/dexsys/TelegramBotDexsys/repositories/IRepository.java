@@ -1,6 +1,6 @@
-package com.dexsys.TelegramBotDexsys.UseCase;
+package com.dexsys.TelegramBotDexsys.repositories;
 
-import com.dexsys.TelegramBotDexsys.UseCase.Entities.User;
+import com.dexsys.TelegramBotDexsys.services.entities.User;
 import org.telegram.telegrambots.meta.api.objects.Update;
 
 public interface IRepository {
