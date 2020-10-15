@@ -1,6 +1,7 @@
 package com.dexsys.TelegramBotDexsys.services.implementation;
 
 import com.dexsys.TelegramBotDexsys.clientServices.RepeaterHandler;
+import com.dexsys.TelegramBotDexsys.clientServices.DTO.UserDTO;
 import com.dexsys.TelegramBotDexsys.repositories.UserRepository;
 import com.dexsys.TelegramBotDexsys.repositories.IRepository;
 import com.dexsys.TelegramBotDexsys.services.ITelegramService;
@@ -29,6 +30,18 @@ public class TelegramService implements ITelegramService {
     @Autowired
     private RepeaterHandler handler;
 
+    private boolean toSetBDate = false;
+
+    public void processMessage(UserDTO userDTO) throws TelegramApiException {
+        userRepository.addUserToRepository(userDTO);
+        if (toSetBDate) {
+            setBDay(userDTO.getChatId(), userDTO.getUserName(), userDTO.getText());
+            toSetBDate = false;
+        } else if (userDTO.getText().equals("Ввести дату рождения")) {
+            toSetBDate = true;
+        }
+    }
+
     @Override
     @PostConstruct
     public void setup() {
@@ -53,6 +66,7 @@ public class TelegramService implements ITelegramService {
         //filling the outout message with destination(chatId) and content(text)
         outputMessage.setChatId(chatId);
         outputMessage.setText(text);
+        setButtons(outputMessage);
         return outputMessage;
     }
 

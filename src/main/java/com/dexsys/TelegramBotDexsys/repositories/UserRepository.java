@@ -1,10 +1,10 @@
 package com.dexsys.TelegramBotDexsys.repositories;
 
+import com.dexsys.TelegramBotDexsys.clientServices.DTO.UserDTO;
 import com.dexsys.TelegramBotDexsys.services.entities.User;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import org.springframework.stereotype.Repository;
-import org.telegram.telegrambots.meta.api.objects.Update;
 
 import java.util.Map;
 
@@ -26,9 +26,9 @@ public class UserRepository implements IRepository {
     }
 
     @Override
-    public void addUserToRepository(Update update) {
-        if (!userMap.containsKey(update.getMessage().getFrom().getUserName())) {
-            addUser(User.fromUpdate(update));
+    public void addUserToRepository(UserDTO userDTO) {
+        if (!userMap.containsKey(userDTO.getUserName())) {
+            addUser(User.createUser(userDTO));
         }
     }
 }
