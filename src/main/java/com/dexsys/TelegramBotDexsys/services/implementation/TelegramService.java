@@ -5,6 +5,7 @@ import com.dexsys.TelegramBotDexsys.clientServices.DTO.UserDTO;
 import com.dexsys.TelegramBotDexsys.repositories.UserRepository;
 import com.dexsys.TelegramBotDexsys.repositories.IRepository;
 import com.dexsys.TelegramBotDexsys.services.ITelegramService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.telegram.telegrambots.meta.TelegramBotsApi;
@@ -22,6 +23,7 @@ import java.util.List;
 
 
 @Service
+@Slf4j
 public class TelegramService implements ITelegramService {
 
     @Autowired
@@ -34,20 +36,21 @@ public class TelegramService implements ITelegramService {
 
     @Override
     @PostConstruct
-    public void setup() {
+    public void setupBot() {
         TelegramBotsApi botsApi = new TelegramBotsApi();
         try {
             botsApi.registerBot(handler);
         } catch (TelegramApiException e) {
-            e.printStackTrace();
+            log.error("setupBot: " + e.toString());
         }
     }
 
     public void processMessage(UserDTO userDTO) throws TelegramApiException {
-        userRepository.addUserToRepository(userDTO);
+        userRepository.createAndAddUserToRepository(userDTO);
         if (toSetBDate) {
             setBDay(userDTO);
             toSetBDate = false;
+            log.info("Установлена дата рождения \"{}\" для пользователя {}", userDTO.getText(), userDTO.getUserName());
         } else if (userDTO.getText().equals("Ввести дату рождения")) {
             toSetBDate = true;
         }

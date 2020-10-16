@@ -13,7 +13,7 @@ public class UserDTO {
     private String text;
 
     @Builder
-    public static UserDTO fromUpdate(Update update) {
+    public static UserDTO createUserDTO(Update update) {
         return UserDTO.builder()
                 .chatId(update.getMessage().getChatId())
                 .userName(update.getMessage().getFrom().getUserName())

@@ -6,7 +6,7 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
 public interface ITelegramService {
 
-    void setup();
+    void setupBot();
     void setBDay(UserDTO userDTO) throws TelegramApiException;
     SendMessage sendMsg(UserDTO userDTO) throws TelegramApiException;
     void setButtons(SendMessage sendMessage);

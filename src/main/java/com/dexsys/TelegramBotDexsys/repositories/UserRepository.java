@@ -4,12 +4,14 @@ import com.dexsys.TelegramBotDexsys.clientServices.DTO.UserDTO;
 import com.dexsys.TelegramBotDexsys.services.entities.User;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Repository;
 
 import java.util.Map;
 
 @AllArgsConstructor
 @Repository
+@Slf4j
 @Data
 public class UserRepository implements IRepository {
 
@@ -23,10 +25,11 @@ public class UserRepository implements IRepository {
     @Override
     public void addUser(User user) {
         userMap.put(user.getUserName(), user);
+        log.info("Добавлен пользователь в базу данных с именем {}", user.getUserName());
     }
 
     @Override
-    public void addUserToRepository(UserDTO userDTO) {
+    public void createAndAddUserToRepository(UserDTO userDTO) {
         if (!userMap.containsKey(userDTO.getUserName())) {
             addUser(User.createUser(userDTO));
         }
