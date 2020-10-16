@@ -32,16 +32,6 @@ public class TelegramService implements ITelegramService {
 
     private boolean toSetBDate = false;
 
-    public void processMessage(UserDTO userDTO) throws TelegramApiException {
-        userRepository.addUserToRepository(userDTO);
-        if (toSetBDate) {
-            setBDay(userDTO.getChatId(), userDTO.getUserName(), userDTO.getText());
-            toSetBDate = false;
-        } else if (userDTO.getText().equals("Ввести дату рождения")) {
-            toSetBDate = true;
-        }
-    }
-
     @Override
     @PostConstruct
     public void setup() {
@@ -53,19 +43,29 @@ public class TelegramService implements ITelegramService {
         }
     }
 
+    public void processMessage(UserDTO userDTO) throws TelegramApiException {
+        userRepository.addUserToRepository(userDTO);
+        if (toSetBDate) {
+            setBDay(userDTO);
+            toSetBDate = false;
+        } else if (userDTO.getText().equals("Ввести дату рождения")) {
+            toSetBDate = true;
+        }
+    }
+
     //setting birthdate of the user
     @Override
-    public synchronized void setBDay(long chatId, String userName, String text) throws TelegramApiException {
-        ((UserRepository) userRepository).getUserMap().get(userName).setBDate(text);
+    public synchronized void setBDay(UserDTO userDTO) throws TelegramApiException {
+        ((UserRepository) userRepository).getUserMap().get(userDTO.getUserName()).setBDate(userDTO.getText());
     }
 
     @Override
-    public synchronized SendMessage sendMsg(long chatId, String text) throws TelegramApiException {
+    public synchronized SendMessage sendMsg(UserDTO userDTO) throws TelegramApiException {
         //creating blank message to be send
         SendMessage outputMessage = new SendMessage();
         //filling the outout message with destination(chatId) and content(text)
-        outputMessage.setChatId(chatId);
-        outputMessage.setText(text);
+        outputMessage.setChatId(userDTO.getChatId());
+        outputMessage.setText(userDTO.getText());
         setButtons(outputMessage);
         return outputMessage;
     }

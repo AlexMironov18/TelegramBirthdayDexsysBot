@@ -14,7 +14,8 @@ public class UserDTO {
 
     @Builder
     public static UserDTO fromUpdate(Update update) {
-        return UserDTO.builder().chatId(update.getMessage().getChatId())
+        return UserDTO.builder()
+                .chatId(update.getMessage().getChatId())
                 .userName(update.getMessage().getFrom().getUserName())
                 .text(update.getMessage().getText())
                 .build();
