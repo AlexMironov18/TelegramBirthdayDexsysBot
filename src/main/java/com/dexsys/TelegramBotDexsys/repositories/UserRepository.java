@@ -33,9 +33,9 @@ public class UserRepository implements IRepository {
     }
 
     @Override
-    public void createAndAddUserToRepository(UserDTO userDTO) {
-        if (!userMap.containsKey(userDTO.getUserName())) {
-            addUser(User.createUser(userDTO));
+    public void createAndAddUserToRepository(User user) {
+        if (!userMap.containsKey(user.getUserName())) {
+            addUser(user);
         }
     }
 }

@@ -8,6 +8,6 @@ public interface IRepository {
     String printUsers();
     String printUserList();
     void addUser(User user);
-    void createAndAddUserToRepository(UserDTO userDTO);
+    void createAndAddUserToRepository(User user);
 
 }

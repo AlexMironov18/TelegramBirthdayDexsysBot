@@ -2,6 +2,7 @@ package com.dexsys.TelegramBotDexsys.clientServices;
 
 import com.dexsys.TelegramBotDexsys.clientServices.DTO.UserDTO;
 import com.dexsys.TelegramBotDexsys.repositories.IRepository;
+import com.dexsys.TelegramBotDexsys.services.ITelegramReplyService;
 import com.dexsys.TelegramBotDexsys.services.ITelegramService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,15 +19,16 @@ public class RepeaterHandler extends TelegramLongPollingBot {
     private IRepository userRepository;
     @Autowired
     private ITelegramService telegramService;
+    @Autowired
+    private ITelegramReplyService telegramReplyService;
 
     @Override
     public void onUpdateReceived(Update update) {
-
         UserDTO userDTO = UserDTO.createUserDTO(update);
         try {
             if (update.hasMessage() && update.getMessage().hasText()) {
                 telegramService.processMessage(userDTO);
-                execute(telegramService.sendMsg(userDTO));
+                execute(telegramReplyService.sendMsg(userDTO));
                 log.info("Отправлено сообщение \"{}\" в чат {}", userDTO.getText(), userDTO.getChatId());
                 System.out.println(userRepository.printUserList());
             }
