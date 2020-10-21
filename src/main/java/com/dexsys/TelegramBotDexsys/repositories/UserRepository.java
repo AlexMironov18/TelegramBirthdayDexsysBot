@@ -18,6 +18,10 @@ public class UserRepository implements IRepository {
     private Map<String, User> userMap;
 
     @Override
+    public String printUsers() {
+        return userMap.toString();
+    }
+    @Override
     public String printUserList() {
         return userMap.toString();
     }

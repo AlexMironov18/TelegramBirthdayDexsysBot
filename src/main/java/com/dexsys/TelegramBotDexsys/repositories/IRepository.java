@@ -5,6 +5,7 @@ import com.dexsys.TelegramBotDexsys.services.entities.User;
 
 public interface IRepository {
 
+    String printUsers();
     String printUserList();
     void addUser(User user);
     void createAndAddUserToRepository(UserDTO userDTO);

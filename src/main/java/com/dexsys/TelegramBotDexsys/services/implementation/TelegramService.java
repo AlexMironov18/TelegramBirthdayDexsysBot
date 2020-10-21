@@ -68,7 +68,9 @@ public class TelegramService implements ITelegramService {
         SendMessage outputMessage = new SendMessage();
         //filling the outout message with destination(chatId) and content(text)
         outputMessage.setChatId(userDTO.getChatId());
-        outputMessage.setText(userDTO.getText());
+        if (userDTO.getText().equals("Ввести дату рождения")) outputMessage.setText("Введите вашу дату рождения:");
+        else if (userDTO.getText().equals("Показать пользователей")) outputMessage.setText(userRepository.printUsers());
+        else outputMessage.setText(userDTO.getText());
         setButtons(outputMessage);
         return outputMessage;
     }
@@ -83,8 +85,11 @@ public class TelegramService implements ITelegramService {
         replyKeyboardMarkup.setOneTimeKeyboard(false);
         List<KeyboardRow> keyboard = new ArrayList<>();
         KeyboardRow keyboardFirstRow = new KeyboardRow();
+        KeyboardRow keyboardSecondRow = new KeyboardRow();
         keyboardFirstRow.add(new KeyboardButton("Ввести дату рождения"));
+        keyboardSecondRow.add(new KeyboardButton("Показать пользователей"));
         keyboard.add(keyboardFirstRow);
+        keyboard.add(keyboardSecondRow);
         replyKeyboardMarkup.setKeyboard(keyboard);
     }
 }
