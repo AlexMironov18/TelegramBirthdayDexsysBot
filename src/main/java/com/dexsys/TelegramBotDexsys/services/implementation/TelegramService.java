@@ -25,7 +25,7 @@ import java.util.List;
 @Service
 @Slf4j
 public class TelegramService implements ITelegramService {
-
+//всю работу - в User а не с UserDTO
     @Autowired
     private IRepository userRepository;
 
