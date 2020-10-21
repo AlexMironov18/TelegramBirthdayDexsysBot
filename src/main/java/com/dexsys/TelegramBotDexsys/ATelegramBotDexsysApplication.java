@@ -7,12 +7,12 @@ import org.telegram.telegrambots.ApiContextInitializer;
 
 
 @SpringBootApplication(scanBasePackages = "com.dexsys.TelegramBotDexsys")
-public class TelegramBotDexsysApplication {
+public class ATelegramBotDexsysApplication {
 
 	public static void main(String[] args) {
 
 		ApiContextInitializer.init();
-		final ConfigurableApplicationContext ctx = SpringApplication.run(TelegramBotDexsysApplication.class, args);
+		final ConfigurableApplicationContext ctx = SpringApplication.run(ATelegramBotDexsysApplication.class, args);
 
 	}
 }
