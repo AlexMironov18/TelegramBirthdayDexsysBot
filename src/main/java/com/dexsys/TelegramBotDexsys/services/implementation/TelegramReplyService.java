@@ -19,6 +19,8 @@ public class TelegramReplyService implements ITelegramReplyService {
 
     @Autowired
     private IRepository userRepository;
+
+    //creating reply message
     @Override
     public synchronized SendMessage sendMsg(UserDTO userDTO) throws TelegramApiException {
         //creating blank message to be send
