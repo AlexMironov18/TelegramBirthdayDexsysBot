@@ -17,6 +17,7 @@ import java.util.stream.Collectors;
 
 @RestController
 @AllArgsConstructor
+@RequiredArgsConstructor
 public class TelegramController {
 
     private ITelegramService service;
