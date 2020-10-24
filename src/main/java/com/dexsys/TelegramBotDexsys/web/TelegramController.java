@@ -28,15 +28,17 @@ public class TelegramController {
     private ITelegramService service;
 
     @GetMapping
-    public HttpEntity<List<User>> getUsers() {
+    public HttpEntity<List<UserDtoWeb>> getUsers() {
         final List<User> users;
         try {
             users = service.getUsers();
         } catch (RuntimeException e) {
            throw new NullPointerException();
         }
-        return ResponseEntity.ok(users);
+        final List<UserDtoWeb> userDto = users.stream().map(mapFromUser).collect(toList());
+        return ResponseEntity.ok(userDto);
     }
+    //если мапить user -> user.tostring то он отображается в брауезере, если просто возвращать user - то нет
     @GetMapping("/{userName}")
     public HttpEntity<String> getUser(@PathVariable("userName") String userName) {
         final User user;
