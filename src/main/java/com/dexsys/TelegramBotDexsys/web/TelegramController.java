@@ -3,6 +3,7 @@ package com.dexsys.TelegramBotDexsys.web;
 import com.dexsys.TelegramBotDexsys.services.ITelegramService;
 import com.dexsys.TelegramBotDexsys.services.entities.User;
 import com.dexsys.TelegramBotDexsys.web.dtos.UserDtoWeb;
+import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.ResponseEntity;
@@ -15,10 +16,10 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 
 @RestController
-@RequiredArgsConstructor
+@AllArgsConstructor
 public class TelegramController {
 
-    private final ITelegramService service;
+    private ITelegramService service;
 
     @GetMapping("/getusers")
     public HttpEntity<List<UserDtoWeb>> getUsers() {
@@ -30,7 +31,7 @@ public class TelegramController {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        final List<UserDtoWeb> result = users.stream().map(mapFromUser).collect(Collectors.toList());
+        List<UserDtoWeb> result = users.stream().map(mapFromUser).collect(Collectors.toList());
         return ResponseEntity.ok(result);
     }
 

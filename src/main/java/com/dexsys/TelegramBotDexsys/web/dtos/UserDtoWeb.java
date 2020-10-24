@@ -1,8 +1,6 @@
 package com.dexsys.TelegramBotDexsys.web.dtos;
 
-import com.dexsys.TelegramBotDexsys.handlers.DTO.UserDTO;
 import lombok.Builder;
-import org.telegram.telegrambots.meta.api.objects.Update;
 
 @Builder
 public class UserDtoWeb {
