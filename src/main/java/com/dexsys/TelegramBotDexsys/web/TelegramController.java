@@ -39,7 +39,7 @@ public class TelegramController {
     }
     @GetMapping("/{userName}")
     public HttpEntity<User> getUser(@PathVariable("userName") String userName) {
-        User user;
+        final User user;
         user = service.getUser(userName);
         return ResponseEntity.ok(user);
     }
