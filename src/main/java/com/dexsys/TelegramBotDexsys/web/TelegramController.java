@@ -28,11 +28,7 @@ public class TelegramController {
     @GetMapping
     public HttpEntity<List<UserDtoWeb>> getUsers() {
         final List<User> users;
-        try {
-            users = service.getUserList();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        users = service.getUserList();
         final List<UserDtoWeb> result = users.stream().map(mapFromUser).collect(toList());
         return ResponseEntity.ok(result);
     }
