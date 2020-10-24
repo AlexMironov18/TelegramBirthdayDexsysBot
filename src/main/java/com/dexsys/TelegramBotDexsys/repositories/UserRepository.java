@@ -1,13 +1,14 @@
 package com.dexsys.TelegramBotDexsys.repositories;
 
-import com.dexsys.TelegramBotDexsys.clientServices.DTO.UserDTO;
 import com.dexsys.TelegramBotDexsys.services.entities.User;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 @AllArgsConstructor
 @Repository
@@ -37,5 +38,10 @@ public class UserRepository implements IRepository {
         if (!userMap.containsKey(user.getUserName())) {
             addUser(user);
         }
+    }
+
+    @Override
+    public List<User> getUserList() {
+        return userMap.values().stream().collect(Collectors.toList());
     }
 }

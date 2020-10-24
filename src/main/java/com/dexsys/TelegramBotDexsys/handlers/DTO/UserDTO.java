@@ -1,4 +1,4 @@
-package com.dexsys.TelegramBotDexsys.clientServices.DTO;
+package com.dexsys.TelegramBotDexsys.handlers.DTO;
 
 import lombok.Builder;
 import lombok.Data;

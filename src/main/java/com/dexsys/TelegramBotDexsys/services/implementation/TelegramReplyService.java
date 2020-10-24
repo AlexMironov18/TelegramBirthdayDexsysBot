@@ -1,6 +1,6 @@
 package com.dexsys.TelegramBotDexsys.services.implementation;
 
-import com.dexsys.TelegramBotDexsys.clientServices.DTO.UserDTO;
+import com.dexsys.TelegramBotDexsys.handlers.DTO.UserDTO;
 import com.dexsys.TelegramBotDexsys.repositories.IRepository;
 import com.dexsys.TelegramBotDexsys.services.ITelegramReplyService;
 import org.springframework.beans.factory.annotation.Autowired;

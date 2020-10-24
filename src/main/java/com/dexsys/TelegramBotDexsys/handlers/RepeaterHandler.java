@@ -1,6 +1,6 @@
-package com.dexsys.TelegramBotDexsys.clientServices;
+package com.dexsys.TelegramBotDexsys.handlers;
 
-import com.dexsys.TelegramBotDexsys.clientServices.DTO.UserDTO;
+import com.dexsys.TelegramBotDexsys.handlers.DTO.UserDTO;
 import com.dexsys.TelegramBotDexsys.repositories.IRepository;
 import com.dexsys.TelegramBotDexsys.services.ITelegramReplyService;
 import com.dexsys.TelegramBotDexsys.services.ITelegramService;

@@ -1,7 +1,7 @@
 package com.dexsys.TelegramBotDexsys.services.implementation;
 
-import com.dexsys.TelegramBotDexsys.clientServices.RepeaterHandler;
-import com.dexsys.TelegramBotDexsys.clientServices.DTO.UserDTO;
+import com.dexsys.TelegramBotDexsys.handlers.RepeaterHandler;
+import com.dexsys.TelegramBotDexsys.handlers.DTO.UserDTO;
 import com.dexsys.TelegramBotDexsys.repositories.UserRepository;
 import com.dexsys.TelegramBotDexsys.repositories.IRepository;
 import com.dexsys.TelegramBotDexsys.services.ITelegramService;
@@ -10,16 +10,9 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.telegram.telegrambots.meta.TelegramBotsApi;
-import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
-import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboardMarkup;
-import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardButton;
-import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardRow;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
 import javax.annotation.PostConstruct;
-
-
-import java.util.ArrayList;
 import java.util.List;
 
 
@@ -64,6 +57,11 @@ public class TelegramService implements ITelegramService {
     @Override
     public synchronized void setBirthDay(User user, String birthDate) throws TelegramApiException {
         ((UserRepository) userRepository).getUserMap().get(user.getUserName()).setBirthDate(birthDate);
+    }
+
+    @Override
+    public List<User> getUsers() {
+        return userRepository.getUserList();
     }
 
 }
