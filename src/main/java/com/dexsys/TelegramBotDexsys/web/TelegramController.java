@@ -1,5 +1,6 @@
 package com.dexsys.TelegramBotDexsys.web;
 
+import com.dexsys.TelegramBotDexsys.repositories.IRepository;
 import com.dexsys.TelegramBotDexsys.services.ITelegramService;
 import com.dexsys.TelegramBotDexsys.services.entities.User;
 import com.dexsys.TelegramBotDexsys.web.dtos.UserDtoWeb;
@@ -15,24 +16,24 @@ import java.util.List;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
+import static java.util.stream.Collectors.toList;
+
 @RestController
-@AllArgsConstructor
+@RequestMapping("/api/users")
 @RequiredArgsConstructor
 public class TelegramController {
 
-    private ITelegramService service;
+    private final IRepository service;
 
-    @GetMapping("/getusers")
+    @GetMapping
     public HttpEntity<List<UserDtoWeb>> getUsers() {
-
-        List<User> users = null;
-
+        final List<User> users;
         try {
-            users = service.getUsers();
+            users = service.getUserList();
         } catch (Exception e) {
             e.printStackTrace();
         }
-        List<UserDtoWeb> result = users.stream().map(mapFromUser).collect(Collectors.toList());
+        final List<UserDtoWeb> result = users.stream().map(mapFromUser).collect(toList());
         return ResponseEntity.ok(result);
     }
 

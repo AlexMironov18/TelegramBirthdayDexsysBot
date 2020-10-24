@@ -44,4 +44,9 @@ public class UserRepository implements IRepository {
     public List<User> getUserList() {
         return userMap.values().stream().collect(Collectors.toList());
     }
+
+    @Override
+    public User getUser(String userName) {
+        return userMap.get(userMap.get(userName));
+    }
 }

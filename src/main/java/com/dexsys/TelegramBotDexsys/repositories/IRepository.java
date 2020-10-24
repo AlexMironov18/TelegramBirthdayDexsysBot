@@ -11,5 +11,6 @@ public interface IRepository {
     void addUser(User user);
     void createAndAddUserToRepository(User user);
     List<User> getUserList();
+    User getUser(String userName);
 
 }
