@@ -16,6 +16,7 @@ import java.util.stream.Collectors;
 @Data
 public class UserRepository implements IRepository {
 
+    //TODO добавить метод get и delete (как в CRUD)
     private Map<String, User> userMap;
 
     @Override
