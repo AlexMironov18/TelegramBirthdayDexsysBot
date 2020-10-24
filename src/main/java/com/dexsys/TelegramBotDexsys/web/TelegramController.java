@@ -28,22 +28,20 @@ public class TelegramController {
     private ITelegramService service;
 
     @GetMapping
-    public HttpEntity<List<UserDtoWeb>> getUsers() {
+    public HttpEntity<List<User>> getUsers() {
         final List<User> users;
         try {
             users = service.getUsers();
         } catch (RuntimeException e) {
            throw new NullPointerException();
         }
-        final List<UserDtoWeb> result = users.stream().map(mapFromUser).collect(toList());
-        return ResponseEntity.ok(result);
+        return ResponseEntity.ok(users);
     }
     @GetMapping("/{userName}")
-    public HttpEntity<UserDtoWeb> getUser(@PathVariable("userName") String userName) {
+    public HttpEntity<User> getUser(@PathVariable("userName") String userName) {
         User user;
         user = service.getUser(userName);
-        UserDtoWeb result = mapFromUser.apply(user);
-        return ResponseEntity.ok(result);
+        return ResponseEntity.ok(user);
     }
     @RequestMapping("/sayhi")
     public String home(){
