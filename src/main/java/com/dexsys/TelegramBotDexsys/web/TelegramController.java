@@ -56,12 +56,14 @@ public class TelegramController {
 
     private Function<User, UserDtoWeb> mapFromUser = it ->
             UserDtoWeb.builder()
-                    .isMale(it.isMale())
-                    .phone(it.getPhone())
+                    .birthDate(it.getBirthDate())
+                    .chatId(it.getChatId())
                     .firstName(it.getFirstName())
                     .lastName(it.getLastName())
                     .middleName(it.getMiddleName())
+                    .id(it.getId())
+                    .isMale(it.isMale())
+                    .phone(it.getPhone())
                     .userName(it.getUserName())
-                    .birthDate(it.getBirthDate())
                     .build();
 }
