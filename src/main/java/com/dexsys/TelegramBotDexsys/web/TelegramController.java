@@ -40,14 +40,15 @@ public class TelegramController {
     }
     //если мапить user -> user.tostring то он отображается в брауезере, если просто возвращать user - то нет
     @GetMapping("/{userName}")
-    public HttpEntity<String> getUser(@PathVariable("userName") String userName) {
+    public HttpEntity<UserDtoWeb> getUser(@PathVariable("userName") String userName) {
         final User user;
         try {
             user = service.getUser(userName);
         } catch (RuntimeException e) {
             throw new NullPointerException();
         }
-        return ResponseEntity.ok(user.toString());
+        final UserDtoWeb userDto = mapFromUser.apply(user);
+        return ResponseEntity.ok(userDto);
     }
     @RequestMapping("/sayhi")
     public String home(){
