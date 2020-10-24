@@ -38,10 +38,14 @@ public class TelegramController {
         return ResponseEntity.ok(users);
     }
     @GetMapping("/{userName}")
-    public HttpEntity<User> getUser(@PathVariable("userName") String userName) {
+    public HttpEntity<String> getUser(@PathVariable("userName") String userName) {
         final User user;
-        user = service.getUser(userName);
-        return ResponseEntity.ok(user);
+        try {
+            user = service.getUser(userName);
+        } catch (RuntimeException e) {
+            throw new NullPointerException();
+        }
+        return ResponseEntity.ok(user.toString());
     }
     @RequestMapping("/sayhi")
     public String home(){

@@ -47,6 +47,6 @@ public class UserRepository implements IRepository {
 
     @Override
     public User getUser(String userName) {
-        return userMap.get(userMap.get(userName));
+        return userMap.get(userName);
     }
 }
