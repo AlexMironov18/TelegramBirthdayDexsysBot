@@ -64,4 +64,8 @@ public class TelegramService implements ITelegramService {
         return userRepository.getUserList();
     }
 
+    @Override
+    public User getUser(String userName) {
+        return userRepository.getUser(userName);
+    }
 }

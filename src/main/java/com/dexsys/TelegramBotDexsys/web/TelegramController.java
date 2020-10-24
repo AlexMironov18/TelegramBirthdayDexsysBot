@@ -3,18 +3,19 @@ package com.dexsys.TelegramBotDexsys.web;
 import com.dexsys.TelegramBotDexsys.repositories.IRepository;
 import com.dexsys.TelegramBotDexsys.services.ITelegramService;
 import com.dexsys.TelegramBotDexsys.services.entities.User;
+import com.dexsys.TelegramBotDexsys.services.implementation.TelegramService;
 import com.dexsys.TelegramBotDexsys.web.dtos.UserDtoWeb;
-import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 import java.util.function.Function;
-import java.util.stream.Collectors;
 
 import static java.util.stream.Collectors.toList;
 
@@ -23,17 +24,28 @@ import static java.util.stream.Collectors.toList;
 @RequiredArgsConstructor
 public class TelegramController {
 
-    private final IRepository service;
+    @Autowired
+    private ITelegramService service;
 
     @GetMapping
     public HttpEntity<List<UserDtoWeb>> getUsers() {
         final List<User> users;
-        users = service.getUserList();
+        try {
+            users = service.getUsers();
+        } catch (RuntimeException e) {
+           throw new NullPointerException();
+        }
         final List<UserDtoWeb> result = users.stream().map(mapFromUser).collect(toList());
         return ResponseEntity.ok(result);
     }
-
-    @RequestMapping("/")
+    @GetMapping("/{userName}")
+    public HttpEntity<UserDtoWeb> getUser(@PathVariable("userName") String userName) {
+        User user;
+        user = service.getUser(userName);
+        UserDtoWeb result = mapFromUser.apply(user);
+        return ResponseEntity.ok(result);
+    }
+    @RequestMapping("/sayhi")
     public String home(){
         return "Hello World!";
     }

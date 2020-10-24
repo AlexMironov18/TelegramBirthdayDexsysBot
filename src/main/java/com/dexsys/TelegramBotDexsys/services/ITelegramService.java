@@ -12,6 +12,7 @@ public interface ITelegramService {
     void setBirthDay(User user, String birthDate) throws TelegramApiException;
     void processMessage(UserDTO userDTO) throws TelegramApiException;
     List<User> getUsers();
+    User getUser(String userName);
 
 
 }
