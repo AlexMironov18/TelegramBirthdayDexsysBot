@@ -74,3 +74,107 @@
 14:10:56.622 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 5.132 seconds (JVM running for 6.063)
 14:11:13.322 [BDayDexsysBot Telegram Executor] INFO  c.d.T.repositories.UserRepository - Добавлен пользователь в базу данных с именем AlexMironov18
 14:11:13.433 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "hi" в чат 935193822
+12:59:35.041 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 9864 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+12:59:35.055 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+12:59:44.393 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 10.54 seconds (JVM running for 12.881)
+13:09:03.377 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 9448 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:09:03.379 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:09:08.085 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 5.207 seconds (JVM running for 5.969)
+13:09:11.119 [BDayDexsysBot Telegram Executor] INFO  c.d.T.repositories.UserRepository - Добавлен пользователь в базу данных с именем AlexMironov18
+13:09:11.268 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "Ввести дату рождения" в чат 935193822
+13:09:16.578 [BDayDexsysBot Telegram Executor] INFO  c.d.T.s.i.TelegramService - Установлена дата рождения "1998" для пользователя AlexMironov18
+13:09:16.673 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "1998" в чат 935193822
+13:09:18.946 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "Показать пользователей" в чат 935193822
+13:09:30.404 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "Показать пользователей" в чат 935193822
+13:17:33.621 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 8928 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:17:33.627 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:17:38.162 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 5.082 seconds (JVM running for 5.799)
+13:17:42.598 [BDayDexsysBot Telegram Executor] INFO  c.d.T.repositories.UserRepository - Добавлен пользователь в базу данных с именем AlexMironov18
+13:17:42.709 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "hi" в чат 935193822
+13:17:44.516 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "hey" в чат 935193822
+13:17:45.885 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "Показать пользователей" в чат 935193822
+13:17:49.447 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "Ввести дату рождения" в чат 935193822
+13:17:50.686 [BDayDexsysBot Telegram Executor] INFO  c.d.T.s.i.TelegramService - Установлена дата рождения "1998" для пользователя AlexMironov18
+13:17:50.783 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "1998" в чат 935193822
+13:17:52.314 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "Показать пользователей" в чат 935193822
+13:17:56.414 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "Показать пользователей" в чат 935193822
+13:19:14.061 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 11452 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:19:14.065 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:19:18.272 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 11784 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:19:18.283 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:19:22.960 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 5.113 seconds (JVM running for 5.854)
+13:19:29.980 [BDayDexsysBot Telegram Executor] INFO  c.d.T.repositories.UserRepository - Добавлен пользователь в базу данных с именем AlexMironov18
+13:19:30.081 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "hi" в чат 935193822
+13:19:32.134 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "hey" в чат 935193822
+13:19:36.511 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "Показать пользователей" в чат 935193822
+13:19:39.026 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "Ввести дату рождения" в чат 935193822
+13:19:40.750 [BDayDexsysBot Telegram Executor] INFO  c.d.T.s.i.TelegramService - Установлена дата рождения "1998" для пользователя AlexMironov18
+13:19:40.846 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "1998" в чат 935193822
+13:19:42.242 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "Показать пользователей" в чат 935193822
+13:19:46.351 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "Показать пользователей" в чат 935193822
+13:20:28.021 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "hi" в чат 935193822
+13:21:26.951 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 9244 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:21:26.956 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:21:31.850 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 5.316 seconds (JVM running for 5.997)
+13:21:35.267 [BDayDexsysBot Telegram Executor] INFO  c.d.T.repositories.UserRepository - Добавлен пользователь в базу данных с именем AlexMironov18
+13:21:35.396 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "hi" в чат 935193822
+13:21:36.604 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "hey" в чат 935193822
+13:21:37.602 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "Показать пользователей" в чат 935193822
+13:22:40.784 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 11328 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:22:40.788 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:22:45.409 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 5.103 seconds (JVM running for 5.793)
+13:22:56.879 [BDayDexsysBot Telegram Executor] INFO  c.d.T.repositories.UserRepository - Добавлен пользователь в базу данных с именем AlexMironov18
+13:22:57.008 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "hey" в чат 935193822
+13:22:58.373 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "Показать пользователей" в чат 935193822
+13:22:59.890 [BDayDexsysBot Telegram Executor] ERROR c.d.T.handlers.RepeaterHandler - onUpdateReceived: org.telegram.telegrambots.meta.exceptions.TelegramApiValidationException: Text parameter can't be empty in method: SendMessage{chatId='935193822', text='null', parseMode='null', disableNotification='null', disableWebPagePreview=null, replyToMessageId=null, replyMarkup=ReplyKeyboardMarkup{keyboard=[[KeyboardButton{text=Share your number, requestContact=true, requestLocation=null, requestPoll=null}, KeyboardButton{text=Ввести дату рождения, requestContact=null, requestLocation=null, requestPoll=null}], [KeyboardButton{text=Показать пользователей, requestContact=null, requestLocation=null, requestPoll=null}, KeyboardButton{text=INFO, requestContact=null, requestLocation=null, requestPoll=null}]], resizeKeyboard=true, oneTimeKeyboard=false, selective=true}}
+13:23:00.885 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "Показать пользователей" в чат 935193822
+13:23:06.069 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "Ввести дату рождения" в чат 935193822
+13:23:07.560 [BDayDexsysBot Telegram Executor] INFO  c.d.T.s.i.TelegramService - Установлена дата рождения "1998" для пользователя AlexMironov18
+13:23:07.700 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "1998" в чат 935193822
+13:23:08.861 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "Показать пользователей" в чат 935193822
+13:23:20.030 [BDayDexsysBot Telegram Executor] ERROR c.d.T.handlers.RepeaterHandler - onUpdateReceived: org.telegram.telegrambots.meta.exceptions.TelegramApiValidationException: Text parameter can't be empty in method: SendMessage{chatId='935193822', text='null', parseMode='null', disableNotification='null', disableWebPagePreview=null, replyToMessageId=null, replyMarkup=ReplyKeyboardMarkup{keyboard=[[KeyboardButton{text=Share your number, requestContact=true, requestLocation=null, requestPoll=null}, KeyboardButton{text=Ввести дату рождения, requestContact=null, requestLocation=null, requestPoll=null}], [KeyboardButton{text=Показать пользователей, requestContact=null, requestLocation=null, requestPoll=null}, KeyboardButton{text=INFO, requestContact=null, requestLocation=null, requestPoll=null}]], resizeKeyboard=true, oneTimeKeyboard=false, selective=true}}
+13:27:51.528 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 6224 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:27:51.531 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:27:56.125 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 5.097 seconds (JVM running for 5.811)
+13:27:58.602 [BDayDexsysBot Telegram Executor] INFO  c.d.T.repositories.UserRepository - Добавлен пользователь в базу данных с именем AlexMironov18
+13:27:58.707 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "hi" в чат 935193822
+13:28:00.632 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "Показать пользователей" в чат 935193822
+13:28:04.838 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "Ввести дату рождения" в чат 935193822
+13:28:06.360 [BDayDexsysBot Telegram Executor] INFO  c.d.T.s.i.TelegramService - Установлена дата рождения "1998" для пользователя AlexMironov18
+13:28:06.461 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "1998" в чат 935193822
+13:28:08.828 [BDayDexsysBot Telegram Executor] ERROR c.d.T.handlers.RepeaterHandler - onUpdateReceived: org.telegram.telegrambots.meta.exceptions.TelegramApiValidationException: Text parameter can't be empty in method: SendMessage{chatId='935193822', text='null', parseMode='null', disableNotification='null', disableWebPagePreview=null, replyToMessageId=null, replyMarkup=ReplyKeyboardMarkup{keyboard=[[KeyboardButton{text=Share your number, requestContact=true, requestLocation=null, requestPoll=null}, KeyboardButton{text=Ввести дату рождения, requestContact=null, requestLocation=null, requestPoll=null}], [KeyboardButton{text=Показать пользователей, requestContact=null, requestLocation=null, requestPoll=null}, KeyboardButton{text=INFO, requestContact=null, requestLocation=null, requestPoll=null}]], resizeKeyboard=true, oneTimeKeyboard=false, selective=true}}
+13:28:11.108 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "Показать пользователей" в чат 935193822
+13:54:26.349 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 10544 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:54:26.352 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:54:30.854 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 5.005 seconds (JVM running for 5.76)
+13:54:35.686 [BDayDexsysBot Telegram Executor] INFO  c.d.T.repositories.UserRepository - Добавлен пользователь в базу данных с именем AlexMironov18
+13:54:35.813 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "hi" в чат 935193822
+13:54:37.589 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "hey" в чат 935193822
+13:54:41.710 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "Ввести дату рождения" в чат 935193822
+13:54:43.446 [BDayDexsysBot Telegram Executor] INFO  c.d.T.s.i.TelegramService - Установлена дата рождения "1998" для пользователя AlexMironov18
+13:54:43.583 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "1998" в чат 935193822
+13:57:09.064 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 11848 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:57:09.068 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:57:13.604 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 5.012 seconds (JVM running for 5.662)
+13:57:16.507 [BDayDexsysBot Telegram Executor] INFO  c.d.T.repositories.UserRepository - Добавлен пользователь в базу данных с именем AlexMironov18
+13:57:16.627 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "hi" в чат 935193822
+13:57:17.407 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "hey" в чат 935193822
+13:57:18.632 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "Показать пользователей" в чат 935193822
+13:57:20.790 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "Ввести дату рождения" в чат 935193822
+13:57:21.874 [BDayDexsysBot Telegram Executor] INFO  c.d.T.s.i.TelegramService - Установлена дата рождения "1998" для пользователя AlexMironov18
+13:57:22.038 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "1998" в чат 935193822
+13:57:22.971 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "Показать пользователей" в чат 935193822
+13:57:27.741 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "Показать пользователей" в чат 935193822
+14:05:34.753 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 11304 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+14:05:34.755 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+14:05:39.258 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 4.978 seconds (JVM running for 6.113)
+14:05:56.359 [BDayDexsysBot Telegram Executor] INFO  c.d.T.repositories.UserRepository - Добавлен пользователь в базу данных с именем AlexMironov18
+14:05:56.500 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "hi" в чат 935193822
+14:05:58.058 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "hey" в чат 935193822
+14:05:59.191 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "Показать пользователей" в чат 935193822
+14:06:03.624 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "Ввести дату рождения" в чат 935193822
+14:06:04.962 [BDayDexsysBot Telegram Executor] INFO  c.d.T.s.i.TelegramService - Установлена дата рождения "1998" для пользователя AlexMironov18
+14:06:05.060 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "1998" в чат 935193822
+14:06:11.084 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "Показать пользователей" в чат 935193822
+14:06:17.215 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "hey" в чат 935193822
+14:06:18.285 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "Показать пользователей" в чат 935193822

@@ -60,6 +60,11 @@ public class TelegramService implements ITelegramService {
     }
 
     @Override
+    public synchronized void setPhone(String userName, String phone) throws TelegramApiException {
+        ((UserRepository) userRepository).getUserMap().get(user.getUserName()).setPhone(phone);
+    }
+
+    @Override
     public List<User> getUsers() {
         return userRepository.getUserList();
     }

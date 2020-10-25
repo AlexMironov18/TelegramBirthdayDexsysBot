@@ -25,8 +25,14 @@ public class RepeaterHandler extends TelegramLongPollingBot {
     @Override
     public void onUpdateReceived(Update update) {
         UserDTO userDTO = UserDTO.createUserDTO(update);
+        //update.getMessage().getContact().getPhoneNumber(); - phoneNumber
         try {
-            if (update.hasMessage() && update.getMessage().hasText()) {
+            if (update.getMessage().getContact() != null) {
+                userDTO.setText("Ввести номер телефона");
+                telegramService.setPhone(userDTO.getUserName(), update.getMessage().getContact().getPhoneNumber());
+                execute(telegramReplyService.sendMsg(userDTO));
+                System.out.println(userRepository.printUserList());
+            } else if (update.hasMessage() && update.getMessage().hasText()) {
                 telegramService.processMessage(userDTO);
                 execute(telegramReplyService.sendMsg(userDTO));
                 log.info("Отправлено сообщение \"{}\" в чат {}", userDTO.getText(), userDTO.getChatId());

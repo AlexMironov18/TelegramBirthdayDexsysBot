@@ -27,21 +27,27 @@ public class TelegramReplyService implements ITelegramReplyService {
         SendMessage outputMessage = new SendMessage();
         //filling the output message with destination(chatId) and content(text)
         outputMessage.setChatId(userDTO.getChatId());
-        switch(userDTO.getText()) {
-            case "Ввести дату рождения": outputMessage.setText("Введите вашу дату рождения:");
-                break;
-            case "Показать пользователей": outputMessage.setText(userRepository.printUsers());
-                break;
-            case "INFO": outputMessage.setText("Кнопка \"Введите вашу дату рождения\" позволяет " +
-                    "ввести дату рождения данного пользователя в систему\nКнопка \"Показать пользователей\" " +
-                    "показывает данные всех пользователей этой системы");
-                break;
-            default: outputMessage.setText(userDTO.getText());
-        }
+        setText(outputMessage, userDTO);
         setButtons(outputMessage);
         return outputMessage;
     }
 
+    @Override
+    public synchronized void setText(SendMessage sendMessage, UserDTO userDTO) {
+        switch(userDTO.getText()) {
+            case "Ввести дату рождения": sendMessage.setText("Введите вашу дату рождения:");
+                break;
+            case "Показать пользователей": sendMessage.setText(userRepository.printUsers());
+                break;
+            case "INFO": sendMessage.setText("Кнопка \"Введите вашу дату рождения\" позволяет " +
+                    "ввести дату рождения данного пользователя в систему\nКнопка \"Показать пользователей\" " +
+                    "показывает данные всех пользователей этой системы");
+                break;
+            case "Ввести номер телефона": sendMessage.setText("Ваш номер телефона записан");
+                break;
+            default: sendMessage.setText(userDTO.getText());
+        }
+    }
     //adding keyboard
     @Override
     public synchronized void setButtons(SendMessage sendMessage) {
@@ -53,6 +59,9 @@ public class TelegramReplyService implements ITelegramReplyService {
         List<KeyboardRow> keyboard = new ArrayList<>();
         KeyboardRow keyboardFirstRow = new KeyboardRow();
         KeyboardRow keyboardSecondRow = new KeyboardRow();
+        KeyboardButton contactKeyButton = new KeyboardButton();
+        contactKeyButton.setText("Ввести номер телефона").setRequestContact(true);
+        keyboardFirstRow.add(contactKeyButton);
         keyboardFirstRow.add(new KeyboardButton("Ввести дату рождения"));
         keyboardSecondRow.add(new KeyboardButton("Показать пользователей"));
         keyboardSecondRow.add(new KeyboardButton("INFO"));
