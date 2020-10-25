@@ -16,6 +16,7 @@ public class UserDTO {
     private String firstName;
     private String lastName;
     private String middleName;
+    private String phone;
 
 
     @Builder
@@ -26,6 +27,7 @@ public class UserDTO {
                 .lastName(update.getMessage().getFrom().getLastName())
                 .userName(update.getMessage().getFrom().getUserName())
                 .text(update.getMessage().getText())
+                .phone(update.getMessage().getContact().getPhoneNumber())
                 .build();
     }
 }
