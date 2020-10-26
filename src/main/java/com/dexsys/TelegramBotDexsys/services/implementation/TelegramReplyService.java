@@ -52,6 +52,7 @@ public class TelegramReplyService implements ITelegramReplyService {
             case "INFO": sendMessage.setText("Кнопка \"Введите вашу дату рождения\" позволяет " +
                     "ввести дату рождения данного пользователя в систему\nКнопка \"Показать пользователей\" " +
                     "показывает данные всех пользователей этой системы");
+                break;
             case "Ввести номер телефона": sendMessage.setText("Вы авторизованы в системе");
                 break;
             default: sendMessage.setText(userDTO.getText());
