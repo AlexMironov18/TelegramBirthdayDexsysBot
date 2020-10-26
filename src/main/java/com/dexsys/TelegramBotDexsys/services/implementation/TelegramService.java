@@ -69,4 +69,9 @@ public class TelegramService implements ITelegramService {
     public User getUser(String userName) {
         return userRepository.getUser(userName);
     }
+
+    @Override
+    public boolean deleteUser(String phoneNUmber) {
+        return userRepository.deleteUser(phoneNUmber);
+    }
 }

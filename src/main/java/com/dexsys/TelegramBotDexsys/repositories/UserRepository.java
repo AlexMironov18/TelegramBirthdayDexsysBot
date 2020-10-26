@@ -34,7 +34,7 @@ public class UserRepository implements IRepository {
     @Override
     public void addUser(User user) {
         userMap.put(user.getPhone(), user);
-        log.info("Добавлен пользователь в базу данных с именем {}", user.getUserName());
+        log.info("Добавлен пользователь в базу данных с телефоном {}", user.getPhone());
     }
 
     @Override
@@ -51,7 +51,12 @@ public class UserRepository implements IRepository {
     }
 
     @Override
-    public User getUser(String userName) {
-        return userMap.get(userName);
+    public User getUser(String phoneNumber) {
+        return userMap.get(phoneNumber);
+    }
+
+    @Override
+    public boolean deleteUser(String phoneNumber) {
+        return userMap.remove(phoneNumber) != null;
     }
 }

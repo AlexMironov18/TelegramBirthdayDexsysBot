@@ -11,6 +11,7 @@ public interface IRepository {
     void addUser(User user);
     void createUser(User user);
     List<User> getUserList();
-    User getUser(String userName);
+    User getUser(String phoneNumber);
+    boolean deleteUser(String phoneNumber);
 
 }

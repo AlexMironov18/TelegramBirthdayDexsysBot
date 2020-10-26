@@ -52,6 +52,8 @@ public class TelegramReplyService implements ITelegramReplyService {
             case "INFO": sendMessage.setText("Кнопка \"Введите вашу дату рождения\" позволяет " +
                     "ввести дату рождения данного пользователя в систему\nКнопка \"Показать пользователей\" " +
                     "показывает данные всех пользователей этой системы");
+            case "Ввести номер телефона": sendMessage.setText("Вы авторизованы в системе");
+                break;
             default: sendMessage.setText(userDTO.getText());
         }
     }
@@ -77,11 +79,9 @@ public class TelegramReplyService implements ITelegramReplyService {
     @Override
     public synchronized void setTextDefault(SendMessage sendMessage, UserDTO userDTO) {
         switch(userDTO.getText()) {
-            case "INFO": sendMessage.setText("Кнопка \"Введите вашу дату рождения\" позволяет " +
-                    "ввести дату рождения данного пользователя в систему\nКнопка \"Показать пользователей\" " +
-                    "показывает данные всех пользователей этой системы");
-                break;
-            case "Ввести номер телефона": sendMessage.setText("Ваш номер телефона записан");
+            case "INFO": sendMessage.setText("Для авторизации в системе и получения возможностей " +
+                    "к основным функциям бота - нажмите \"Ввести номер телефона\".\n" +
+                    "До авторизации, бот будет присылать вам ответ в виде введеных вами сообщений. ");
                 break;
             default: sendMessage.setText(userDTO.getText());
         }
@@ -99,8 +99,6 @@ public class TelegramReplyService implements ITelegramReplyService {
         KeyboardButton contactKeyButton = new KeyboardButton();
         contactKeyButton.setText("Ввести номер телефона").setRequestContact(true);
         keyboardFirstRow.add(contactKeyButton);
-        keyboardFirstRow.add(new KeyboardButton("Ввести дату рождения"));
-        keyboardSecondRow.add(new KeyboardButton("Показать пользователей"));
         keyboardSecondRow.add(new KeyboardButton("INFO"));
         keyboard.add(keyboardFirstRow);
         keyboard.add(keyboardSecondRow);

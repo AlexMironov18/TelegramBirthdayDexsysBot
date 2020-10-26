@@ -8,11 +8,9 @@ import com.dexsys.TelegramBotDexsys.web.dtos.UserDtoWeb;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.function.Function;
@@ -39,16 +37,27 @@ public class TelegramController {
         return ResponseEntity.ok(userDto);
     }
 
-    @GetMapping("/{userName}")
-    public HttpEntity<UserDtoWeb> getUser(@PathVariable("userName") String userName) {
+    @GetMapping("/{phone}")
+    public HttpEntity<UserDtoWeb> getUser(@PathVariable("phone") String phoneNumber) {
         final User user;
         try {
-            user = service.getUser(userName);
+            user = service.getUser(phoneNumber);
         } catch (RuntimeException e) {
             throw new NullPointerException();
         }
         final UserDtoWeb userDto = mapToUserDto.apply(user);
         return ResponseEntity.ok(userDto);
+    }
+
+    @DeleteMapping("/delete/{phone}")
+    public HttpEntity<?> deleteUser(@PathVariable("phone") String phoneNumber) {
+        final boolean isUserDeleted;
+        try {
+            isUserDeleted = service.deleteUser(phoneNumber);
+        } catch (RuntimeException e) {
+            throw new NullPointerException();
+        }
+        return isUserDeleted ? new ResponseEntity(HttpStatus.OK) : new ResponseEntity(HttpStatus.NOT_FOUND);
     }
 
     @GetMapping("/sayhi")

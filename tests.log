@@ -239,3 +239,30 @@
 11:05:36.734 [BDayDexsysBot Telegram Executor] INFO  c.d.T.s.i.TelegramService - Установлена дата рождения "1998" для пользователя AlexMironov18
 11:05:36.832 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "1998" в чат 935193822
 11:05:38.324 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "Показать пользователей" в чат 935193822
+12:21:07.281 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 11228 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+12:21:07.284 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+12:21:11.769 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "hi" в чат 935193822
+12:21:11.957 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "INFO" в чат 935193822
+12:21:12.131 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 5.327 seconds (JVM running for 6.057)
+12:21:21.326 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "hi" в чат 935193822
+12:21:22.094 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "hey" в чат 935193822
+12:21:23.374 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "Показать пользователей" в чат 935193822
+12:21:28.376 [BDayDexsysBot Telegram Executor] INFO  c.d.T.repositories.UserRepository - Добавлен пользователь в базу данных с телефоном +79501617728
+12:21:30.307 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "Показать пользователей" в чат 935193822
+12:21:33.957 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "INFO" в чат 935193822
+12:21:34.992 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "Показать пользователей" в чат 935193822
+12:21:37.118 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "Ввести дату рождения" в чат 935193822
+12:21:39.904 [BDayDexsysBot Telegram Executor] INFO  c.d.T.s.i.TelegramService - Установлена дата рождения "1998" для пользователя AlexMironov18
+12:21:40.027 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "1998" в чат 935193822
+12:21:40.862 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "Показать пользователей" в чат 935193822
+12:28:25.587 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 10448 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+12:28:25.589 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+12:28:30.615 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 5.491 seconds (JVM running for 6.195)
+12:28:34.803 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "hi" в чат 935193822
+12:28:37.155 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "INFO" в чат 935193822
+12:28:46.968 [BDayDexsysBot Telegram Executor] INFO  c.d.T.repositories.UserRepository - Добавлен пользователь в базу данных с телефоном +79501617728
+12:28:49.498 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "Показать пользователей" в чат 935193822
+12:28:51.128 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "Ввести дату рождения" в чат 935193822
+12:28:53.169 [BDayDexsysBot Telegram Executor] INFO  c.d.T.s.i.TelegramService - Установлена дата рождения "1998" для пользователя AlexMironov18
+12:28:53.267 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "1998" в чат 935193822
+12:28:54.468 [BDayDexsysBot Telegram Executor] INFO  c.d.T.handlers.RepeaterHandler - Отправлено сообщение "Показать пользователей" в чат 935193822
