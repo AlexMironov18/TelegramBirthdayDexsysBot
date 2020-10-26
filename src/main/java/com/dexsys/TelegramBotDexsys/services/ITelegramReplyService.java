@@ -9,5 +9,7 @@ public interface ITelegramReplyService {
     SendMessage sendMsg(UserDTO userDTO) throws TelegramApiException;
     void setText(SendMessage sendMessage, UserDTO userDTO);
     void setButtons(SendMessage sendMessage);
+    void setTextDefault(SendMessage sendMessage, UserDTO userDTO);
+    void setButtonsDefault(SendMessage sendMessage);
 
 }

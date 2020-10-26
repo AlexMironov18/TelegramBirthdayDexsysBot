@@ -9,7 +9,7 @@ public interface IRepository {
     String printUsers();
     String printUserList();
     void addUser(User user);
-    void createAndAddUserToRepository(User user);
+    void createUser(User user);
     List<User> getUserList();
     User getUser(String userName);
 

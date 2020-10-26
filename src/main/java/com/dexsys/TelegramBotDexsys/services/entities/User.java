@@ -25,6 +25,7 @@ public class User {
                 .firstName(userDTO.getFirstName())
                 .lastName(userDTO.getLastName())
                 .userName(userDTO.getUserName())
+                .phone(userDTO.getPhone())
                 .build();
     }
 }

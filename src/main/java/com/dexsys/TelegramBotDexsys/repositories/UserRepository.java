@@ -16,8 +16,11 @@ import java.util.stream.Collectors;
 @Data
 public class UserRepository implements IRepository {
 
-    //TODO добавить метод get и delete (как в CRUD)
+    //user repository
     private Map<String, User> userMap;
+    //since a key - phone number and we can get it only once, but chatId we get every time message has been sent
+    //it's easy to get key(phoneNumber) using chatId
+    private Map<Long, String> chatIdMap;
 
     @Override
     public String printUsers() {
@@ -30,14 +33,15 @@ public class UserRepository implements IRepository {
 
     @Override
     public void addUser(User user) {
-        userMap.put(user.getUserName(), user);
+        userMap.put(user.getPhone(), user);
         log.info("Добавлен пользователь в базу данных с именем {}", user.getUserName());
     }
 
     @Override
-    public void createAndAddUserToRepository(User user) {
-        if (!userMap.containsKey(user.getUserName())) {
+    public void createUser(User user) {
+        if (!userMap.containsKey(user.getPhone())) {
             addUser(user);
+            chatIdMap.put(user.getChatId(), user.getPhone());
         }
     }
 

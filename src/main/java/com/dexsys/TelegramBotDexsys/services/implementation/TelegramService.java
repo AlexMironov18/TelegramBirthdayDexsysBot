@@ -42,7 +42,7 @@ public class TelegramService implements ITelegramService {
     public void processMessage(UserDTO userDTO) throws TelegramApiException {
         user = User.createUser(userDTO);
         String birthDate;
-        userRepository.createAndAddUserToRepository(user);
+        if (userDTO.getPhone() != null) userRepository.createUser(user);
         if (toSetBDate) {
             birthDate = userDTO.getText();
             setBirthDay(user, birthDate);
@@ -56,12 +56,8 @@ public class TelegramService implements ITelegramService {
     //setting birthdate of the user
     @Override
     public synchronized void setBirthDay(User user, String birthDate) throws TelegramApiException {
-        ((UserRepository) userRepository).getUserMap().get(user.getUserName()).setBirthDate(birthDate);
-    }
-
-    @Override
-    public synchronized void setPhone(String userName, String phone) throws TelegramApiException {
-        ((UserRepository) userRepository).getUserMap().get(user.getUserName()).setPhone(phone);
+        ((UserRepository) userRepository).getUserMap()
+                .get(((UserRepository) userRepository).getChatIdMap().get(user.getChatId())).setBirthDate(birthDate);
     }
 
     @Override
