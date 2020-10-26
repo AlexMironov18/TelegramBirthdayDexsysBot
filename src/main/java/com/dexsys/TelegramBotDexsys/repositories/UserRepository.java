@@ -57,6 +57,7 @@ public class UserRepository implements IRepository {
 
     @Override
     public boolean deleteUser(String phoneNumber) {
+        chatIdMap.values().remove(phoneNumber);
         return userMap.remove(phoneNumber) != null;
     }
 }
