@@ -26,14 +26,14 @@ public class TelegramReplyService implements ITelegramReplyService {
     public synchronized SendMessage sendMsg(UserDTO userDTO) throws TelegramApiException {
         //creating blank message to be send
         SendMessage outputMessage = new SendMessage();
-        //filling the output message with destination(chatId) and content(text)
+        //filling the output message with destination(chatId)
         outputMessage.setChatId(userDTO.getChatId());
-        //sending text and keyboard if user is authorised
+        //sending text and keyboard if user is authorized
         if (((UserRepository) userRepository).getChatIdMap().get(userDTO.getChatId()) != null) {
             setText(outputMessage, userDTO);
             setButtons(outputMessage);
             return outputMessage;
-            //sending text and keyboard if user isn't authorised
+            //sending text and keyboard if user isn't authorized
         } else {
             setTextDefault(outputMessage, userDTO);
             setButtonsDefault(outputMessage);

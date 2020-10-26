@@ -19,7 +19,7 @@ public class UserRepository implements IRepository {
     //user repository
     private Map<String, User> userMap;
     //since a key - phone number and we can get it only once, but chatId we get every time message has been sent
-    //it's easy to get key(phoneNumber) using chatId
+    //it's easy to get value(phoneNumber) using this key(chatId)
     private Map<Long, String> chatIdMap;
 
     @Override

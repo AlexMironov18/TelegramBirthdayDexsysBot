@@ -53,7 +53,6 @@ public class TelegramService implements ITelegramService {
         }
     }
 
-    //setting birthdate of the user
     @Override
     public synchronized void setBirthDay(User user, String birthDate) throws TelegramApiException {
         ((UserRepository) userRepository).getUserMap()
