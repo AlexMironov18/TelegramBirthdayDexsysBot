@@ -1,10 +1,9 @@
 package com.dexsys.TelegramBotDexsys.web;
 
-import com.dexsys.TelegramBotDexsys.repositories.IRepository;
 import com.dexsys.TelegramBotDexsys.services.ITelegramService;
 import com.dexsys.TelegramBotDexsys.services.entities.User;
-import com.dexsys.TelegramBotDexsys.services.implementation.TelegramService;
 import com.dexsys.TelegramBotDexsys.web.dtos.UserDtoWeb;
+import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
@@ -26,6 +25,7 @@ public class TelegramController {
     private ITelegramService service;
 
     @GetMapping
+    @ApiOperation(value = "find all users", notes = "returns a list of users")
     public HttpEntity<List<UserDtoWeb>> getUsers() {
         final List<User> users;
         try {
@@ -38,6 +38,7 @@ public class TelegramController {
     }
 
     @GetMapping("/{phone}")
+    @ApiOperation(value = "find the user with this id", notes = "returns a user with a given id")
     public HttpEntity<UserDtoWeb> getUser(@PathVariable("phone") String phoneNumber) {
         final User user;
         try {
@@ -49,7 +50,8 @@ public class TelegramController {
         return ResponseEntity.ok(userDto);
     }
 
-    @DeleteMapping("/delete/{phone}")
+    @DeleteMapping("/{phone}")
+    @ApiOperation(value = "delete the user with this id", notes = "deletes a user with a given id")
     public HttpEntity<?> deleteUser(@PathVariable("phone") String phoneNumber) {
         final boolean isUserDeleted;
         try {
@@ -58,11 +60,6 @@ public class TelegramController {
             throw new NullPointerException();
         }
         return isUserDeleted ? new ResponseEntity(HttpStatus.OK) : new ResponseEntity(HttpStatus.NOT_FOUND);
-    }
-
-    @GetMapping("/sayhi")
-    public String sayHi(){
-        return "Hello World!";
     }
 
     private Function<User, UserDtoWeb> mapToUserDto = it ->

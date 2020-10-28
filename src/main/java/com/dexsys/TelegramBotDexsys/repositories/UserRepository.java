@@ -18,8 +18,7 @@ public class UserRepository implements IRepository {
 
     //user repository
     private Map<String, User> userMap;
-    //since a key - phone number and we can get it only once, but chatId we get every time message has been sent
-    //it's easy to get value(phoneNumber) using this key(chatId)
+    // chatId - phone map, to get a phone number, using chatId
     private Map<Long, String> chatIdMap;
 
     @Override
@@ -33,15 +32,10 @@ public class UserRepository implements IRepository {
 
     @Override
     public void addUser(User user) {
-        userMap.put(user.getPhone(), user);
-        log.info("Добавлен пользователь в базу данных с телефоном {}", user.getPhone());
-    }
-
-    @Override
-    public void createUser(User user) {
         if (!userMap.containsKey(user.getPhone())) {
-            addUser(user);
+            userMap.put(user.getPhone(), user);
             chatIdMap.put(user.getChatId(), user.getPhone());
+            log.info("Добавлен пользователь в базу данных с телефоном {}", user.getPhone());
         }
     }
 

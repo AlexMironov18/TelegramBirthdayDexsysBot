@@ -42,12 +42,14 @@ public class TelegramService implements ITelegramService {
     public void processMessage(UserDTO userDTO) throws TelegramApiException {
         user = User.createUser(userDTO);
         String birthDate;
-        if (userDTO.getPhone() != null) userRepository.createUser(user);
+        //during authorizing, userDTO has a phone number
+        if (userDTO.getPhone() != null) userRepository.addUser(user);
         if (toSetBDate) {
             birthDate = userDTO.getText();
             setBirthDay(user, birthDate);
             toSetBDate = false;
-            log.info("Установлена дата рождения \"{}\" для пользователя {}", userDTO.getText(), userDTO.getUserName());
+            log.info("Установлена дата рождения \"{}\" для пользователя {}", userDTO.getText(),
+                    ((UserRepository) userRepository).getChatIdMap().get(user.getChatId()));
         } else if (userDTO.getText().equals("Ввести дату рождения")) {
             toSetBDate = true;
         }
