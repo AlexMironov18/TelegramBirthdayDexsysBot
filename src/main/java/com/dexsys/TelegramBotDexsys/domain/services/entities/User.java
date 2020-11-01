@@ -1,6 +1,6 @@
-package com.dexsys.TelegramBotDexsys.services.entities;
+package com.dexsys.TelegramBotDexsys.domain.services.entities;
 
-import com.dexsys.TelegramBotDexsys.handlers.DTO.UserDTO;
+import com.dexsys.TelegramBotDexsys.app.clientService.telegramHandlers.DTO.UserDTO;
 import lombok.Builder;
 import lombok.Data;
 

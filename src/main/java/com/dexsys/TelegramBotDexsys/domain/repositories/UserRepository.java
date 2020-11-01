@@ -1,6 +1,7 @@
-package com.dexsys.TelegramBotDexsys.repositories;
+package com.dexsys.TelegramBotDexsys.domain.repositories;
 
-import com.dexsys.TelegramBotDexsys.services.entities.User;
+import com.dexsys.TelegramBotDexsys.domain.services.entities.User;
+import com.dexsys.TelegramBotDexsys.services.IRepository;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;

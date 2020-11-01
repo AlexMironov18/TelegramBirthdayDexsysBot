@@ -1,6 +1,6 @@
-package com.dexsys.TelegramBotDexsys.repositories;
+package com.dexsys.TelegramBotDexsys.services;
 
-import com.dexsys.TelegramBotDexsys.services.entities.User;
+import com.dexsys.TelegramBotDexsys.domain.services.entities.User;
 
 import java.util.List;
 

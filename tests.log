@@ -361,3 +361,480 @@
 14:30:36.205 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 12844 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
 14:30:36.209 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
 14:30:42.367 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.769 seconds (JVM running for 7.496)
+15:54:07.920 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 7652 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+15:54:07.937 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+15:54:18.937 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 12.797 seconds (JVM running for 15.885)
+15:54:28.010 [BDayDexsysBot Telegram Executor] INFO  c.d.T.telegramAPI.RepeaterHandler - Отправлено сообщение "hi" в чат 935193822
+15:55:46.733 [BDayDexsysBot Telegram Executor] INFO  c.d.T.repositories.UserRepository - Добавлен пользователь в базу данных с телефоном +79501617728
+11:23:06.694 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 324 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+11:23:06.721 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+11:23:20.122 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 14.474 seconds (JVM running for 18.925)
+11:24:24.809 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 10340 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+11:24:24.812 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+11:24:31.058 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.77 seconds (JVM running for 7.57)
+11:26:45.901 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 2040 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+11:26:45.904 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+11:26:51.981 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.666 seconds (JVM running for 7.411)
+11:26:57.994 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 9008 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+11:26:57.997 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+11:27:03.804 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.225 seconds (JVM running for 6.985)
+11:27:10.077 [BDayDexsysBot Telegram Executor] INFO  c.d.T.telegramAPI.RepeaterHandler - Отправлено сообщение "hi" в чат 935193822
+11:27:17.130 [BDayDexsysBot Telegram Executor] INFO  c.d.T.telegramAPI.RepeaterHandler - Отправлено сообщение "hey" в чат 935193822
+11:29:59.751 [BDayDexsysBot Telegram Executor] INFO  c.d.T.repositories.UserRepository - Добавлен пользователь в базу данных с телефоном +79501617728
+11:41:00.741 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 10996 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+11:41:00.744 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+11:41:06.967 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.81 seconds (JVM running for 7.674)
+11:41:11.918 [BDayDexsysBot Telegram Executor] INFO  c.d.T.telegramAPI.RepeaterHandler - Отправлено сообщение "hi" в чат 935193822
+11:41:14.961 [BDayDexsysBot Telegram Executor] INFO  c.d.T.telegramAPI.RepeaterHandler - Отправлено сообщение "hey" в чат 935193822
+11:41:32.640 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 10244 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+11:41:32.644 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+11:41:38.279 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.143 seconds (JVM running for 6.987)
+11:47:59.104 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 10164 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+11:47:59.107 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+11:48:04.768 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.157 seconds (JVM running for 6.877)
+12:23:48.463 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 9208 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+12:23:48.466 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+12:23:54.480 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.523 seconds (JVM running for 7.254)
+12:25:45.428 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 12016 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+12:25:45.431 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+12:25:51.262 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.36 seconds (JVM running for 7.11)
+13:07:24.002 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 9572 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:07:24.005 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:07:30.476 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 7.035 seconds (JVM running for 7.897)
+13:07:54.723 [BDayDexsysBot Telegram Executor] INFO  c.d.T.telegramAPI.RepeaterHandler - Отправлено сообщение "hi" в чат 935193822
+13:07:54.995 [BDayDexsysBot Telegram Executor] INFO  c.d.T.telegramAPI.RepeaterHandler - Отправлено сообщение "hi" в чат 935193822
+13:08:02.418 [BDayDexsysBot Telegram Executor] INFO  c.d.T.telegramAPI.RepeaterHandler - Отправлено сообщение "hey" в чат 935193822
+13:08:32.747 [BDayDexsysBot Telegram Executor] INFO  c.d.T.repositories.UserRepository - Добавлен пользователь в базу данных с телефоном +79501617728
+13:08:37.362 [BDayDexsysBot Telegram Executor] INFO  c.d.T.telegramAPI.RepeaterHandler - Отправлено сообщение "hhey" в чат 935193822
+13:08:39.043 [BDayDexsysBot Telegram Executor] INFO  c.d.T.telegramAPI.RepeaterHandler - Отправлено сообщение "Показать пользователей" в чат 935193822
+13:09:08.476 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 13116 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:09:08.479 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:09:14.236 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.231 seconds (JVM running for 6.923)
+13:09:18.135 [BDayDexsysBot Telegram Executor] INFO  c.d.T.telegramAPI.RepeaterHandler - Отправлено сообщение "hi" в чат 935193822
+18:13:39.040 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 3288 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+18:13:39.061 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+18:13:55.192 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 19.903 seconds (JVM running for 29.096)
+18:20:47.096 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 8212 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+18:20:47.099 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+18:20:53.071 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.582 seconds (JVM running for 7.486)
+18:21:44.713 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 12992 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+18:21:44.717 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+18:21:50.680 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.524 seconds (JVM running for 7.402)
+18:22:54.721 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 12852 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+18:22:54.724 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+18:23:00.530 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.39 seconds (JVM running for 7.404)
+18:29:33.224 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 7724 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+18:29:33.227 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+18:29:39.085 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.368 seconds (JVM running for 7.096)
+18:35:09.110 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 7400 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+18:35:09.114 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+18:35:14.916 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.2 seconds (JVM running for 7.147)
+18:38:53.650 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 11580 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+18:38:53.652 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+18:38:59.462 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.344 seconds (JVM running for 7.104)
+18:44:17.931 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 12352 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+18:44:17.934 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+18:44:24.189 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.813 seconds (JVM running for 7.51)
+18:46:18.299 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 10008 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+18:46:18.305 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+18:46:24.684 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.876 seconds (JVM running for 7.628)
+18:51:34.316 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 12744 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+18:51:34.319 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+18:51:40.200 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.477 seconds (JVM running for 7.211)
+18:54:16.661 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 9080 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+18:54:16.664 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+18:54:22.561 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.407 seconds (JVM running for 7.132)
+18:55:47.648 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 9344 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+18:55:47.651 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+18:55:53.484 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.33 seconds (JVM running for 7.102)
+10:14:51.296 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 12064 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+10:14:51.304 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+10:15:23.496 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 35.545 seconds (JVM running for 42.591)
+10:17:45.179 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 11740 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+10:17:45.183 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+10:17:52.017 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 7.509 seconds (JVM running for 8.414)
+10:19:26.947 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 10080 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+10:19:26.951 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+10:19:33.255 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.973 seconds (JVM running for 7.949)
+10:20:00.555 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 11872 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+10:20:00.558 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+10:20:07.157 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 7.088 seconds (JVM running for 7.928)
+10:22:29.205 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 12096 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+10:22:29.215 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+10:22:35.270 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.611 seconds (JVM running for 7.359)
+10:33:25.194 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 1328 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+10:33:25.200 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+10:33:31.552 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.84 seconds (JVM running for 7.537)
+10:35:10.813 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 12004 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+10:35:10.821 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+10:35:16.651 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.325 seconds (JVM running for 7.167)
+10:38:00.120 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 11396 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+10:38:00.122 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+10:38:06.995 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 7.434 seconds (JVM running for 8.188)
+10:44:46.509 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 10080 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+10:44:46.511 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+10:44:53.868 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 8.191 seconds (JVM running for 9.226)
+10:53:00.057 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 8120 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+10:53:00.066 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+10:53:05.971 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.491 seconds (JVM running for 7.329)
+10:57:35.382 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 156 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+10:57:35.401 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+10:57:41.323 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.609 seconds (JVM running for 7.294)
+11:00:43.904 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 10688 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+11:00:43.908 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+11:00:49.699 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.234 seconds (JVM running for 6.938)
+11:08:45.421 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 13000 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+11:08:45.425 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+11:08:51.236 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.386 seconds (JVM running for 7.092)
+11:13:28.527 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 9516 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+11:13:28.534 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+11:13:34.349 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.283 seconds (JVM running for 6.996)
+11:14:22.869 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 10284 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+11:14:22.872 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+11:14:28.455 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.042 seconds (JVM running for 6.746)
+11:14:54.065 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 13060 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+11:14:54.069 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+11:14:59.787 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.212 seconds (JVM running for 6.939)
+11:16:05.158 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 13012 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+11:16:05.161 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+11:16:11.010 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.366 seconds (JVM running for 7.106)
+11:21:53.103 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 13100 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+11:21:53.106 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+11:21:59.270 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.793 seconds (JVM running for 7.518)
+11:22:55.808 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 8396 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+11:22:55.812 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+11:23:01.242 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.016 seconds (JVM running for 6.739)
+11:25:54.521 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 13244 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+11:25:54.524 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+11:26:00.453 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.381 seconds (JVM running for 7.215)
+11:29:08.129 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 4532 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+11:29:08.132 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+11:29:13.868 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.219 seconds (JVM running for 6.926)
+11:30:45.857 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 12072 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+11:30:45.861 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+11:30:51.701 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.497 seconds (JVM running for 7.231)
+11:32:02.546 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 10076 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+11:32:02.550 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+11:32:08.280 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.174 seconds (JVM running for 6.855)
+11:34:41.963 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 9300 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+11:34:41.966 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+11:34:47.608 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.266 seconds (JVM running for 7.101)
+11:37:25.842 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 12308 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+11:37:25.845 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+11:37:31.363 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.284 seconds (JVM running for 7.287)
+11:40:40.965 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 12620 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+11:40:40.968 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+11:40:47.443 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.956 seconds (JVM running for 7.754)
+11:42:14.762 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 13156 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+11:42:14.765 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+11:42:20.748 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.56 seconds (JVM running for 7.285)
+11:45:03.762 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 12704 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+11:45:03.765 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+11:45:09.420 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.173 seconds (JVM running for 6.868)
+11:49:44.917 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 9612 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+11:49:44.920 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+11:49:50.871 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.41 seconds (JVM running for 7.239)
+11:52:03.343 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 6660 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+11:52:03.351 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+11:52:09.110 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.343 seconds (JVM running for 7.074)
+11:58:33.184 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 12720 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+11:58:33.189 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+11:58:38.994 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.293 seconds (JVM running for 7.019)
+12:00:55.664 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 12804 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+12:00:55.670 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+12:01:01.551 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.447 seconds (JVM running for 7.222)
+12:19:11.275 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 12680 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+12:19:11.278 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+12:19:17.715 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.861 seconds (JVM running for 7.588)
+12:24:00.804 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 10472 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+12:24:00.808 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+12:24:06.764 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.744 seconds (JVM running for 7.47)
+12:28:31.129 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 9376 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+12:28:31.132 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+12:28:37.413 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.755 seconds (JVM running for 7.48)
+12:30:03.737 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 13204 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+12:30:03.747 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+12:30:09.709 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.421 seconds (JVM running for 7.179)
+12:53:04.650 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 12060 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+12:53:04.666 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+12:53:12.602 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 8.528 seconds (JVM running for 9.32)
+12:58:10.036 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 11656 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+12:58:10.039 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+12:58:15.827 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.22 seconds (JVM running for 6.903)
+12:59:12.763 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 10836 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+12:59:12.766 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+12:59:18.552 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.229 seconds (JVM running for 6.951)
+13:01:40.503 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 12772 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:01:40.507 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:01:46.410 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.315 seconds (JVM running for 7.111)
+13:03:24.399 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 10024 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:03:24.402 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:03:30.717 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.794 seconds (JVM running for 7.562)
+13:08:36.964 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 12016 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:08:36.967 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:08:42.732 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.239 seconds (JVM running for 6.977)
+13:11:42.465 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 8512 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:11:42.471 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:11:48.365 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.462 seconds (JVM running for 7.207)
+13:13:43.256 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 10864 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:13:43.259 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:13:49.115 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.269 seconds (JVM running for 6.974)
+13:18:54.451 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 10612 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:18:54.454 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:19:00.636 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.625 seconds (JVM running for 7.338)
+13:30:46.002 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 10440 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:30:46.011 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:30:52.976 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 7.448 seconds (JVM running for 8.16)
+13:33:24.194 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 11084 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:33:24.198 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:33:29.865 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.17 seconds (JVM running for 6.906)
+13:34:11.885 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 13028 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:34:11.889 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:34:17.612 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.18 seconds (JVM running for 6.886)
+13:39:34.916 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 2408 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:39:34.919 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:39:40.546 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.107 seconds (JVM running for 6.829)
+13:42:17.911 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 4840 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:42:17.916 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:42:23.973 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.553 seconds (JVM running for 7.275)
+13:50:52.337 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 13256 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:50:52.344 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:50:58.153 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.336 seconds (JVM running for 7.056)
+13:58:24.209 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 11828 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:58:24.214 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:58:34.228 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 10.541 seconds (JVM running for 11.232)
+13:59:38.100 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 13128 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:59:38.103 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:59:43.480 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 5.852 seconds (JVM running for 6.576)
+14:00:33.236 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 12688 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+14:00:33.239 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+14:00:39.174 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.476 seconds (JVM running for 7.193)
+14:00:52.032 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 2092 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+14:00:52.035 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+14:00:57.579 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.038 seconds (JVM running for 6.817)
+14:26:18.181 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 12008 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+14:26:18.184 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+14:26:24.821 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 7.083 seconds (JVM running for 8.058)
+14:27:48.299 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 9660 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+14:27:48.302 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+14:27:55.351 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 7.638 seconds (JVM running for 8.557)
+14:30:01.174 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 8820 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+14:30:01.179 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+14:30:07.771 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 7.114 seconds (JVM running for 7.879)
+14:32:12.263 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 12920 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+14:32:12.267 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+14:32:18.462 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.734 seconds (JVM running for 7.637)
+14:34:20.403 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 8400 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+14:34:20.407 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+14:34:27.278 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 7.431 seconds (JVM running for 8.52)
+14:35:41.410 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 13176 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+14:35:41.423 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+14:35:47.835 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.987 seconds (JVM running for 7.867)
+14:37:15.345 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 9740 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+14:37:15.349 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+14:40:16.458 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 11432 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+14:40:16.461 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+14:40:39.764 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 9972 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+14:40:39.767 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+14:41:12.048 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 11320 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+14:41:12.093 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+14:41:17.866 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.298 seconds (JVM running for 7.068)
+14:43:16.391 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 8256 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+14:43:16.396 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+14:43:22.623 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.709 seconds (JVM running for 7.51)
+14:43:55.813 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 12528 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+14:43:55.816 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+14:44:02.775 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 7.548 seconds (JVM running for 8.412)
+14:44:31.912 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 13004 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+14:44:31.915 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+14:44:37.568 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.21 seconds (JVM running for 6.969)
+14:47:05.400 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 8848 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+14:47:05.403 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+14:47:10.968 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.339 seconds (JVM running for 7.061)
+14:48:27.051 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 12844 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+14:48:27.054 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+14:48:33.041 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.409 seconds (JVM running for 7.125)
+14:49:07.542 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 13276 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+14:49:07.545 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+14:49:14.937 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 7.96 seconds (JVM running for 8.916)
+14:52:27.647 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 12144 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+14:52:27.650 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+14:52:33.799 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.599 seconds (JVM running for 7.366)
+14:53:17.426 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 13288 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+14:53:17.430 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+14:53:24.217 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 7.208 seconds (JVM running for 7.953)
+14:54:39.411 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 10572 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+14:54:39.420 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+14:54:45.289 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.324 seconds (JVM running for 7.095)
+14:55:05.583 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 9064 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+14:55:05.602 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+14:55:11.900 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.845 seconds (JVM running for 7.523)
+16:06:08.217 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 12100 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+16:06:08.238 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+16:07:21.956 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 12252 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+16:07:21.958 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+16:08:32.139 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 4840 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+16:08:32.142 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+16:09:40.737 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 10216 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+16:09:40.740 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+16:09:47.121 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.862 seconds (JVM running for 7.661)
+16:12:39.929 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 6228 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+16:12:39.932 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+16:12:45.485 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.173 seconds (JVM running for 6.925)
+16:14:15.727 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 12192 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+16:14:15.731 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+16:14:21.589 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.35 seconds (JVM running for 7.045)
+16:15:51.363 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 11568 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+16:15:51.369 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+16:15:57.253 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.378 seconds (JVM running for 7.113)
+16:16:56.738 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 11392 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+16:16:56.741 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+16:17:02.808 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.52 seconds (JVM running for 7.266)
+16:17:30.442 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 9588 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+16:17:30.498 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+16:17:36.268 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.451 seconds (JVM running for 7.268)
+16:22:14.079 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 12144 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+16:22:14.084 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+16:22:20.275 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 7.044 seconds (JVM running for 7.957)
+12:42:25.969 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 12464 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+12:42:26.011 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+12:42:34.771 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 9.661 seconds (JVM running for 11.847)
+12:46:30.267 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 7984 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+12:46:30.274 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+12:47:08.998 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 12496 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+12:47:09.001 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+12:47:36.477 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 992 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+12:47:36.480 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+12:47:43.488 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 7.624 seconds (JVM running for 8.442)
+12:48:41.394 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 12356 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+12:48:41.399 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+12:48:47.659 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.753 seconds (JVM running for 7.458)
+12:49:59.567 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 12736 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+12:49:59.571 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+12:50:05.853 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.762 seconds (JVM running for 7.711)
+12:50:37.817 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 8300 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+12:50:37.821 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+12:50:43.977 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.683 seconds (JVM running for 7.46)
+12:51:05.817 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 9724 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+12:51:05.821 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+12:51:12.558 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 7.226 seconds (JVM running for 8.024)
+12:54:49.299 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 10824 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+12:54:49.302 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+12:54:55.222 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.44 seconds (JVM running for 7.182)
+12:56:12.499 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 8104 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+12:56:12.503 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+12:56:20.711 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 8.861 seconds (JVM running for 9.86)
+12:59:16.729 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 9984 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+12:59:16.732 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+12:59:24.424 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 8.274 seconds (JVM running for 9.058)
+13:02:19.930 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 12204 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:02:19.933 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:02:25.889 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.5 seconds (JVM running for 7.267)
+13:03:02.327 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 7892 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:03:02.330 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:03:08.194 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.386 seconds (JVM running for 7.203)
+13:04:00.308 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 13012 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:04:00.312 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:04:06.642 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.901 seconds (JVM running for 7.703)
+13:04:32.429 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 12708 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:04:32.432 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:04:38.444 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.446 seconds (JVM running for 7.216)
+13:11:21.490 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 10444 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:11:21.495 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:11:27.415 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.415 seconds (JVM running for 7.134)
+13:13:05.057 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 12472 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:13:05.060 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:13:12.165 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 7.628 seconds (JVM running for 8.409)
+13:15:04.354 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 12584 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:15:04.358 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:15:10.363 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.567 seconds (JVM running for 7.302)
+13:15:53.875 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 11392 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:15:53.878 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:15:59.720 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.313 seconds (JVM running for 7.111)
+13:17:19.699 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 12328 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:17:19.708 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:17:25.492 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.35 seconds (JVM running for 7.111)
+13:17:56.149 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 9760 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:17:56.161 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:18:02.726 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 7.109 seconds (JVM running for 7.896)
+13:20:12.429 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 8492 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:20:12.457 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:20:18.650 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.708 seconds (JVM running for 7.484)
+13:22:11.376 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 1224 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:22:11.379 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:22:17.214 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.383 seconds (JVM running for 7.187)
+13:23:26.760 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 12280 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:23:26.763 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:23:32.546 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.18 seconds (JVM running for 6.927)
+13:24:33.032 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 11940 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:24:33.036 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:24:39.010 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.394 seconds (JVM running for 7.116)
+13:26:12.822 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 9508 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:26:12.825 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:26:18.798 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.597 seconds (JVM running for 7.347)
+13:26:58.808 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 5552 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:26:58.811 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:27:04.707 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.448 seconds (JVM running for 7.205)
+13:27:40.775 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 7884 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:27:40.778 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:27:46.598 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.281 seconds (JVM running for 6.993)
+13:28:11.044 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 7548 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:28:11.051 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:28:16.958 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.459 seconds (JVM running for 7.163)
+13:28:33.208 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 12676 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:28:33.211 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:28:39.390 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.75 seconds (JVM running for 7.471)
+13:28:59.676 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 13092 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:28:59.679 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:29:06.069 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.842 seconds (JVM running for 7.662)
+13:30:07.142 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 7416 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:30:07.144 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:30:12.847 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.169 seconds (JVM running for 6.866)
+13:30:58.226 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 11596 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:30:58.229 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:31:04.265 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.536 seconds (JVM running for 7.2)
+13:35:36.363 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 9156 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:35:36.366 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:35:42.168 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.346 seconds (JVM running for 7.113)
+13:45:25.303 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 8656 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:45:25.306 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:45:30.998 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.228 seconds (JVM running for 7.014)
+13:46:17.938 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 9888 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:46:17.941 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:46:23.698 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.319 seconds (JVM running for 7.208)
+13:47:20.804 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 13188 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:47:20.830 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:47:26.685 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.538 seconds (JVM running for 7.445)
+13:50:13.144 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 12008 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:50:13.148 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:50:18.939 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.339 seconds (JVM running for 7.078)
+13:50:49.003 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 8264 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:50:49.010 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:50:55.144 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.625 seconds (JVM running for 7.411)
+13:51:56.230 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 9688 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:51:56.234 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:52:02.522 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.85 seconds (JVM running for 7.579)
+13:52:28.082 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 12964 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:52:28.093 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:52:33.732 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.205 seconds (JVM running for 6.961)
+13:52:53.573 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 8432 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:52:53.576 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:52:59.278 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.163 seconds (JVM running for 6.984)
+13:53:16.487 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 11788 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:53:16.490 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:53:21.830 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 5.838 seconds (JVM running for 6.635)
+13:55:20.458 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 12052 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:55:20.467 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:55:26.277 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.329 seconds (JVM running for 7.039)
+13:56:23.919 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 12588 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:56:23.922 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:56:29.991 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.627 seconds (JVM running for 7.344)
+13:57:06.777 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 11860 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:57:06.779 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:57:12.430 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 6.122 seconds (JVM running for 6.933)
+13:59:20.994 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 13056 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+13:59:20.997 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+13:59:28.304 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 8.108 seconds (JVM running for 9.233)
+14:00:09.343 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 10556 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+14:00:09.347 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+14:00:16.242 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 7.503 seconds (JVM running for 8.277)

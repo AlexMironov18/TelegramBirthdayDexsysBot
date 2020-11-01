@@ -1,7 +1,8 @@
-package com.dexsys.TelegramBotDexsys.handlers;
+package com.dexsys.TelegramBotDexsys.app.clientService.telegramHandlers;
 
-import com.dexsys.TelegramBotDexsys.handlers.DTO.UserDTO;
-import com.dexsys.TelegramBotDexsys.repositories.IRepository;
+import com.dexsys.TelegramBotDexsys.app.clientService.mockClient.MockClient;
+import com.dexsys.TelegramBotDexsys.app.clientService.telegramHandlers.DTO.UserDTO;
+import com.dexsys.TelegramBotDexsys.services.IRepeaterHandler;
 import com.dexsys.TelegramBotDexsys.services.ITelegramReplyService;
 import com.dexsys.TelegramBotDexsys.services.ITelegramService;
 import lombok.extern.slf4j.Slf4j;
@@ -13,10 +14,8 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
 @Component
 @Slf4j
-public class RepeaterHandler extends TelegramLongPollingBot {
+public class RepeaterHandler extends TelegramLongPollingBot implements IRepeaterHandler {
 
-    @Autowired
-    private IRepository userRepository;
     @Autowired
     private ITelegramService telegramService;
     @Autowired

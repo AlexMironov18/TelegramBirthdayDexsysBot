@@ -1,4 +1,4 @@
-package com.dexsys.TelegramBotDexsys;
+package com.dexsys.TelegramBotDexsys.app.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

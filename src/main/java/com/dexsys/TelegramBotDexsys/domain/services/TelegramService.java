@@ -1,11 +1,11 @@
-package com.dexsys.TelegramBotDexsys.services.implementation;
+package com.dexsys.TelegramBotDexsys.domain.services;
 
-import com.dexsys.TelegramBotDexsys.handlers.RepeaterHandler;
-import com.dexsys.TelegramBotDexsys.handlers.DTO.UserDTO;
-import com.dexsys.TelegramBotDexsys.repositories.UserRepository;
-import com.dexsys.TelegramBotDexsys.repositories.IRepository;
+import com.dexsys.TelegramBotDexsys.app.clientService.telegramHandlers.RepeaterHandler;
+import com.dexsys.TelegramBotDexsys.app.clientService.telegramHandlers.DTO.UserDTO;
+import com.dexsys.TelegramBotDexsys.domain.repositories.UserRepository;
+import com.dexsys.TelegramBotDexsys.services.IRepository;
 import com.dexsys.TelegramBotDexsys.services.ITelegramService;
-import com.dexsys.TelegramBotDexsys.services.entities.User;
+import com.dexsys.TelegramBotDexsys.domain.services.entities.User;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
