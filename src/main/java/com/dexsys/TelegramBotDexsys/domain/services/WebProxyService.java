@@ -5,9 +5,11 @@ import com.dexsys.TelegramBotDexsys.app.web.webDTO.UserWebDTO;
 import com.dexsys.TelegramBotDexsys.services.IMockClient;
 import com.dexsys.TelegramBotDexsys.services.IWebProxyService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Set;
 import java.util.UUID;
 import java.util.function.Function;
 import java.util.stream.Collectors;
@@ -29,13 +31,18 @@ public class WebProxyService implements IWebProxyService {
     }
 
     @Override
-    public UserMockDTO createUser(UserWebDTO userWebDTO) {
+    public String createUser(UserWebDTO userWebDTO) {
         return mockClient.createUser(mapperToMock.apply(userWebDTO));
     }
 
     @Override
     public UserMockDTO generateUser() {
         return mockClient.generateUser();
+    }
+
+    @Override
+    public Set<HttpMethod> getOptions(UUID uuid) {
+        return mockClient.getOptions(uuid);
     }
 
     private Function<UserWebDTO, UserMockDTO> mapperToMock = it -> UserMockDTO.builder()
@@ -58,7 +65,7 @@ public class WebProxyService implements IWebProxyService {
             .isMale(it.isMale())
             .phone(it.getPhone())
             .build();
-    ;
+
     //get generate delete getAll
     //эти методы вызываются из TelegramController и вызывают методы MockClient
 }

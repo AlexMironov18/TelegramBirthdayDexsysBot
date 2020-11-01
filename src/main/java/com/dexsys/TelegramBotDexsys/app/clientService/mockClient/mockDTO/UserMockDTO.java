@@ -15,6 +15,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
+import java.util.Date;
 import java.util.UUID;
 
 @Data
@@ -31,9 +32,9 @@ public class UserMockDTO implements Serializable {
     private String firstName;
     private String secondName;
     private String middleName;
-    private String birthDate;
+    private Date birthDate;
     private String phone;
-    private long chatId;
+    private String chatId;
     private boolean isMale;
 
 }

@@ -8,10 +8,12 @@ import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Set;
 import java.util.UUID;
 
 @RestController
@@ -27,20 +29,16 @@ public class TelegramController {
 
     @GetMapping
     @ApiOperation(value = "find all users", notes = "returns a list of users")
-    public HttpEntity<List<UserWebDTO>> getUsers() {
+    public ResponseEntity<List<UserWebDTO>> getUsers() {
 
         final List<UserWebDTO> users;
-        try {
-            users = webProxyService.getUsers();
-        } catch (RuntimeException e) {
-           throw new NullPointerException();
-        }
+        users = webProxyService.getUsers();
         return ResponseEntity.ok(users);
     }
 
     @GetMapping("/{uuid}")
     @ApiOperation(value = "find the user with this id", notes = "returns a user with a given id")
-    public HttpEntity<UserWebDTO> getUser(@PathVariable("uuid") UUID uuid) {
+    public ResponseEntity<UserWebDTO> getUser(@PathVariable("uuid") UUID uuid) {
 
         final UserWebDTO userWebDTO;
         try {
@@ -53,7 +51,7 @@ public class TelegramController {
 
     @PostMapping
     @ApiOperation(value = "create a user", notes = "creates a user")
-    public ResponseEntity<UserMockDTO> createUser(@RequestBody UserWebDTO user) {
+    public ResponseEntity<String> createUser(@RequestBody UserWebDTO user) {
         final UserWebDTO userWebDTO = user;
         return ResponseEntity.ok(webProxyService.createUser(userWebDTO));
     }
@@ -62,5 +60,10 @@ public class TelegramController {
     @ApiOperation(value = "create a user", notes = "creates a user")
     public ResponseEntity<UserMockDTO> generateUser() {
         return ResponseEntity.ok(webProxyService.generateUser());
+    }
+
+    @RequestMapping(value = "/{uuid}", method = RequestMethod.OPTIONS)
+    public ResponseEntity<Set<HttpMethod>> getOptions(@PathVariable("uuid") UUID uuid) {
+        return ResponseEntity.ok(webProxyService.getOptions(uuid));
     }
 }

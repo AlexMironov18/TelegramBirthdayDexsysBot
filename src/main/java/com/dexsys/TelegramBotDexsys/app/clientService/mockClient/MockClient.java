@@ -4,12 +4,14 @@ package com.dexsys.TelegramBotDexsys.app.clientService.mockClient;
 import com.dexsys.TelegramBotDexsys.app.clientService.mockClient.mockDTO.UserMockDTO;
 import com.dexsys.TelegramBotDexsys.services.IMockClient;
 import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Set;
 import java.util.UUID;
 
 
@@ -48,13 +50,23 @@ public class MockClient implements IMockClient {
     }
 
     @Override
-    public UserMockDTO createUser(UserMockDTO userMockDTO) {
+    public String createUser(UserMockDTO userMockDTO) {
 
         HttpEntity<UserMockDTO> request = new HttpEntity<>(userMockDTO);
-        UserMockDTO response = restTemplate.postForObject(
-                "https://serene-coast-56441.herokuapp.com/api/users",
-                request,
-                 UserMockDTO.class);
-        return response;
+        ResponseEntity<String> response = restTemplate.postForEntity("https://serene-coast-56441.herokuapp.com/api/users",
+                request, String.class);
+        return "Добавлен пользователь с id: \n" + response.getBody();
+
+//        HttpEntity<UserMockDTO> request = new HttpEntity<>(userMockDTO);
+//        UserMockDTO response = restTemplate.postForObject(
+//                "https://serene-coast-56441.herokuapp.com/api/users",
+//                request,
+//                 UserMockDTO.class);
+//        return response;
+    }
+
+    @Override
+    public Set<HttpMethod> getOptions(UUID uuid) {
+        return restTemplate.optionsForAllow("https://serene-coast-56441.herokuapp.com/api/users" + uuid);
     }
 }
