@@ -7,7 +7,6 @@ import com.dexsys.TelegramBotDexsys.services.IWebProxyService;
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -30,30 +29,19 @@ public class TelegramController {
     @GetMapping
     @ApiOperation(value = "find all users", notes = "returns a list of users")
     public ResponseEntity<List<UserWebDTO>> getUsers() {
-
-        final List<UserWebDTO> users;
-        users = webProxyService.getUsers();
-        return ResponseEntity.ok(users);
+        return ResponseEntity.ok(webProxyService.getUsers());
     }
 
     @GetMapping("/{uuid}")
     @ApiOperation(value = "find the user with this id", notes = "returns a user with a given id")
     public ResponseEntity<UserWebDTO> getUser(@PathVariable("uuid") UUID uuid) {
-
-        final UserWebDTO userWebDTO;
-        try {
-            userWebDTO = webProxyService.getUser(uuid);
-        } catch (RuntimeException e) {
-            throw new NullPointerException();
-        }
-        return ResponseEntity.ok(userWebDTO);
+        return ResponseEntity.ok(webProxyService.getUser(uuid));
     }
 
     @PostMapping
     @ApiOperation(value = "create a user", notes = "creates a user")
     public ResponseEntity<String> createUser(@RequestBody UserWebDTO user) {
-        final UserWebDTO userWebDTO = user;
-        return ResponseEntity.ok(webProxyService.createUser(userWebDTO));
+        return ResponseEntity.ok(webProxyService.createUser(user));
     }
 
     @PostMapping("/generate")
