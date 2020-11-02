@@ -6,6 +6,7 @@ import com.dexsys.TelegramBotDexsys.app.web.webDTO.UserWebDTO;
 import com.dexsys.TelegramBotDexsys.services.IMockClient;
 import com.dexsys.TelegramBotDexsys.services.IWebProxyService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.HttpClientErrorException;

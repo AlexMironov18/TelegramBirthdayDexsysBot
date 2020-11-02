@@ -21,9 +21,6 @@ import java.util.UUID;
 public class TelegramController {
 
     @Autowired
-    private ITelegramService service;
-
-    @Autowired
     private IWebProxyService webProxyService;
 
     @GetMapping

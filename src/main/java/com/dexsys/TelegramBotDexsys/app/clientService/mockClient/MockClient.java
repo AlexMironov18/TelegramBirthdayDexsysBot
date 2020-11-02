@@ -9,6 +9,7 @@ import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.HttpServerErrorException;
@@ -23,7 +24,7 @@ import java.util.UUID;
 
 //при вводе телефона идет get запрос если он !=empty то авторизуем пользователя и добавляем в локальный репозиторий
 //данные из json ответа (только те поля, которые в локальном репоитории null)
-@Service
+
 public class MockClient implements IMockClient {
 
     final RestTemplate restTemplate = new RestTemplate();
