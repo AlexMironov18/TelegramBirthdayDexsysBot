@@ -4,27 +4,28 @@ import com.dexsys.TelegramBotDexsys.app.clientService.telegramHandlers.DTO.UserD
 import lombok.Builder;
 import lombok.Data;
 
+import java.util.Date;
+import java.util.UUID;
+
 @Builder
 @Data
 public class User {
 
-    private long chatId;
-    private String userName;
-    private String birthDate;
-    private long id;
-    private boolean isMale;
+
+    private UUID id;
     private String firstName;
-    private String lastName;
+    private String secondName;
     private String middleName;
+    private Date birthDate;
     private String phone;
+    private String chatId;
+    private boolean isMale;
+
 
     @Builder
     public static User createUser(UserDTO userDTO) {
         return User.builder()
                 .chatId(userDTO.getChatId())
-                .firstName(userDTO.getFirstName())
-                .lastName(userDTO.getLastName())
-                .userName(userDTO.getUserName())
                 .phone(userDTO.getPhone())
                 .build();
     }

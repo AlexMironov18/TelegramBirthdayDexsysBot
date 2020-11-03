@@ -4,27 +4,21 @@ import lombok.Builder;
 import lombok.Data;
 import org.telegram.telegrambots.meta.api.objects.Update;
 
+import java.util.Date;
+import java.util.UUID;
+
 @Builder
 @Data
 public class UserDTO {
 
-    private long chatId;
-    private String userName;
+    private String chatId;
     private String text;
-    private long id;
-    private boolean isMale;
-    private String firstName;
-    private String lastName;
-    private String middleName;
     private String phone;
 
     @Builder
     public static UserDTO createUserDTO(Update update) {
         return UserDTO.builder()
-                .chatId(update.getMessage().getChatId())
-                .firstName(update.getMessage().getFrom().getFirstName())
-                .lastName(update.getMessage().getFrom().getLastName())
-                .userName(update.getMessage().getFrom().getUserName())
+                .chatId(update.getMessage().getChatId().toString())
                 .text(update.getMessage().getText())
                 .build();
     }
@@ -32,10 +26,7 @@ public class UserDTO {
     @Builder
     public static UserDTO createRegisterUserDTO(Update update) {
         return UserDTO.builder()
-                .chatId(update.getMessage().getChatId())
-                .firstName(update.getMessage().getFrom().getFirstName())
-                .lastName(update.getMessage().getFrom().getLastName())
-                .userName(update.getMessage().getFrom().getUserName())
+                .chatId(update.getMessage().getChatId().toString())
                 .phone(update.getMessage().getContact().getPhoneNumber())
                 .build();
     }

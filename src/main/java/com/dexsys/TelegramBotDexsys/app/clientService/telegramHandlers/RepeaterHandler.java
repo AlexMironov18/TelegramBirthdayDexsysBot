@@ -29,13 +29,13 @@ public class RepeaterHandler extends TelegramLongPollingBot implements IRepeater
             if (update.getMessage().getContact() != null) {
                 userDTO = UserDTO.createRegisterUserDTO(update);
                 userDTO.setText("Ввести номер телефона");
-                telegramService.processMessage(userDTO);
+                telegramService.processAuthorizationMessage(userDTO);
                 execute(telegramReplyService.sendMsg(userDTO));
                 //default behavior
             } else if (update.hasMessage() && update.getMessage().hasText()) {
                 userDTO = UserDTO.createUserDTO(update);
-                telegramService.processMessage(userDTO);
                 execute(telegramReplyService.sendMsg(userDTO));
+                telegramService.processMessage(userDTO);
                 log.info("Отправлено сообщение \"{}\" в чат {}", userDTO.getText(), userDTO.getChatId());
             }
         } catch (TelegramApiException e) {

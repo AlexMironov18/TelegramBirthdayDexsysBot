@@ -6,8 +6,6 @@ import java.util.List;
 
 public interface IRepository {
 
-    String printUsers();
-    String printUserList();
     void addUser(User user);
     List<User> getUserList();
     User getUser(String phoneNumber);

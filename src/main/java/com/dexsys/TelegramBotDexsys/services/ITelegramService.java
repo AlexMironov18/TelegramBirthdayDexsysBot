@@ -9,10 +9,11 @@ import java.util.List;
 public interface ITelegramService {
 
     void setupBot();
-    void setBirthDay(User user, String birthDate) throws TelegramApiException;
+    //void setBirthDay(User user, String birthDate) throws TelegramApiException;
     void processMessage(UserDTO userDTO) throws TelegramApiException;
+    void processAuthorizationMessage(UserDTO userDTO) throws TelegramApiException;
     List<User> getUsers();
-    User getUser(String phoneNUmber);
-    boolean deleteUser(String phoneNUmber);
+    User getUser(String chatId);
+    boolean deleteUser(String chatId);
 
 }

@@ -42,12 +42,13 @@ public class TelegramController {
     }
 
     @PostMapping("/generate")
-    @ApiOperation(value = "create a user", notes = "creates a user")
+    @ApiOperation(value = "generate a user", notes = "generates a user")
     public ResponseEntity<UserMockDTO> generateUser() {
         return ResponseEntity.ok(webProxyService.generateUser());
     }
 
     @RequestMapping(value = "/{uuid}", method = RequestMethod.OPTIONS)
+    @ApiOperation(value = "find allowed options to the user", notes = "returns a list of the options")
     public ResponseEntity<Set<HttpMethod>> getOptions(@PathVariable("uuid") UUID uuid) {
         return ResponseEntity.ok(webProxyService.getOptions(uuid));
     }

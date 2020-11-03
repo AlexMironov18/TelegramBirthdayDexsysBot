@@ -4,6 +4,7 @@ import com.dexsys.TelegramBotDexsys.app.clientService.telegramHandlers.DTO.UserD
 import com.dexsys.TelegramBotDexsys.services.IRepository;
 import com.dexsys.TelegramBotDexsys.domain.repositories.UserRepository;
 import com.dexsys.TelegramBotDexsys.services.ITelegramReplyService;
+import com.dexsys.TelegramBotDexsys.services.ITelegramService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
@@ -20,6 +21,9 @@ public class TelegramReplyService implements ITelegramReplyService {
 
     @Autowired
     private IRepository userRepository;
+
+    @Autowired
+    private ITelegramService telegramService;
 
     //creating reply message
     @Override
@@ -45,15 +49,17 @@ public class TelegramReplyService implements ITelegramReplyService {
     @Override
     public synchronized void setText(SendMessage sendMessage, UserDTO userDTO) {
         switch(userDTO.getText()) {
-            case "Ввести дату рождения": sendMessage.setText("Введите вашу дату рождения:");
+            case "Показать профиль": sendMessage.setText(telegramService.getUser(userDTO.getChatId()).toString());
                 break;
-            case "Показать пользователей": sendMessage.setText(userRepository.printUsers());
+            case "Показать пользователей": sendMessage.setText(telegramService.getUsers().toString());
                 break;
             case "INFO": sendMessage.setText("Кнопка \"Введите вашу дату рождения\" позволяет " +
                     "ввести дату рождения данного пользователя в систему\nКнопка \"Показать пользователей\" " +
                     "показывает данные всех пользователей этой системы");
                 break;
             case "Ввести номер телефона": sendMessage.setText("Вы авторизованы в системе");
+                break;
+            case "Очистить профиль": sendMessage.setText("Ваш профиль очищен, вы не авторизованы в системе");
                 break;
             default: sendMessage.setText(userDTO.getText());
         }
@@ -68,7 +74,8 @@ public class TelegramReplyService implements ITelegramReplyService {
         List<KeyboardRow> keyboard = new ArrayList<>();
         KeyboardRow keyboardFirstRow = new KeyboardRow();
         KeyboardRow keyboardSecondRow = new KeyboardRow();
-        keyboardFirstRow.add(new KeyboardButton("Ввести дату рождения"));
+        keyboardFirstRow.add(new KeyboardButton("Показать профиль"));
+        keyboardFirstRow.add(new KeyboardButton("Очистить профиль"));
         keyboardSecondRow.add(new KeyboardButton("Показать пользователей"));
         keyboardSecondRow.add(new KeyboardButton("INFO"));
         keyboard.add(keyboardFirstRow);

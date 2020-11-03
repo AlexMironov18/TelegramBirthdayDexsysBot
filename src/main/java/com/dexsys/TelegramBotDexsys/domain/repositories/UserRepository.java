@@ -20,16 +20,8 @@ public class UserRepository implements IRepository {
     //user repository
     private Map<String, User> userMap;
     // chatId - phone map, to get a phone number, using chatId
-    private Map<Long, String> chatIdMap;
+    private Map<String, String> chatIdMap;
 
-    @Override
-    public String printUsers() {
-        return userMap.toString();
-    }
-    @Override
-    public String printUserList() {
-        return userMap.toString();
-    }
 
     @Override
     public void addUser(User user) {
@@ -46,13 +38,14 @@ public class UserRepository implements IRepository {
     }
 
     @Override
-    public User getUser(String phoneNumber) {
-        return userMap.get(phoneNumber);
+    public User getUser(String chatId) {
+        return userMap.get(chatIdMap.get(chatId));
     }
 
     @Override
-    public boolean deleteUser(String phoneNumber) {
-        chatIdMap.values().remove(phoneNumber);
-        return userMap.remove(phoneNumber) != null;
+    public boolean deleteUser(String chatId) {
+        Object user = userMap.remove(chatIdMap.get(chatId));
+        chatIdMap.remove(chatId);
+        return user != null;
     }
 }
