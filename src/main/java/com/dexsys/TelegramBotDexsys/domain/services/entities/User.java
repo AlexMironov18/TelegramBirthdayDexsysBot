@@ -11,7 +11,6 @@ import java.util.UUID;
 @Data
 public class User {
 
-
     private UUID id;
     private String firstName;
     private String secondName;
@@ -20,7 +19,6 @@ public class User {
     private String phone;
     private String chatId;
     private boolean isMale;
-
 
     @Builder
     public static User createUser(UserDTO userDTO) {

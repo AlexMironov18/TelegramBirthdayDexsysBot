@@ -25,7 +25,6 @@ import java.util.function.Function;
 public class TelegramService implements ITelegramService {
 
     private User user;
-    private boolean toSetBDate = false;
     @Autowired
     private IRepository userRepository;
     @Autowired
@@ -50,7 +49,7 @@ public class TelegramService implements ITelegramService {
     public synchronized SendMessage processAuthorizationMessage(UserDTO userDTO) throws TelegramApiException {
         user = User.createUser(userDTO);
         User userToAuthorize = proxyService.getUsers().stream()
-                .filter(userWebDTO -> userWebDTO.getPhone().equals(user.getPhone()))
+                .filter(userWebDTO -> userWebDTO.getPhone() != null && userWebDTO.getPhone().equals(user.getPhone()))
                 .findAny().map(mapperToUser).orElse(null);
         if (userToAuthorize != null) {
             userToAuthorize.setChatId(user.getChatId());

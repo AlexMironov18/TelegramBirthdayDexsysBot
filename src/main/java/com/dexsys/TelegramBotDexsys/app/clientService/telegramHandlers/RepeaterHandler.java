@@ -18,8 +18,6 @@ public class RepeaterHandler extends TelegramLongPollingBot implements IRepeater
 
     @Autowired
     private ITelegramService telegramService;
-    @Autowired
-    private ITelegramReplyService telegramReplyService;
 
     @Override
     public void onUpdateReceived(Update update) {
