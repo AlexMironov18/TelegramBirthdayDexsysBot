@@ -59,7 +59,8 @@ public class TelegramReplyService implements ITelegramReplyService {
                 break;
             case "Ввести номер телефона": sendMessage.setText("Вы авторизованы в системе");
                 break;
-            case "Очистить профиль": sendMessage.setText("Ваш профиль очищен, вы не авторизованы в системе");
+            case "Пользователь не найден":
+                sendMessage.setText("Пользователя с телефоном " + userDTO.getPhone() + " нет в базе данных");
                 break;
             default: sendMessage.setText(userDTO.getText());
         }
@@ -90,6 +91,8 @@ public class TelegramReplyService implements ITelegramReplyService {
             case "INFO": sendMessage.setText("Для авторизации в системе и получения возможностей " +
                     "к основным функциям бота - нажмите \"Ввести номер телефона\".\n" +
                     "До авторизации, бот будет присылать вам ответ в виде введеных вами сообщений. ");
+                break;
+            case "Очистить профиль": sendMessage.setText("Ваш профиль очищен, вы не авторизованы в системе");
                 break;
             default: sendMessage.setText(userDTO.getText());
         }
