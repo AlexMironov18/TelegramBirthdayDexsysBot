@@ -1,10 +1,12 @@
 package com.dexsys.TelegramBotDexsys.app.clientService.mockClient.mockDTO;
 
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.databind.deser.std.DateDeserializers;
 import com.fasterxml.jackson.databind.deser.std.StringDeserializer;
 import com.fasterxml.jackson.databind.deser.std.UUIDDeserializer;
 import com.fasterxml.jackson.databind.ser.std.StringSerializer;
@@ -24,15 +26,12 @@ import java.util.UUID;
 @Builder
 public class UserMockDTO implements Serializable {
 
-    public UserMockDTO(String id) {
-        this.id = UUID.fromString(id);
-    }
-
+    private Date birthDay;
+    @JsonDeserialize(using = UUIDDeserializer.class)
     private UUID id;
     private String firstName;
     private String secondName;
     private String middleName;
-    private String birthDate;
     private String phone;
     private String chatId;
     private boolean isMale;

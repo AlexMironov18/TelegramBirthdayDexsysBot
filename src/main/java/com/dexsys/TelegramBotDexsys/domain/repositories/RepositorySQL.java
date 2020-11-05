@@ -1,15 +1,13 @@
 package com.dexsys.TelegramBotDexsys.domain.repositories;
 
 import com.dexsys.TelegramBotDexsys.app.web.webDTO.UserWebDTO;
+import com.dexsys.TelegramBotDexsys.domain.repositories.DTO.UserDbDTO;
 import com.dexsys.TelegramBotDexsys.services.IConnectionFactory;
 import com.dexsys.TelegramBotDexsys.services.IRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
@@ -29,7 +27,7 @@ public class RepositorySQL implements IRepository {
         try (Connection connection = connectionFactory.getConnection();
              PreparedStatement statement = connectionFactory.createStatement(connection, query)) {
             connection.setAutoCommit(false);
-            statement.setObject(1, userWebDTO.getBirthDate());
+            statement.setString(1, userWebDTO.getBirthDate().toString());
             statement.setString(2, userWebDTO.getChatId());
             statement.setString(3, userWebDTO.getFirstName());
             statement.setString(4, userWebDTO.getSecondName());
@@ -37,7 +35,7 @@ public class RepositorySQL implements IRepository {
             statement.setObject(6, userWebDTO.getId());
             statement.setBoolean(7, userWebDTO.isMale());
             statement.setString(8, userWebDTO.getPhone());
-            statement.setObject(9, userWebDTO.getBirthDate());
+            statement.setString(9, userWebDTO.getBirthDate().toString());
             int i = connectionFactory.executeInsertStatement(statement);
             connection.commit();
             return i;
@@ -48,7 +46,7 @@ public class RepositorySQL implements IRepository {
     }
 
     @Override
-    public List<UserWebDTO> getUserList()  {
+    public List<UserDbDTO> getUserList()  {
         String query = getUsersQuery();
         ResultSet resultSet = null;
         try (Connection connection = connectionFactory.getConnection();
@@ -71,7 +69,7 @@ public class RepositorySQL implements IRepository {
     //получает данные по пользователю (по его chatId)
     //получает пустой ResultSEt если пользователя с таким chatId нет в базе
     @Override
-    public UserWebDTO getUser(String chatId) {
+    public UserDbDTO getUser(String chatId) {
         String query = getUserQuery();
         ResultSet resultSet = null;
         try (Connection connection = connectionFactory.getConnection();
@@ -130,7 +128,7 @@ public class RepositorySQL implements IRepository {
     }
 
     //обработка resultSet в UserDTO (для метода getUser)
-    private UserWebDTO processUserResultSet(ResultSet resultSet) throws SQLException {
+    private UserDbDTO processUserResultSet(ResultSet resultSet) throws SQLException {
         //если вернуло данные в resultSet
         if (resultSet.next()) {
             return mapToUserWebDTO.apply(resultSet);
@@ -139,17 +137,17 @@ public class RepositorySQL implements IRepository {
         }
     }
 
-    private List<UserWebDTO> processUsersResultSet(ResultSet resultSet) throws SQLException {
-        List<UserWebDTO> userList = new ArrayList<>();
+    private List<UserDbDTO> processUsersResultSet(ResultSet resultSet) throws SQLException {
+        List<UserDbDTO> userList = new ArrayList<>();
         while (resultSet.next()) {
             userList.add(mapToUserWebDTO.apply(resultSet));
         }
         return userList;
     }
 
-    private  Function<ResultSet, UserWebDTO>  mapToUserWebDTO  =  it -> {
+    private  Function<ResultSet, UserDbDTO>  mapToUserWebDTO  =  it -> {
         try {
-            return UserWebDTO.builder()
+            return UserDbDTO.builder()
                     .birthDate(it.getString(1))
                     .chatId(it.getString(2))
                     .firstName(it.getString(3))

@@ -3,6 +3,7 @@ package com.dexsys.TelegramBotDexsys.domain.services;
 import com.dexsys.TelegramBotDexsys.app.clientService.telegramHandlers.RepeaterHandler;
 import com.dexsys.TelegramBotDexsys.app.clientService.telegramHandlers.DTO.UserDTO;
 import com.dexsys.TelegramBotDexsys.app.web.webDTO.UserWebDTO;
+import com.dexsys.TelegramBotDexsys.domain.repositories.DTO.UserDbDTO;
 import com.dexsys.TelegramBotDexsys.services.IRepository;
 import com.dexsys.TelegramBotDexsys.services.ITelegramReplyService;
 import com.dexsys.TelegramBotDexsys.services.ITelegramService;
@@ -16,12 +17,7 @@ import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
 import javax.annotation.PostConstruct;
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.List;
-import java.util.Locale;
 import java.util.function.Function;
 
 
@@ -80,7 +76,7 @@ public class TelegramService implements ITelegramService {
         if (setBirthday) {
             User userToSetBithdate = new User();
             userToSetBithdate.setChatId(userDTO.getChatId());
-            userToSetBithdate.setBirthDate(userDTO.getText());
+//            userToSetBithdate.setBirthDate(userDTO.getText());
             addUser(userToSetBithdate);
             setBirthday = false;
             userDTO.setText("Дата рождения введена");
@@ -95,12 +91,12 @@ public class TelegramService implements ITelegramService {
     }
 
     @Override
-    public List<UserWebDTO> getUsers() {
+    public List<UserDbDTO> getUsers() {
         return userRepository.getUserList();
     }
 
     @Override
-    public UserWebDTO getUser(String chatId) {
+    public UserDbDTO getUser(String chatId) {
         return userRepository.getUser(chatId);
     }
 

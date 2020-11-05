@@ -1,7 +1,7 @@
 package com.dexsys.TelegramBotDexsys.services;
 
 import com.dexsys.TelegramBotDexsys.app.clientService.telegramHandlers.DTO.UserDTO;
-import com.dexsys.TelegramBotDexsys.app.web.webDTO.UserWebDTO;
+import com.dexsys.TelegramBotDexsys.domain.repositories.DTO.UserDbDTO;
 import com.dexsys.TelegramBotDexsys.domain.services.entities.User;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
@@ -15,8 +15,8 @@ public interface ITelegramService {
     SendMessage processMessage(UserDTO userDTO) throws TelegramApiException;
     SendMessage processAuthorizationMessage(UserDTO userDTO) throws TelegramApiException;
     Integer addUser(User user);
-    List<UserWebDTO> getUsers();
-    UserWebDTO getUser(String chatId);
+    List<UserDbDTO> getUsers();
+    UserDbDTO getUser(String chatId);
     Integer deleteUser(String chatId);
 
 }

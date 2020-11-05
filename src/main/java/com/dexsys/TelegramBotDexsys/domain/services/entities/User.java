@@ -19,7 +19,7 @@ public class User {
     private String firstName;
     private String secondName;
     private String middleName;
-    private String birthDate;
+    private Date birthDate;
     private String phone;
     private String chatId;
     private boolean isMale;
