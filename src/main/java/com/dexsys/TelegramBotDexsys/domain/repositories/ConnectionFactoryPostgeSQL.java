@@ -1,14 +1,15 @@
 package com.dexsys.TelegramBotDexsys.domain.repositories;
 
+import org.springframework.stereotype.Service;
+
 import java.sql.*;
 
-public class ConnectionFactory implements IConnectionFactory {
+@Service
+public class ConnectionFactoryPostgeSQL implements IConnectionFactory {
 
     static final String DATABASE_URL = "jdbc:postgresql://localhost:5432/telegramdb";
     static final String NAME = "postgres";
     static final String PASSWORD = "123";
-
-
 
     @Override
     public Connection getConnection() {

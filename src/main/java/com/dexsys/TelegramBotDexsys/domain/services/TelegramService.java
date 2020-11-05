@@ -83,6 +83,7 @@ public class TelegramService implements ITelegramService {
             userToSetBithdate.setBirthDate(userDTO.getText());
             addUser(userToSetBithdate);
             setBirthday = false;
+            userDTO.setText("Дата рождения введена");
             return telegramReplyService.sendMsg(userDTO);
         }
         return telegramReplyService.sendMsg(userDTO);
