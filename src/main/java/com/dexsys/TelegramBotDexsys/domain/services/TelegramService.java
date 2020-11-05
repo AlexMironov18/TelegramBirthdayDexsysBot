@@ -24,7 +24,7 @@ import java.util.function.Function;
 @Slf4j
 public class TelegramService implements ITelegramService {
 
-    private User user;
+
     @Autowired
     private IRepository userRepository;
     @Autowired
@@ -33,6 +33,8 @@ public class TelegramService implements ITelegramService {
     private IWebProxyService proxyService;
     @Autowired
     private ITelegramReplyService telegramReplyService;
+
+    private User user;
 
     @Override
     @PostConstruct
@@ -53,7 +55,7 @@ public class TelegramService implements ITelegramService {
                 .findAny().map(mapperToUser).orElse(null);
         if (userToAuthorize != null) {
             userToAuthorize.setChatId(user.getChatId());
-            userRepository.addUser(userToAuthorize);
+            addUser(userToAuthorize);
             return telegramReplyService.sendMsg(userDTO);
         } else {
             userDTO.setText("Пользователь не найден");
@@ -68,21 +70,37 @@ public class TelegramService implements ITelegramService {
     }
 
     @Override
-    public List<User> getUsers() {
+    public Integer addUser(User user) {
+        return userRepository.addUser(mapperToUserWebDTO.apply(user));
+    }
+
+    @Override
+    public List<UserWebDTO> getUsers() {
         return userRepository.getUserList();
     }
 
     @Override
-    public User getUser(String chatId) {
+    public UserWebDTO getUser(String chatId) {
         return userRepository.getUser(chatId);
     }
 
     @Override
-    public boolean deleteUser(String chatId) {
+    public Integer deleteUser(String chatId) {
         return userRepository.deleteUser(chatId);
     }
 
     private Function<UserWebDTO, User> mapperToUser = it -> User.builder()
+            .birthDate(it.getBirthDate())
+            .chatId(it.getChatId())
+            .firstName(it.getFirstName())
+            .secondName(it.getSecondName())
+            .middleName(it.getMiddleName())
+            .id(it.getId())
+            .isMale(it.isMale())
+            .phone(it.getPhone())
+            .build();
+
+    private Function<User, UserWebDTO> mapperToUserWebDTO = it -> UserWebDTO.builder()
             .birthDate(it.getBirthDate())
             .chatId(it.getChatId())
             .firstName(it.getFirstName())

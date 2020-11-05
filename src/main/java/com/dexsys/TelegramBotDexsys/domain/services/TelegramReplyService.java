@@ -2,7 +2,6 @@ package com.dexsys.TelegramBotDexsys.domain.services;
 
 import com.dexsys.TelegramBotDexsys.app.clientService.telegramHandlers.DTO.UserDTO;
 import com.dexsys.TelegramBotDexsys.services.IRepository;
-import com.dexsys.TelegramBotDexsys.domain.repositories.UserRepository;
 import com.dexsys.TelegramBotDexsys.services.ITelegramReplyService;
 import com.dexsys.TelegramBotDexsys.services.ITelegramService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,7 +32,7 @@ public class TelegramReplyService implements ITelegramReplyService {
         //filling the output message with destination(chatId)
         outputMessage.setChatId(userDTO.getChatId());
         //sending text and keyboard if user is authorized
-        if (((UserRepository) userRepository).getChatIdMap().get(userDTO.getChatId()) != null) {
+        if (telegramService.getUser(userDTO.getChatId()) != null) {
             setText(outputMessage, userDTO);
             setButtons(outputMessage);
             return outputMessage;
