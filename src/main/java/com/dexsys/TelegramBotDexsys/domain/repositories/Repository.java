@@ -47,14 +47,15 @@ public class Repository implements IRepository {
 
     @Override
     public List<UserWebDTO> getUserList()  {
-        String query = getUserQuery();
+        String query = getUsersQuery();
         ResultSet resultSet = null;
         try (Connection connection = connectionFactory.getConnection();
              PreparedStatement statement = connectionFactory.createStatement(connection, query)) {
             //setAutoCommit(true) - автоматически коммитит каждый сделанынй statement в подключенную БД
             //setAutoCommit(false) - копит все сделанные statement и каоммити все сразу , при команде connection.commit();
             try {
-                connection.setAutoCommit(false);resultSet = connectionFactory.executeSelectStatement(statement);
+                connection.setAutoCommit(false);
+                resultSet = connectionFactory.executeSelectStatement(statement);
                 connection.commit();
                 return processUsersResultSet(resultSet);
             } finally {
