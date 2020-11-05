@@ -1,4 +1,4 @@
-package com.dexsys.TelegramBotDexsys.domain.repositories;
+package com.dexsys.TelegramBotDexsys.services;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

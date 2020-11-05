@@ -1,5 +1,6 @@
 package com.dexsys.TelegramBotDexsys.domain.repositories;
 
+import com.dexsys.TelegramBotDexsys.services.IConnectionFactory;
 import org.springframework.stereotype.Service;
 
 import java.sql.*;

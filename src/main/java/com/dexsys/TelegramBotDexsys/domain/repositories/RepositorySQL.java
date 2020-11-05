@@ -1,6 +1,7 @@
 package com.dexsys.TelegramBotDexsys.domain.repositories;
 
 import com.dexsys.TelegramBotDexsys.app.web.webDTO.UserWebDTO;
+import com.dexsys.TelegramBotDexsys.services.IConnectionFactory;
 import com.dexsys.TelegramBotDexsys.services.IRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
