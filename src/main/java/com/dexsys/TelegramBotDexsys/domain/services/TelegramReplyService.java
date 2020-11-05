@@ -74,12 +74,15 @@ public class TelegramReplyService implements ITelegramReplyService {
         List<KeyboardRow> keyboard = new ArrayList<>();
         KeyboardRow keyboardFirstRow = new KeyboardRow();
         KeyboardRow keyboardSecondRow = new KeyboardRow();
+        KeyboardRow keyboardThirdRow = new KeyboardRow();
         keyboardFirstRow.add(new KeyboardButton("Показать профиль"));
         keyboardFirstRow.add(new KeyboardButton("Очистить профиль"));
         keyboardSecondRow.add(new KeyboardButton("Показать пользователей"));
         keyboardSecondRow.add(new KeyboardButton("INFO"));
+        keyboardThirdRow.add(new KeyboardButton("Ввести дату рождения"));
         keyboard.add(keyboardFirstRow);
         keyboard.add(keyboardSecondRow);
+        keyboard.add(keyboardThirdRow);
         replyKeyboardMarkup.setKeyboard(keyboard);
     }
 

@@ -26,7 +26,6 @@ public class Repository implements IRepository {
     @Override
     public Integer addUser(UserWebDTO userWebDTO) {
         String query = getInsertQuery();
-        ResultSet resultSet;
         try (Connection connection = connectionFactory.getConnection();
              PreparedStatement statement = connectionFactory.createStatement(connection, query)) {
             connection.setAutoCommit(false);
@@ -38,11 +37,12 @@ public class Repository implements IRepository {
             statement.setObject(6, userWebDTO.getId());
             statement.setBoolean(7, userWebDTO.isMale());
             statement.setString(8, userWebDTO.getPhone());
-            statement.setString(9, userWebDTO.getPhone());
+            statement.setObject(9, userWebDTO.getBirthDate());
             int i = connectionFactory.executeInsertStatement(statement);
             connection.commit();
             return i;
         } catch (SQLException e) {
+            e.printStackTrace();
             throw new RuntimeException("Exception");
         }
     }
@@ -70,7 +70,6 @@ public class Repository implements IRepository {
 
     //получает данные по пользователю (по его chatId)
     //получает пустой ResultSEt если пользователя с таким chatId нет в базе
-    @Builder
     @Override
     public UserWebDTO getUser(String chatId) {
         String query = getUserQuery();
@@ -97,7 +96,6 @@ public class Repository implements IRepository {
     @Override
     public Integer deleteUser(String chatId) {
         String query = deleteQuery();
-        ResultSet resultSet = null;
         try (Connection connection = connectionFactory.getConnection();
              PreparedStatement statement = connectionFactory.createStatement(connection, query)) {
             //setAutoCommit(true) - автоматически коммитит каждый сделанынй statement в подключенную БД
@@ -115,7 +113,7 @@ public class Repository implements IRepository {
     //запрос для insertUser
     private String getInsertQuery() {
         return "INSERT into users (birthdate, chatid, firstname, secondname, middlename, id, ismale, phone)" +
-                " values (?,?,?,?,?,?,?,?) ON CONFLICT (chatid) DO UPDATE SET phone = ?";
+                " values (?,?,?,?,?,?,?,?) ON CONFLICT (chatid) DO UPDATE SET birthdate = ?";
     }
 
     //запрос для getUser
@@ -152,7 +150,7 @@ public class Repository implements IRepository {
     private  Function<ResultSet, UserWebDTO>  mapToUserWebDTO  =  it -> {
         try {
             return UserWebDTO.builder()
-                    .birthDate((Date) it.getObject(1))
+                    .birthDate(it.getString(1))
                     .chatId(it.getString(2))
                     .firstName(it.getString(3))
                     .secondName(it.getString(4))

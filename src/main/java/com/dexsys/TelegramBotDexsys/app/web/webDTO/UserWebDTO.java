@@ -26,7 +26,7 @@ public class UserWebDTO implements Serializable {
     private String firstName;
     private String secondName;
     private String middleName;
-    private Date birthDate;
+    private String birthDate;
     private String phone;
     private String chatId;
     private boolean isMale;

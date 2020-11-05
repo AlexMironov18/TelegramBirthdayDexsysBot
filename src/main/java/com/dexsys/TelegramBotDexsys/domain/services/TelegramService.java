@@ -16,7 +16,12 @@ import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
 import javax.annotation.PostConstruct;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 import java.util.function.Function;
 
 
@@ -63,9 +68,23 @@ public class TelegramService implements ITelegramService {
         }
     }
 
+    boolean setBirthday = false;
     @Override
     public synchronized SendMessage processMessage(UserDTO userDTO) throws TelegramApiException {
         if (userDTO.getText().equals("Очистить профиль")) deleteUser(userDTO.getChatId());
+        if (userDTO.getText().equals("Ввести дату рождения")) {
+            setBirthday = true;
+            userDTO.setText("Введите вашу дату рождения в формате: January 1, 1975");
+            return telegramReplyService.sendMsg(userDTO);
+        }
+        if (setBirthday) {
+            User userToSetBithdate = new User();
+            userToSetBithdate.setChatId(userDTO.getChatId());
+            userToSetBithdate.setBirthDate(userDTO.getText());
+            addUser(userToSetBithdate);
+            setBirthday = false;
+            return telegramReplyService.sendMsg(userDTO);
+        }
         return telegramReplyService.sendMsg(userDTO);
     }
 

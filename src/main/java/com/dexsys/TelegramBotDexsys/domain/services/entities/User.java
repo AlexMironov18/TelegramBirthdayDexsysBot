@@ -1,21 +1,25 @@
 package com.dexsys.TelegramBotDexsys.domain.services.entities;
 
 import com.dexsys.TelegramBotDexsys.app.clientService.telegramHandlers.DTO.UserDTO;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.Date;
 import java.util.UUID;
 
 @Builder
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class User {
 
     private UUID id;
     private String firstName;
     private String secondName;
     private String middleName;
-    private Date birthDate;
+    private String birthDate;
     private String phone;
     private String chatId;
     private boolean isMale;
