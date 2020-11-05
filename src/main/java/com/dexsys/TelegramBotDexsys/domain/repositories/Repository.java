@@ -10,9 +10,11 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.UUID;
+import java.util.function.Function;
 
 @Service
 public class Repository implements IRepository {
@@ -133,27 +135,34 @@ public class Repository implements IRepository {
     private UserWebDTO processUserResultSet(ResultSet resultSet) throws SQLException {
         //если вернуло данные в resultSet
         if (resultSet.next()) {
-            return UserWebDTO.builder()
-                    .birthDate((Date) resultSet.getObject(1))
-                    .chatId(resultSet.getString(2))
-                    .firstName(resultSet.getString(3))
-                    .secondName(resultSet.getString(4))
-                    .middleName(resultSet.getString(5))
-                    .id((UUID) resultSet.getObject(6))
-                    .isMale(resultSet.getBoolean(7))
-                    .phone(resultSet.getString(8))
-                    .build();
+            return mapToUserWebDTO.apply(resultSet);
         } else {
             return null;
         }
     }
 
     private List<UserWebDTO> processUsersResultSet(ResultSet resultSet) throws SQLException {
-        //если вернуло данные в resultSet
-        if (resultSet.next()) {
-            return null;
-        } else {
-            return null;
+        List<UserWebDTO> userList = new ArrayList<>();
+        while (resultSet.next()) {
+            userList.add(mapToUserWebDTO.apply(resultSet));
         }
+        return userList;
     }
+
+    private  Function<ResultSet, UserWebDTO>  mapToUserWebDTO  =  it -> {
+        try {
+            return UserWebDTO.builder()
+                    .birthDate((Date) it.getObject(1))
+                    .chatId(it.getString(2))
+                    .firstName(it.getString(3))
+                    .secondName(it.getString(4))
+                    .middleName(it.getString(5))
+                    .id((UUID) it.getObject(6))
+                    .isMale(it.getBoolean(7))
+                    .phone(it.getString(8))
+                    .build();
+        } catch (SQLException throwables) {
+            throw new RuntimeException();
+        }
+    };
 }
