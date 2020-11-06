@@ -78,7 +78,7 @@ public class RepositorySQL implements IRepository {
             //setAutoCommit(false) - копит все сделанные statement и каоммити все сразу , при команде connection.commit();
             try {
                 connection.setAutoCommit(false);
-                statement.setObject(1, chatId);
+                statement.setString(1, chatId);
                 resultSet = connectionFactory.executeSelectStatement(statement);
                 connection.commit();
                 return processUserResultSet(resultSet);
@@ -131,7 +131,7 @@ public class RepositorySQL implements IRepository {
     private UserDbDTO processUserResultSet(ResultSet resultSet) throws SQLException {
         //если вернуло данные в resultSet
         if (resultSet.next()) {
-            return mapToUserWebDTO.apply(resultSet);
+            return mapToUserDbDTO.apply(resultSet);
         } else {
             return null;
         }
@@ -140,12 +140,12 @@ public class RepositorySQL implements IRepository {
     private List<UserDbDTO> processUsersResultSet(ResultSet resultSet) throws SQLException {
         List<UserDbDTO> userList = new ArrayList<>();
         while (resultSet.next()) {
-            userList.add(mapToUserWebDTO.apply(resultSet));
+            userList.add(mapToUserDbDTO.apply(resultSet));
         }
         return userList;
     }
 
-    private  Function<ResultSet, UserDbDTO>  mapToUserWebDTO  =  it -> {
+    private  Function<ResultSet, UserDbDTO>  mapToUserDbDTO  =  it -> {
         try {
             return UserDbDTO.builder()
                     .birthDate(it.getString(1))

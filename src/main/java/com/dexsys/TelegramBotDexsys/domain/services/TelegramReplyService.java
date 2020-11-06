@@ -19,9 +19,6 @@ import java.util.List;
 public class TelegramReplyService implements ITelegramReplyService {
 
     @Autowired
-    private IRepository userRepository;
-
-    @Autowired
     private ITelegramService telegramService;
 
     //creating reply message

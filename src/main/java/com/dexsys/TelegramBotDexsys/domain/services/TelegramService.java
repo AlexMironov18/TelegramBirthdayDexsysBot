@@ -17,14 +17,17 @@ import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
 import javax.annotation.PostConstruct;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.List;
+import java.util.Locale;
 import java.util.function.Function;
 
 
 @Service
 @Slf4j
 public class TelegramService implements ITelegramService {
-
 
     @Autowired
     private IRepository userRepository;
@@ -74,10 +77,15 @@ public class TelegramService implements ITelegramService {
             return telegramReplyService.sendMsg(userDTO);
         }
         if (setBirthday) {
-            User userToSetBithdate = new User();
-            userToSetBithdate.setChatId(userDTO.getChatId());
-//            userToSetBithdate.setBirthDate(userDTO.getText());
-            addUser(userToSetBithdate);
+            DateFormat format = new SimpleDateFormat("MMMM d, yyyy", Locale.ENGLISH);
+            User userToSetBirthdate = new User();
+            userToSetBirthdate.setChatId(userDTO.getChatId());
+            try {
+                userToSetBirthdate.setBirthDate(format.parse(userDTO.getText()));
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
+            addUser(userToSetBirthdate);
             setBirthday = false;
             userDTO.setText("Дата рождения введена");
             return telegramReplyService.sendMsg(userDTO);
