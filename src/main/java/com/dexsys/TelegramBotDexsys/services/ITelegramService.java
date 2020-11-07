@@ -17,4 +17,5 @@ public interface ITelegramService {
     User getUser(String chatId);
     boolean deleteUser(String chatId);
 
+    boolean isUserExist(String chatId);
 }

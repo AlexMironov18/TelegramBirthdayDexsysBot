@@ -23,8 +23,6 @@ public class TelegramService implements ITelegramService {
 
     private User user;
     @Autowired
-    private IRepository userRepository;
-    @Autowired
     private RepeaterHandler handler;
     @Autowired
     private IWebProxyService proxyService;
@@ -32,7 +30,7 @@ public class TelegramService implements ITelegramService {
     private ITelegramReplyService telegramReplyService;
 
     @Autowired
-    private UserRepository repository;
+    private IUserRepository repository;
 
     @Override
     @PostConstruct
@@ -53,7 +51,7 @@ public class TelegramService implements ITelegramService {
                 .findAny().map(mapperToUser).orElse(null);
         if (userToAuthorize != null) {
             userToAuthorize.setChatId(user.getChatId());
-            userRepository.addUser(userToAuthorize);
+            repository.save(userToAuthorize);
             return telegramReplyService.sendMsg(userDTO);
         } else {
             userDTO.setText("Пользователь не найден");
@@ -69,17 +67,27 @@ public class TelegramService implements ITelegramService {
 
     @Override
     public List<User> getUsers() {
-        return userRepository.getUserList();
+        return (List<User>) repository.findAll();
     }
 
     @Override
     public User getUser(String chatId) {
-        return userRepository.getUser(chatId);
+        if (isUserExist(chatId)) {
+            return repository.findById(chatId).get();
+        } else return null;
     }
 
     @Override
     public boolean deleteUser(String chatId) {
-        return userRepository.deleteUser(chatId);
+        if (isUserExist(chatId)) {
+            repository.deleteById(chatId);
+            return true;
+        } else return false;
+    }
+
+    @Override
+    public boolean isUserExist(String chatId) {
+        return repository.existsById(chatId);
     }
 
     private Function<UserWebDTO, User> mapperToUser = it -> User.builder()

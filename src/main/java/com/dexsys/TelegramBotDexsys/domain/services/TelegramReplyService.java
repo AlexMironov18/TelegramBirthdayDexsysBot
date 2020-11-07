@@ -2,9 +2,9 @@ package com.dexsys.TelegramBotDexsys.domain.services;
 
 import com.dexsys.TelegramBotDexsys.app.clientService.telegramHandlers.DTO.UserDTO;
 import com.dexsys.TelegramBotDexsys.services.IRepository;
-import com.dexsys.TelegramBotDexsys.domain.repositories.UserRepository;
 import com.dexsys.TelegramBotDexsys.services.ITelegramReplyService;
 import com.dexsys.TelegramBotDexsys.services.ITelegramService;
+import com.dexsys.TelegramBotDexsys.services.IUserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
@@ -19,8 +19,6 @@ import java.util.List;
 @Service
 public class TelegramReplyService implements ITelegramReplyService {
 
-    @Autowired
-    private IRepository userRepository;
 
     @Autowired
     private ITelegramService telegramService;
@@ -33,7 +31,7 @@ public class TelegramReplyService implements ITelegramReplyService {
         //filling the output message with destination(chatId)
         outputMessage.setChatId(userDTO.getChatId());
         //sending text and keyboard if user is authorized
-        if (((UserRepository) userRepository).getChatIdMap().get(userDTO.getChatId()) != null) {
+        if (telegramService.isUserExist(userDTO.getChatId())) {
             setText(outputMessage, userDTO);
             setButtons(outputMessage);
             return outputMessage;

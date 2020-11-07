@@ -1,9 +1,9 @@
 package com.dexsys.TelegramBotDexsys.domain.services.entities;
 
 import com.dexsys.TelegramBotDexsys.app.clientService.telegramHandlers.DTO.UserDTO;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -16,10 +16,14 @@ import java.util.UUID;
 @Data
 @Entity
 @Table(name = "users")
-@NoArgsConstructor
+@AllArgsConstructor
 public class User {
 
-    @Id
+    public User() {
+        super();
+    }
+
+    @Column(name = "id")
     private UUID id;
     @Column(name = "firstname")
     private String firstName;
@@ -31,6 +35,7 @@ public class User {
     private Date birthDate;
     @Column(name = "phone")
     private String phone;
+    @Id
     @Column(name = "chatid")
     private String chatId;
     @Column(name = "ismale")

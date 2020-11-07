@@ -1280,3 +1280,73 @@
 15:45:46.061 [BDayDexsysBot Telegram Executor] INFO  c.d.T.a.c.t.RepeaterHandler - Отправлено сообщение "hey" в чат 935193822
 15:45:47.219 [BDayDexsysBot Telegram Executor] INFO  c.d.T.a.c.t.RepeaterHandler - Отправлено сообщение "Очистить профиль" в чат 935193822
 15:45:50.049 [BDayDexsysBot Telegram Executor] INFO  c.d.T.d.repositories.UserRepository - Добавлен пользователь в базу данных с телефоном +79501617728
+11:14:19.628 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 12796 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+11:14:19.641 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+11:15:41.692 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 7940 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+11:15:41.695 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+11:18:54.582 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 9984 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+11:18:54.584 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+11:26:50.143 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 10244 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+11:26:50.145 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+11:27:44.265 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 8832 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+11:27:44.268 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+11:27:59.690 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 15.913 seconds (JVM running for 16.685)
+11:28:07.984 [BDayDexsysBot Telegram Executor] INFO  c.d.T.a.c.t.RepeaterHandler - Отправлено сообщение "hi" в чат 935193822
+11:28:14.780 [BDayDexsysBot Telegram Executor] INFO  c.d.T.d.repositories.UserRepository - Добавлен пользователь в базу данных с телефоном +79501617728
+11:30:37.373 [BDayDexsysBot Telegram Executor] INFO  c.d.T.a.c.t.RepeaterHandler - Отправлено сообщение "Очистить профиль" в чат 935193822
+11:30:51.603 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 7872 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+11:30:51.623 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+11:31:09.158 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 18.188 seconds (JVM running for 18.97)
+11:31:54.665 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 6816 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+11:31:54.668 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+11:32:04.184 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 9.94 seconds (JVM running for 13.69)
+11:35:20.845 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 7096 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+11:35:20.849 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+11:35:28.972 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 8.661 seconds (JVM running for 9.382)
+11:36:54.902 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 1020 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+11:36:54.911 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+11:37:03.315 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 8.982 seconds (JVM running for 9.72)
+11:37:09.297 [BDayDexsysBot Telegram Executor] INFO  c.d.T.a.c.t.RepeaterHandler - Отправлено сообщение "Показать профиль" в чат 935193822
+11:37:14.071 [BDayDexsysBot Telegram Executor] INFO  c.d.T.a.c.t.RepeaterHandler - Отправлено сообщение "Показать пользователей" в чат 935193822
+11:50:38.058 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 5740 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+11:50:38.062 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+11:50:46.306 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 9.041 seconds (JVM running for 9.836)
+11:51:52.541 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 8760 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+11:51:52.545 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+11:52:00.687 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 8.805 seconds (JVM running for 9.587)
+11:52:36.877 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 11772 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+11:52:36.880 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+11:52:44.714 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 8.395 seconds (JVM running for 9.239)
+11:53:21.959 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 11176 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+11:53:21.962 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+11:53:30.195 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 8.716 seconds (JVM running for 9.406)
+11:53:32.582 [BDayDexsysBot Telegram Executor] INFO  c.d.T.a.c.t.RepeaterHandler - Отправлено сообщение "Очистить профиль" в чат 935193822
+11:57:32.309 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 11576 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+11:57:32.311 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+11:57:40.448 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 8.583 seconds (JVM running for 9.359)
+11:57:42.555 [BDayDexsysBot Telegram Executor] INFO  c.d.T.a.c.t.RepeaterHandler - Отправлено сообщение "Очистить профиль" в чат 935193822
+11:59:09.874 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 9520 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+11:59:09.877 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+11:59:18.969 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 9.625 seconds (JVM running for 10.74)
+11:59:48.454 [BDayDexsysBot Telegram Executor] INFO  c.d.T.a.c.t.RepeaterHandler - Отправлено сообщение "Показать профиль" в чат 935193822
+11:59:57.190 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 7832 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+11:59:57.194 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+12:00:05.419 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 8.779 seconds (JVM running for 9.608)
+12:02:06.861 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 8820 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+12:02:06.864 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+12:02:16.282 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 9.997 seconds (JVM running for 10.827)
+12:02:22.890 [BDayDexsysBot Telegram Executor] INFO  c.d.T.a.c.t.RepeaterHandler - Отправлено сообщение "Показать профиль" в чат 935193822
+12:02:26.241 [BDayDexsysBot Telegram Executor] INFO  c.d.T.a.c.t.RepeaterHandler - Отправлено сообщение "Показать пользователей" в чат 935193822
+12:02:31.196 [BDayDexsysBot Telegram Executor] INFO  c.d.T.a.c.t.RepeaterHandler - Отправлено сообщение "INFO" в чат 935193822
+12:02:32.802 [BDayDexsysBot Telegram Executor] INFO  c.d.T.a.c.t.RepeaterHandler - Отправлено сообщение "hi" в чат 935193822
+12:02:36.636 [BDayDexsysBot Telegram Executor] INFO  c.d.T.a.c.t.RepeaterHandler - Отправлено сообщение "hey" в чат 935193822
+12:02:38.596 [BDayDexsysBot Telegram Executor] INFO  c.d.T.a.c.t.RepeaterHandler - Отправлено сообщение "Очистить профиль" в чат 935193822
+12:08:50.339 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 3920 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+12:08:50.342 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+12:08:59.790 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 9.869 seconds (JVM running for 10.746)
+12:09:02.111 [BDayDexsysBot Telegram Executor] INFO  c.d.T.a.c.t.RepeaterHandler - Отправлено сообщение "Показать профиль" в чат 935193822
+12:09:18.630 [BDayDexsysBot Telegram Executor] INFO  c.d.T.a.c.t.RepeaterHandler - Отправлено сообщение "Показать профиль" в чат 935193822
+12:09:19.959 [BDayDexsysBot Telegram Executor] INFO  c.d.T.a.c.t.RepeaterHandler - Отправлено сообщение "Показать пользователей" в чат 935193822
+12:09:25.487 [BDayDexsysBot Telegram Executor] INFO  c.d.T.a.c.t.RepeaterHandler - Отправлено сообщение "INFO" в чат 935193822
+12:09:28.350 [BDayDexsysBot Telegram Executor] INFO  c.d.T.a.c.t.RepeaterHandler - Отправлено сообщение "hey" в чат 935193822
+12:09:29.394 [BDayDexsysBot Telegram Executor] INFO  c.d.T.a.c.t.RepeaterHandler - Отправлено сообщение "Очистить профиль" в чат 935193822
