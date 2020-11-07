@@ -11,7 +11,6 @@ public class TelegramBotDexsysApplication {
 
 	public static void main(String[] args) {
 
-		ApiContextInitializer.init();
 		final ConfigurableApplicationContext ctx = SpringApplication.run(TelegramBotDexsysApplication.class, args);
 
 	}

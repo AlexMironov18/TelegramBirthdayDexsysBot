@@ -23,25 +23,14 @@ public class TelegramService implements ITelegramService {
 
     private User user;
     @Autowired
-    private RepeaterHandler handler;
+    private IRepeaterHandler handler;
     @Autowired
     private IWebProxyService proxyService;
     @Autowired
     private ITelegramReplyService telegramReplyService;
-
     @Autowired
     private IUserRepository repository;
 
-    @Override
-    @PostConstruct
-    public void setupBot() {
-        TelegramBotsApi botsApi = new TelegramBotsApi();
-        try {
-            botsApi.registerBot(handler);
-        } catch (TelegramApiException e) {
-            log.error("setupBot: " + e.toString());
-        }
-    }
 
     @Override
     public synchronized SendMessage processAuthorizationMessage(UserDTO userDTO) throws TelegramApiException {

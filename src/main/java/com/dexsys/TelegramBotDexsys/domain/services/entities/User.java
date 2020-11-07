@@ -15,7 +15,7 @@ import java.util.UUID;
 @Builder
 @Data
 @Entity
-@Table(name = "users")
+@Table(name = "usersTable")
 @AllArgsConstructor
 public class User {
 
@@ -23,22 +23,14 @@ public class User {
         super();
     }
 
-    @Column(name = "id")
     private UUID id;
-    @Column(name = "firstname")
     private String firstName;
-    @Column(name = "secondname")
     private String secondName;
-    @Column(name = "middlename")
     private String middleName;
-    @Column(name = "birthdate")
     private Date birthDate;
-    @Column(name = "phone")
     private String phone;
     @Id
-    @Column(name = "chatid")
     private String chatId;
-    @Column(name = "ismale")
     private boolean isMale;
 
     @Builder
