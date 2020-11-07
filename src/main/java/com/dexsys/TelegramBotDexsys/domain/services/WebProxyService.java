@@ -50,7 +50,7 @@ public class WebProxyService implements IWebProxyService {
     }
 
     private Function<UserWebDTO, UserMockDTO> mapperToMock = it -> UserMockDTO.builder()
-            .birthDate(it.getBirthDate())
+            .birthDay(it.getBirthDate())
             .chatId(it.getChatId())
             .firstName(it.getFirstName())
             .secondName(it.getSecondName())
@@ -60,7 +60,7 @@ public class WebProxyService implements IWebProxyService {
             .phone(it.getPhone())
             .build();
     private Function<UserMockDTO, UserWebDTO> mapperToWeb = it -> UserWebDTO.builder()
-            .birthDate(it.getBirthDate())
+            .birthDate(it.getBirthDay())
             .chatId(it.getChatId())
             .firstName(it.getFirstName())
             .secondName(it.getSecondName())

@@ -24,15 +24,12 @@ import java.util.UUID;
 @Builder
 public class UserMockDTO implements Serializable {
 
-    public UserMockDTO(String id) {
-        this.id = UUID.fromString(id);
-    }
-
+    @JsonDeserialize(using = UUIDDeserializer.class)
     private UUID id;
     private String firstName;
     private String secondName;
     private String middleName;
-    private Date birthDate;
+    private Date birthDay;
     private String phone;
     private String chatId;
     private boolean isMale;
