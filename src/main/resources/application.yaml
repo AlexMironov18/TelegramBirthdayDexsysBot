@@ -1,1 +1,12 @@
 useMock: true
+# Database
+db.driver: org.postgresql.Driver
+db.url: jdbc:postgresql://localhost:5432/telegramdb
+db.username: postgres
+db.password: 123
+
+# Hibernate
+hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+hibernate.show_sql: true
+hibernate.hbm2ddl.auto: create
+entitymanager.packagesToScan: com
