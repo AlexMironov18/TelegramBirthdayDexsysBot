@@ -17,7 +17,7 @@ import java.util.UUID;
 @Entity
 @Table(name = "usersTable")
 @AllArgsConstructor
-public class User {
+public class User extends EntityWithTimeStamps {
 
     public User() {
         super();
