@@ -1,6 +1,5 @@
 package com.dexsys.TelegramBotDexsys.domain.services;
 
-import com.dexsys.TelegramBotDexsys.app.clientService.telegramHandlers.RepeaterHandler;
 import com.dexsys.TelegramBotDexsys.app.clientService.telegramHandlers.DTO.UserDTO;
 import com.dexsys.TelegramBotDexsys.app.web.webDTO.UserWebDTO;
 import com.dexsys.TelegramBotDexsys.services.*;
@@ -8,15 +7,12 @@ import com.dexsys.TelegramBotDexsys.domain.services.entities.User;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.telegram.telegrambots.meta.TelegramBotsApi;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
-import javax.annotation.PostConstruct;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.List;
 import java.util.Locale;
 import java.util.function.Function;
 
@@ -43,11 +39,10 @@ public class TelegramService implements ITelegramService {
         if (userToAuthorize != null) {
             userToAuthorize.setChatId(user.getChatId());
             dataService.addUser(userToAuthorize);
-            return telegramReplyService.sendMsg(userDTO);
         } else {
             userDTO.setText("Пользователь не найден");
-            return telegramReplyService.sendMsg(userDTO);
         }
+        return telegramReplyService.sendMsg(userDTO);
     }
 
     @Override

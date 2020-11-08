@@ -1,6 +1,7 @@
 package com.dexsys.TelegramBotDexsys.domain.services;
 
 import com.dexsys.TelegramBotDexsys.app.clientService.telegramHandlers.DTO.UserDTO;
+import com.dexsys.TelegramBotDexsys.domain.services.entities.User;
 import com.dexsys.TelegramBotDexsys.services.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -41,7 +42,16 @@ public class TelegramReplyService implements ITelegramReplyService {
     @Override
     public synchronized void setText(SendMessage sendMessage, UserDTO userDTO) {
         switch(userDTO.getText()) {
-            case "Показать профиль": sendMessage.setText(dataService.getUser(userDTO.getChatId()).toString());
+            case "Показать профиль":
+                User userToShow = dataService.getUser(userDTO.getChatId());
+                    sendMessage.setText(
+                        "Name: " + (userToShow.getFirstName() == null ? "неизвестно" : userToShow.getFirstName())+"\n"+
+                        "SecondName: " + (userToShow.getSecondName() == null ? "неизвестно" : userToShow.getSecondName())+"\n"+
+                        "MiddleName: " + (userToShow.getMiddleName() == null ? "неизвестно" : userToShow.getMiddleName())+"\n"+
+                        "Gender: " + (userToShow.isMale() == true ? "Male" : "Female")+"\n"+
+                        "BirthDate: " + (userToShow.getBirthDate() == null ? "неизвестно" : userToShow.getBirthDate())+"\n"+
+                        "ID: " + (userToShow.getId() == null ? "неизвестно" : userToShow.getId())+"\n"+
+                        "ChatID: " + (userToShow.getChatId() == null ? "неизвестно" : userToShow.getChatId()));
                 break;
             case "Показать пользователей": sendMessage.setText(dataService.getUsers().toString());
                 break;
