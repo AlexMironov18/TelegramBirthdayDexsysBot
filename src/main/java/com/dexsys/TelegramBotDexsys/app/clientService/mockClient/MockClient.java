@@ -5,6 +5,7 @@ import com.dexsys.TelegramBotDexsys.app.clientService.mockClient.mockDTO.UserMoc
 import com.dexsys.TelegramBotDexsys.app.exceptions.ApiRequestException;
 import com.dexsys.TelegramBotDexsys.app.exceptions.ApiResponseException;
 import com.dexsys.TelegramBotDexsys.services.IMockClient;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpEntity;
@@ -24,6 +25,7 @@ import java.util.UUID;
 //при вводе телефона идет get запрос если он !=empty то авторизуем пользователя и добавляем в локальный репозиторий
 //данные из json ответа (только те поля, которые в локальном репоитории null)
 
+@Slf4j
 public class MockClient implements IMockClient {
 
     @Autowired
@@ -40,6 +42,7 @@ public class MockClient implements IMockClient {
                     mockURL + uuid,
                     UserMockDTO.class);
         } catch (HttpStatusCodeException e) {
+            log.error("Ошибка при вызове \"getUser()\" Mock - сервера, код ошибки: {}", e.getStatusCode());
             if (e.getStatusCode().is4xxClientError())
                 throw new ApiRequestException(e.getStatusCode(), "Пользователя с таким id не существует");
              else throw new ApiResponseException(e.getStatusCode(), "Ошибка сервера");
@@ -55,6 +58,7 @@ public class MockClient implements IMockClient {
                     mockURL, UserMockDTO[].class);
             return Arrays.asList(responseEntity);
         } catch (HttpStatusCodeException e) {
+            log.error("Ошибка при вызове \"getAll()\" Mock - сервера, код ошибки: {}", e.getStatusCode());
             if (e.getStatusCode().is4xxClientError())
                 throw new ApiRequestException(e.getStatusCode(), "Список пользователей пуст");
             else throw new ApiResponseException(e.getStatusCode(), "Ошибка сервера");
@@ -72,6 +76,7 @@ public class MockClient implements IMockClient {
                     UserMockDTO.class);
             return response;
         } catch (HttpStatusCodeException e) {
+            log.error("Ошибка при вызове \"generateUser()\" Mock - сервера, код ошибки: {}", e.getStatusCode());
             throw new ApiResponseException(e.getStatusCode(), "Ошибка сервера");
         }
     }
@@ -85,6 +90,7 @@ public class MockClient implements IMockClient {
                     request, String.class);
             return "Добавлен пользователь с id: \n" + response.getBody();
         } catch (HttpStatusCodeException e) {
+            log.error("Ошибка при вызове \"createUser()\" Mock - сервера, код ошибки: {}", e.getStatusCode());
             if (e.getStatusCode().is4xxClientError())
                 throw new ApiRequestException(e.getStatusCode(), "Данные пользователя введены некрректно");
             else throw new ApiResponseException(e.getStatusCode(), "Ошибка сервера");
@@ -105,6 +111,7 @@ public class MockClient implements IMockClient {
         try {
             return restTemplate.optionsForAllow(mockURL + uuid);
         } catch (HttpStatusCodeException e) {
+            log.error("Ошибка при вызове \"getOptions()\" Mock - сервера, код ошибки: {}", e.getStatusCode());
             if (e.getStatusCode().is4xxClientError())
                 throw new ApiRequestException(e.getStatusCode(), "Пользователя с таким id не существует");
             else throw new ApiResponseException(e.getStatusCode(), "Ошибка сервера");

@@ -1619,3 +1619,27 @@
 14:51:13.333 [BDayDexsysBot Telegram Executor] INFO  c.d.T.a.c.t.RepeaterHandler - Отправлено сообщение "Введите вашу дату рождения в формате: January 1, 1975" в чат 935193822
 14:51:16.699 [BDayDexsysBot Telegram Executor] INFO  c.d.T.a.c.t.RepeaterHandler - Отправлено сообщение "Дата рождения введена" в чат 935193822
 14:51:17.606 [BDayDexsysBot Telegram Executor] INFO  c.d.T.a.c.t.RepeaterHandler - Отправлено сообщение "Показать профиль" в чат 935193822
+14:54:16.583 [BDayDexsysBot Telegram Executor] INFO  c.d.T.a.c.t.RepeaterHandler - Отправлено сообщение "Показать пользователей" в чат 935193822
+14:54:22.182 [BDayDexsysBot Telegram Executor] INFO  c.d.T.a.c.t.RepeaterHandler - Отправлено сообщение "Информация" в чат 935193822
+14:54:30.587 [BDayDexsysBot Telegram Executor] INFO  c.d.T.a.c.t.RepeaterHandler - Отправлено сообщение "hey" в чат 935193822
+14:56:47.584 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 8176 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+14:56:47.610 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+14:56:56.616 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 9.496 seconds (JVM running for 10.312)
+14:57:02.118 [BDayDexsysBot Telegram Executor] INFO  c.d.T.a.c.t.RepeaterHandler - Отправлено сообщение "Показать профиль" в чат 935193822
+15:09:25.031 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 12100 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+15:09:25.034 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+15:09:32.242 [main] INFO  c.d.T.d.c.DomainConfiguration - Зарегистрирован Telegram-bot
+15:09:34.351 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 9.848 seconds (JVM running for 10.55)
+15:09:37.033 [BDayDexsysBot Telegram Executor] INFO  c.d.T.d.s.TelegramReplyService - Отправлено сообщение об очистке профиля пользователя в Telegram-чат с chatId: 935193822
+15:09:37.144 [BDayDexsysBot Telegram Executor] INFO  c.d.T.a.c.t.RepeaterHandler - Отправлено сообщение "Очистить профиль" в чат 935193822
+15:11:35.762 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 13044 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+15:11:35.765 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+15:11:42.532 [main] INFO  c.d.T.d.c.DomainConfiguration - Зарегистрирован Telegram-bot
+15:11:44.736 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 9.692 seconds (JVM running for 10.415)
+15:11:49.568 [BDayDexsysBot Telegram Executor] INFO  c.d.T.d.s.TelegramReplyService - Отправлено сообщение об успешной авторизации пользователя в Telegram-чат с chatId: 935193822
+15:11:56.736 [BDayDexsysBot Telegram Executor] INFO  c.d.T.d.s.TelegramReplyService - Отправлено сообщение о профиле пользователя в Telegram-чат с chatId: 935193822
+15:12:03.855 [BDayDexsysBot Telegram Executor] INFO  c.d.T.d.s.TelegramReplyService - Отправлено сообщение об описании интерфейса в Telegram-чат с chatId: 935193822
+15:12:12.005 [BDayDexsysBot Telegram Executor] INFO  c.d.T.d.s.TelegramReplyService - Отправлено сообщение Введите вашу дату рождения в формате: January 1, 1975 в Telegram-чат с chatId: 935193822
+15:12:30.490 [BDayDexsysBot Telegram Executor] INFO  c.d.T.d.s.TelegramReplyService - Отправлено сообщение Дата рождения введена в Telegram-чат с chatId: 935193822
+15:12:31.206 [BDayDexsysBot Telegram Executor] INFO  c.d.T.d.s.TelegramReplyService - Отправлено сообщение о профиле пользователя в Telegram-чат с chatId: 935193822
+15:13:00.132 [BDayDexsysBot Telegram Executor] INFO  c.d.T.d.s.TelegramReplyService - Отправлено сообщение о профилях всех пользователей в Telegram-чат с chatId: 935193822

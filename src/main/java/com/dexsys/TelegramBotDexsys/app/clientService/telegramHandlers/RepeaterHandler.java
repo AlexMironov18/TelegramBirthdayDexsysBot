@@ -31,7 +31,6 @@ public class RepeaterHandler extends TelegramLongPollingBot implements IRepeater
             } else if (update.hasMessage() && update.getMessage().hasText()) {
                 userDTO = UserDTO.createUserDTO(update);
                 execute(telegramService.processMessage(userDTO));
-                log.info("Отправлено сообщение \"{}\" в чат {}", userDTO.getText(), userDTO.getChatId());
             }
         } catch (TelegramApiException e) {
             log.error("onUpdateReceived: " + e.toString());

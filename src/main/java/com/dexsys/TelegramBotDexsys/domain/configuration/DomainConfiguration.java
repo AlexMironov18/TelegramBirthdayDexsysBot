@@ -24,6 +24,7 @@ public class DomainConfiguration {
         IRepeaterHandler handler = new RepeaterHandler();
         try {
             botsApi.registerBot((LongPollingBot) handler);
+            log.info("Зарегистрирован Telegram-bot");
         } catch (TelegramApiException e) {
             log.error("setupBot: " + e.toString());
         }
