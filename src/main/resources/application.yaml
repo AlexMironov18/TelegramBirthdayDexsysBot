@@ -3,9 +3,9 @@ mockURL: https://serene-coast-56441.herokuapp.com/api/users/
 
 db:
   driver: org.postgresql.Driver
-  password: 1d9cf3e01fe8e49b0125fbcc08405cfa1c56a25db98c03dca269df5c28a685c5
-  url: jdbc:postgresql://ec2-54-228-209-117.eu-west-1.compute.amazonaws.com:5432/dbto94h2bqfj9k
-  username: ncppuwgfnpiftv
+  password: c16f59b38d2ade79c1bad116deec885715312d2247958a3e9a03b694d793fe12
+  url: jdbc:postgresql://ec2-52-71-153-228.compute-1.amazonaws.com:5432/d80s8codr999s0
+  username: yeogacdvtanfjl
 entitymanager:
   packagesToScan: com
 hibernate:
