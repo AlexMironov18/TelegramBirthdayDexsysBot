@@ -1679,3 +1679,25 @@
 15:32:46.460 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
 15:32:53.341 [main] INFO  c.d.T.d.c.DomainConfiguration - Зарегистрирован Telegram-bot
 15:32:55.461 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 9.615 seconds (JVM running for 10.297)
+15:38:31.321 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 8400 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+15:38:31.333 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+15:38:38.647 [main] INFO  c.d.T.d.c.DomainConfiguration - Зарегистрирован Telegram-bot
+15:38:40.646 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 9.975 seconds (JVM running for 11.128)
+15:39:40.991 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 10252 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+15:39:41.000 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+15:39:48.071 [main] INFO  c.d.T.d.c.DomainConfiguration - Зарегистрирован Telegram-bot
+15:39:50.088 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 9.742 seconds (JVM running for 10.676)
+15:40:21.258 [BDayDexsysBot Telegram Executor] INFO  c.d.T.d.s.TelegramReplyService - Отправлено сообщение об успешной авторизации пользователя в Telegram-чат с chatId: 935193822
+15:40:22.457 [BDayDexsysBot Telegram Executor] INFO  c.d.T.d.s.TelegramReplyService - Отправлено сообщение о профиле пользователя в Telegram-чат с chatId: 935193822
+15:40:24.448 [BDayDexsysBot Telegram Executor] INFO  c.d.T.d.s.TelegramReplyService - Отправлено сообщение о профилях всех пользователей в Telegram-чат с chatId: 935193822
+15:40:26.450 [BDayDexsysBot Telegram Executor] INFO  c.d.T.d.s.TelegramReplyService - Отправлено сообщение об описании интерфейса в Telegram-чат с chatId: 935193822
+15:40:29.150 [BDayDexsysBot Telegram Executor] INFO  c.d.T.d.s.TelegramReplyService - Отправлено сообщение "hey" в Telegram-чат с chatId: 935193822
+15:40:30.252 [BDayDexsysBot Telegram Executor] INFO  c.d.T.d.s.TelegramReplyService - Отправлено сообщение "Введите вашу дату рождения в формате: January 1, 1975" в Telegram-чат с chatId: 935193822
+15:40:33.751 [BDayDexsysBot Telegram Executor] INFO  c.d.T.d.s.TelegramReplyService - Отправлено сообщение "Дата рождения введена" в Telegram-чат с chatId: 935193822
+15:40:34.437 [BDayDexsysBot Telegram Executor] INFO  c.d.T.d.s.TelegramReplyService - Отправлено сообщение о профиле пользователя в Telegram-чат с chatId: 935193822
+15:40:53.951 [BDayDexsysBot Telegram Executor] INFO  c.d.T.d.s.TelegramReplyService - Отправлено сообщение об очистке профиля пользователя в Telegram-чат с chatId: 935193822
+15:40:56.767 [BDayDexsysBot Telegram Executor] INFO  c.d.T.d.s.TelegramReplyService - Отправлено сообщение об успешной авторизации пользователя в Telegram-чат с chatId: 935193822
+15:44:18.160 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 3900 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+15:44:18.217 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+15:44:25.412 [main] INFO  c.d.T.d.c.DomainConfiguration - Зарегистрирован Telegram-bot
+15:44:27.597 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 10.117 seconds (JVM running for 10.895)

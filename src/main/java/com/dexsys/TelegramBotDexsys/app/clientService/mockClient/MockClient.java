@@ -70,11 +70,10 @@ public class MockClient implements IMockClient {
 
         try {
             HttpEntity<UserMockDTO> request = new HttpEntity<>(new UserMockDTO());
-            UserMockDTO response = restTemplate.postForObject(
+            return restTemplate.postForObject(
                     mockURL + "generate",
                     request,
                     UserMockDTO.class);
-            return response;
         } catch (HttpStatusCodeException e) {
             log.error("Ошибка при вызове \"generateUser()\" Mock - сервера, код ошибки: {}", e.getStatusCode());
             throw new ApiResponseException(e.getStatusCode(), "Ошибка сервера");
@@ -95,14 +94,6 @@ public class MockClient implements IMockClient {
                 throw new ApiRequestException(e.getStatusCode(), "Данные пользователя введены некрректно");
             else throw new ApiResponseException(e.getStatusCode(), "Ошибка сервера");
         }
-
-//        Implement, when mockServer create-request is fixed (returns full user info, not only id)
-//        HttpEntity<UserMockDTO> request = new HttpEntity<>(userMockDTO);
-//        UserMockDTO response = restTemplate.postForObject(
-//                "https://serene-coast-56441.herokuapp.com/api/users",
-//                request,
-//                 UserMockDTO.class);
-//        return response;
     }
 
     @Override
