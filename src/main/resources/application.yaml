@@ -1,7 +1,7 @@
 db:
   driver: org.postgresql.Driver
   password: c0f7c25d7e1634237482bb07e47e1374e9adc59222197e4741aa1ace43a7ad54
-  url: jdbc:postgresql://ec2-34-246-141-162.eu-west-1.compute.amazonaws.com:5432/dbfjm90l3ntrjr
+  url: jdbc:postgresql://ec2-34-246-141-162.eu-west-1.compute.amazonaws.com:5432/dbfjm90l3ntrjr?sslmode=require
   username: zxnwojoxkugtym
 entitymanager:
   packagesToScan: com
