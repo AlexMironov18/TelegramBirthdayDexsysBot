@@ -17,8 +17,6 @@ import org.springframework.context.annotation.PropertySources;
 @Configuration
 public class MockClientConfiguration {
 
-    private boolean useMock;
-
     @Bean
     @ConditionalOnProperty(value = "useMock", havingValue = "true")
     public IMockClient useMockClient() {

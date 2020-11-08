@@ -25,7 +25,6 @@ import java.util.function.Function;
 @Slf4j
 public class TelegramService implements ITelegramService {
 
-
     @Autowired
     private IWebProxyService proxyService;
     @Autowired
@@ -53,14 +52,6 @@ public class TelegramService implements ITelegramService {
 
     @Override
     public synchronized SendMessage processMessage(UserDTO userDTO) throws TelegramApiException {
-//        if (userDTO.getText().equals("Очистить профиль")) deleteUser(userDTO.getChatId());
-//        return telegramReplyService.sendMsg(userDTO);
-        if (userDTO.getText().equals("Очистить профиль")) dataService.deleteUser(userDTO.getChatId());
-        if (userDTO.getText().equals("Изменить дату рождения")) {
-            setBirthday = true;
-            userDTO.setText("Введите вашу дату рождения в формате: January 1, 1975");
-            return telegramReplyService.sendMsg(userDTO);
-        }
         if (setBirthday) {
             DateFormat format = new SimpleDateFormat("MMMM d, yyyy", Locale.ENGLISH);
             User userToSetBirthdate = new User();
@@ -75,9 +66,17 @@ public class TelegramService implements ITelegramService {
             userDTO.setText("Дата рождения введена");
             return telegramReplyService.sendMsg(userDTO);
         }
+        switch (userDTO.getText()) {
+            case "Очистить профиль":
+                dataService.deleteUser(userDTO.getChatId());
+                break;
+            case "Изменить дату рождения" :
+                setBirthday = true;
+                userDTO.setText("Введите вашу дату рождения в формате: January 1, 1975");
+                return telegramReplyService.sendMsg(userDTO);
+        }
         return telegramReplyService.sendMsg(userDTO);
     }
-
 
     private Function<UserWebDTO, User> mapperToUser = it -> User.builder()
             .birthDate(it.getBirthDate())
