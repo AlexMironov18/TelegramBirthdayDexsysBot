@@ -1701,3 +1701,30 @@
 15:44:18.217 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
 15:44:25.412 [main] INFO  c.d.T.d.c.DomainConfiguration - Зарегистрирован Telegram-bot
 15:44:27.597 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 10.117 seconds (JVM running for 10.895)
+15:45:45.946 [BDayDexsysBot Telegram Executor] INFO  c.d.T.d.s.TelegramReplyService - Отправлено сообщение об очистке профиля пользователя в Telegram-чат с chatId: 935193822
+15:45:47.432 [BDayDexsysBot Telegram Executor] INFO  c.d.T.d.s.TelegramReplyService - Отправлено сообщение об описании интерфейса в Telegram-чат с chatId: 935193822
+15:45:48.868 [BDayDexsysBot Telegram Executor] INFO  c.d.T.d.s.TelegramReplyService - Отправлено сообщение "hey" в Telegram-чат с chatId: 935193822
+15:45:51.574 [BDayDexsysBot Telegram Executor] INFO  c.d.T.d.s.TelegramReplyService - Отправлено сообщение об успешной авторизации пользователя в Telegram-чат с chatId: 935193822
+15:45:54.006 [BDayDexsysBot Telegram Executor] INFO  c.d.T.d.s.TelegramReplyService - Отправлено сообщение о профиле пользователя в Telegram-чат с chatId: 935193822
+15:45:57.880 [BDayDexsysBot Telegram Executor] INFO  c.d.T.d.s.TelegramReplyService - Отправлено сообщение об описании интерфейса в Telegram-чат с chatId: 935193822
+15:45:58.825 [BDayDexsysBot Telegram Executor] INFO  c.d.T.d.s.TelegramReplyService - Отправлено сообщение о профилях всех пользователей в Telegram-чат с chatId: 935193822
+15:45:59.942 [BDayDexsysBot Telegram Executor] INFO  c.d.T.d.s.TelegramReplyService - Отправлено сообщение "Введите вашу дату рождения в формате: January 1, 1975" в Telegram-чат с chatId: 935193822
+15:46:02.952 [BDayDexsysBot Telegram Executor] INFO  c.d.T.d.s.TelegramReplyService - Отправлено сообщение "Дата рождения введена" в Telegram-чат с chatId: 935193822
+15:46:04.052 [BDayDexsysBot Telegram Executor] INFO  c.d.T.d.s.TelegramReplyService - Отправлено сообщение о профиле пользователя в Telegram-чат с chatId: 935193822
+15:46:11.280 [BDayDexsysBot Telegram Executor] INFO  c.d.T.d.s.TelegramReplyService - Отправлено сообщение об очистке профиля пользователя в Telegram-чат с chatId: 935193822
+18:12:44.312 [main] INFO  c.d.T.TelegramBotDexsysApplication - Starting TelegramBotDexsysApplication on Alex-PC with PID 996 (D:\TelegramBotDexsys\target\classes started by Alex in D:\TelegramBotDexsys)
+18:12:44.331 [main] INFO  c.d.T.TelegramBotDexsysApplication - No active profile set, falling back to default profiles: default
+18:12:59.285 [main] INFO  c.d.T.d.c.DomainConfiguration - Зарегистрирован Telegram-bot
+18:13:06.514 [main] INFO  c.d.T.TelegramBotDexsysApplication - Started TelegramBotDexsysApplication in 22.905 seconds (JVM running for 24.92)
+18:13:30.635 [BDayDexsysBot Telegram Executor] INFO  c.d.T.d.s.TelegramReplyService - Отправлено сообщение "hi" в Telegram-чат с chatId: 935193822
+18:13:38.516 [BDayDexsysBot Telegram Executor] INFO  c.d.T.d.s.TelegramReplyService - Отправлено сообщение об успешной авторизации пользователя в Telegram-чат с chatId: 935193822
+18:15:21.288 [BDayDexsysBot Telegram Executor] INFO  c.d.T.d.s.TelegramReplyService - Отправлено сообщение об очистке профиля пользователя в Telegram-чат с chatId: 935193822
+18:17:59.146 [BDayDexsysBot Telegram Executor] INFO  c.d.T.d.s.TelegramReplyService - Отправлено сообщение об успешной авторизации пользователя в Telegram-чат с chatId: 935193822
+18:18:27.677 [BDayDexsysBot Telegram Executor] INFO  c.d.T.d.s.TelegramReplyService - Отправлено сообщение о профиле пользователя в Telegram-чат с chatId: 935193822
+18:18:32.544 [BDayDexsysBot Telegram Executor] INFO  c.d.T.d.s.TelegramReplyService - Отправлено сообщение "Введите вашу дату рождения в формате: January 1, 1975" в Telegram-чат с chatId: 935193822
+18:18:39.410 [BDayDexsysBot Telegram Executor] INFO  c.d.T.d.s.TelegramReplyService - Отправлено сообщение "Дата рождения введена" в Telegram-чат с chatId: 935193822
+18:18:43.832 [BDayDexsysBot Telegram Executor] INFO  c.d.T.d.s.TelegramReplyService - Отправлено сообщение о профилях всех пользователей в Telegram-чат с chatId: 935193822
+18:18:51.295 [BDayDexsysBot Telegram Executor] INFO  c.d.T.d.s.TelegramReplyService - Отправлено сообщение об описании интерфейса в Telegram-чат с chatId: 935193822
+18:18:55.223 [BDayDexsysBot Telegram Executor] INFO  c.d.T.d.s.TelegramReplyService - Отправлено сообщение "hey" в Telegram-чат с chatId: 935193822
+18:19:00.055 [BDayDexsysBot Telegram Executor] INFO  c.d.T.d.s.TelegramReplyService - Отправлено сообщение об очистке профиля пользователя в Telegram-чат с chatId: 935193822
+18:19:02.501 [BDayDexsysBot Telegram Executor] INFO  c.d.T.d.s.TelegramReplyService - Отправлено сообщение об описании интерфейса в Telegram-чат с chatId: 935193822

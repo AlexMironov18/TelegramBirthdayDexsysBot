@@ -1,8 +1,8 @@
 db:
   driver: org.postgresql.Driver
-  password: 123
-  url: jdbc:postgresql://localhost:5432/telegramdb
-  username: postgres
+  password: c0f7c25d7e1634237482bb07e47e1374e9adc59222197e4741aa1ace43a7ad54
+  url: jdbc:postgresql://ec2-34-246-141-162.eu-west-1.compute.amazonaws.com:5432/dbfjm90l3ntrjr
+  username: zxnwojoxkugtym
 entitymanager:
   packagesToScan: com
 hibernate:
@@ -13,7 +13,7 @@ hibernate:
 mockURL: https://serene-coast-56441.herokuapp.com/api/users/
 spring:
   datasource:
-    base: jdbc:postgresql://localhost:5432/telegramdb
+    base: jdbc:postgresql://ec2-34-246-141-162.eu-west-1.compute.amazonaws.com:5432/dbfjm90l3ntrjr
     driver-class-name: org.postgresql.Driver
     password: ${db.password}
     tomcat:
