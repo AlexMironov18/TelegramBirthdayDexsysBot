@@ -1,0 +1,30 @@
+db:
+  driver: org.postgresql.Driver
+  password: 123
+  url: jdbc:postgresql://localhost:5432/telegramdb
+  username: postgres
+entitymanager:
+  packagesToScan: com
+hibernate:
+  dialect: org.hibernate.dialect.PostgreSQLDialect
+  hbm2ddl:
+    auto: none
+  show_sql: true
+mockURL: https://serene-coast-56441.herokuapp.com/api/users/
+spring:
+  datasource:
+    base: jdbc:postgresql://localhost:5432/telegramdb
+    driver-class-name: org.postgresql.Driver
+    password: ${db.password}
+    tomcat:
+      test-on-borrow: true
+    url: ${spring.datasource.base}
+    username: ${db.username}
+    validation-query: select 1
+  liquibase:
+    change-log: classpath:/db/db.changelog-master.xml
+    contexts: postgres,text
+    password: ${spring.datasource.password}
+    url: ${spring.datasource.url}
+    user: ${spring.datasource.username}
+useMock: true
