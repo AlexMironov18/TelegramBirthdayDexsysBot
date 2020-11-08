@@ -2,6 +2,7 @@ package com.dexsys.TelegramBotDexsys.domain.services.entities;
 
 import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
 
 import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;
@@ -16,7 +17,8 @@ public abstract class EntityWithTimeStamps implements Serializable {
     @Column(name = "load_date", updatable = false)
     private LocalDateTime loadDate;
 
-    @CreationTimestamp
+    @UpdateTimestamp
     @Column(name = "update_date")
     private LocalDateTime updateDate;
+
 }

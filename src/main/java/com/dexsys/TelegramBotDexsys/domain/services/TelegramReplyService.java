@@ -1,10 +1,7 @@
 package com.dexsys.TelegramBotDexsys.domain.services;
 
 import com.dexsys.TelegramBotDexsys.app.clientService.telegramHandlers.DTO.UserDTO;
-import com.dexsys.TelegramBotDexsys.services.IRepository;
-import com.dexsys.TelegramBotDexsys.services.ITelegramReplyService;
-import com.dexsys.TelegramBotDexsys.services.ITelegramService;
-import com.dexsys.TelegramBotDexsys.services.IUserRepository;
+import com.dexsys.TelegramBotDexsys.services.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
@@ -19,19 +16,16 @@ import java.util.List;
 @Service
 public class TelegramReplyService implements ITelegramReplyService {
 
-
     @Autowired
-    private ITelegramService telegramService;
+    private IDataService dataService;
 
     //creating reply message
     @Override
     public synchronized SendMessage sendMsg(UserDTO userDTO) throws TelegramApiException {
-        //creating blank message to be send
         SendMessage outputMessage = new SendMessage();
-        //filling the output message with destination(chatId)
         outputMessage.setChatId(userDTO.getChatId());
         //sending text and keyboard if user is authorized
-        if (telegramService.isUserExist(userDTO.getChatId())) {
+        if (dataService.isUserExist(userDTO.getChatId())) {
             setText(outputMessage, userDTO);
             setButtons(outputMessage);
             return outputMessage;
@@ -47,15 +41,18 @@ public class TelegramReplyService implements ITelegramReplyService {
     @Override
     public synchronized void setText(SendMessage sendMessage, UserDTO userDTO) {
         switch(userDTO.getText()) {
-            case "Показать профиль": sendMessage.setText(telegramService.getUser(userDTO.getChatId()).toString());
+            case "Показать профиль": sendMessage.setText(dataService.getUser(userDTO.getChatId()).toString());
                 break;
-            case "Показать пользователей": sendMessage.setText(telegramService.getUsers().toString());
+            case "Показать пользователей": sendMessage.setText(dataService.getUsers().toString());
                 break;
-            case "INFO": sendMessage.setText("Кнопка \"Введите вашу дату рождения\" позволяет " +
-                    "ввести дату рождения данного пользователя в систему\nКнопка \"Показать пользователей\" " +
-                    "показывает данные всех пользователей этой системы");
+            case "Информация": sendMessage.setText("Кнопка \"Изменить дату рождения\" позволяет " +
+                    "изменить дату рождения в вашем профиле\n" +
+                    "Кнопка \"Показать пользователей\" " +
+                    "показывает информацию о всех пользователях этого приложения\n" +
+                    "Кнопка \"Показать профиль\" показывает информацию вашего профиля\n" +
+                    "Кнопка \"Очистить профиль\" позволяет вам выйти из приложения");
                 break;
-            case "Ввести номер телефона": sendMessage.setText("Вы авторизованы в системе");
+            case "Авторизоваться по номеру телефона": sendMessage.setText("Вы авторизованы в системе");
                 break;
             case "Пользователь не найден":
                 sendMessage.setText("Пользователя с телефоном " + userDTO.getPhone() + " нет в базе данных");
@@ -73,12 +70,15 @@ public class TelegramReplyService implements ITelegramReplyService {
         List<KeyboardRow> keyboard = new ArrayList<>();
         KeyboardRow keyboardFirstRow = new KeyboardRow();
         KeyboardRow keyboardSecondRow = new KeyboardRow();
+        KeyboardRow keyboardThirdRow = new KeyboardRow();
         keyboardFirstRow.add(new KeyboardButton("Показать профиль"));
         keyboardFirstRow.add(new KeyboardButton("Очистить профиль"));
         keyboardSecondRow.add(new KeyboardButton("Показать пользователей"));
-        keyboardSecondRow.add(new KeyboardButton("INFO"));
+        keyboardSecondRow.add(new KeyboardButton("Информация"));
+        keyboardThirdRow.add(new KeyboardButton("Изменить дату рождения"));
         keyboard.add(keyboardFirstRow);
         keyboard.add(keyboardSecondRow);
+        keyboard.add(keyboardThirdRow);
         replyKeyboardMarkup.setKeyboard(keyboard);
     }
 
@@ -86,8 +86,8 @@ public class TelegramReplyService implements ITelegramReplyService {
     @Override
     public synchronized void setTextDefault(SendMessage sendMessage, UserDTO userDTO) {
         switch(userDTO.getText()) {
-            case "INFO": sendMessage.setText("Для авторизации в системе и получения возможностей " +
-                    "к основным функциям бота - нажмите \"Ввести номер телефона\".\n" +
+            case "Информация": sendMessage.setText("Для авторизации в системе и получения возможностей " +
+                    "к основным функциям бота - нажмите \"Авторизоваться по номеру телефона\".\n" +
                     "До авторизации, бот будет присылать вам ответ в виде введеных вами сообщений. ");
                 break;
             case "Очистить профиль": sendMessage.setText("Ваш профиль очищен, вы не авторизованы в системе");
@@ -106,9 +106,9 @@ public class TelegramReplyService implements ITelegramReplyService {
         KeyboardRow keyboardFirstRow = new KeyboardRow();
         KeyboardRow keyboardSecondRow = new KeyboardRow();
         KeyboardButton contactKeyButton = new KeyboardButton();
-        contactKeyButton.setText("Ввести номер телефона").setRequestContact(true);
+        contactKeyButton.setText("Авторизоваться по номеру телефона").setRequestContact(true);
         keyboardFirstRow.add(contactKeyButton);
-        keyboardSecondRow.add(new KeyboardButton("INFO"));
+        keyboardSecondRow.add(new KeyboardButton("Информация"));
         keyboard.add(keyboardFirstRow);
         keyboard.add(keyboardSecondRow);
         replyKeyboardMarkup.setKeyboard(keyboard);

@@ -15,7 +15,7 @@ import javax.annotation.PostConstruct;
 @Configuration
 @Slf4j
 public class DomainConfiguration {
-    //TODO register Bot
+
     @Bean
     public IRepeaterHandler setupBot() {
 

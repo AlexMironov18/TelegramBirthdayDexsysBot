@@ -5,16 +5,15 @@ import com.dexsys.TelegramBotDexsys.app.clientService.mockClient.mockDTO.UserMoc
 import com.dexsys.TelegramBotDexsys.app.exceptions.ApiRequestException;
 import com.dexsys.TelegramBotDexsys.app.exceptions.ApiResponseException;
 import com.dexsys.TelegramBotDexsys.services.IMockClient;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.HttpClientErrorException;
-import org.springframework.web.client.HttpServerErrorException;
-import org.springframework.web.client.HttpStatusCodeException;
-import org.springframework.web.client.RestTemplate;
+import org.springframework.web.client.*;
 
 import java.util.Arrays;
 import java.util.List;
@@ -27,14 +26,18 @@ import java.util.UUID;
 
 public class MockClient implements IMockClient {
 
-    final RestTemplate restTemplate = new RestTemplate();
+    @Autowired
+    private RestOperations restTemplate;
+
+    @Value("${mockURL}")
+    private String mockURL;
 
     @Override
     public UserMockDTO getUser(UUID uuid) throws HttpStatusCodeException {
 
         try {
             return restTemplate.getForObject(
-                    "https://serene-coast-56441.herokuapp.com/api/users/" + uuid,
+                    mockURL + uuid,
                     UserMockDTO.class);
         } catch (HttpStatusCodeException e) {
             if (e.getStatusCode().is4xxClientError())
@@ -49,7 +52,7 @@ public class MockClient implements IMockClient {
 
         try {
             UserMockDTO[] responseEntity = restTemplate.getForObject(
-                    "https://serene-coast-56441.herokuapp.com/api/users", UserMockDTO[].class);
+                    mockURL, UserMockDTO[].class);
             return Arrays.asList(responseEntity);
         } catch (HttpStatusCodeException e) {
             if (e.getStatusCode().is4xxClientError())
@@ -64,7 +67,7 @@ public class MockClient implements IMockClient {
         try {
             HttpEntity<UserMockDTO> request = new HttpEntity<>(new UserMockDTO());
             UserMockDTO response = restTemplate.postForObject(
-                    "https://serene-coast-56441.herokuapp.com/api/users/generate",
+                    mockURL + "generate",
                     request,
                     UserMockDTO.class);
             return response;
@@ -78,7 +81,7 @@ public class MockClient implements IMockClient {
 
         try {
             HttpEntity<UserMockDTO> request = new HttpEntity<>(userMockDTO);
-            ResponseEntity<String>response = restTemplate.postForEntity("https://serene-coast-56441.herokuapp.com/api/users",
+            ResponseEntity<String>response = restTemplate.postForEntity(mockURL,
                     request, String.class);
             return "Добавлен пользователь с id: \n" + response.getBody();
         } catch (HttpStatusCodeException e) {
@@ -100,7 +103,7 @@ public class MockClient implements IMockClient {
     public Set<HttpMethod> getOptions(UUID uuid) throws HttpStatusCodeException {
 
         try {
-            return restTemplate.optionsForAllow("https://serene-coast-56441.herokuapp.com/api/users/" + uuid);
+            return restTemplate.optionsForAllow(mockURL + uuid);
         } catch (HttpStatusCodeException e) {
             if (e.getStatusCode().is4xxClientError())
                 throw new ApiRequestException(e.getStatusCode(), "Пользователя с таким id не существует");

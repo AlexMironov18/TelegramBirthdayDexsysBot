@@ -25,7 +25,7 @@ public class RepeaterHandler extends TelegramLongPollingBot implements IRepeater
             //when authorizing
             if (update.getMessage().getContact() != null) {
                 userDTO = UserDTO.createRegisterUserDTO(update);
-                userDTO.setText("Ввести номер телефона");
+                userDTO.setText("Авторизоваться по номеру телефона");
                 execute(telegramService.processAuthorizationMessage(userDTO));
                 //default behavior
             } else if (update.hasMessage() && update.getMessage().hasText()) {
