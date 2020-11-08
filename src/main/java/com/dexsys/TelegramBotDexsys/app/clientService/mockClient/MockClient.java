@@ -22,9 +22,6 @@ import java.util.Set;
 import java.util.UUID;
 
 
-//при вводе телефона идет get запрос если он !=empty то авторизуем пользователя и добавляем в локальный репозиторий
-//данные из json ответа (только те поля, которые в локальном репоитории null)
-
 @Slf4j
 public class MockClient implements IMockClient {
 

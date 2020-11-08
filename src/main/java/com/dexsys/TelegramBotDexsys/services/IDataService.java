@@ -12,4 +12,5 @@ public interface IDataService {
     User getUser(String chatId);
     boolean deleteUser(String chatId);
     boolean isUserExist(String chatId);
+
 }

@@ -25,6 +25,6 @@ public class SwaggerConfiguration {
     }
 
     private ApiInfo createApiInfo() {
-        return new ApiInfoBuilder().title("APi for reading and deleting users from repository").version("1.0.0").build();
+        return new ApiInfoBuilder().title("APi for work with Mock-server").version("1.0.0").build();
     }
 }

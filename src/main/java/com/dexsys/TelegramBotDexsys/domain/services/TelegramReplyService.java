@@ -46,6 +46,7 @@ public class TelegramReplyService implements ITelegramReplyService {
         switch(userDTO.getText()) {
             case "Показать профиль":
                 User userToShow = dataService.getUser(userDTO.getChatId());
+
                     sendMessage.setText(
                         "Name: " +
                                 (userToShow.getFirstName() == null ? "неизвестно" : userToShow.getFirstName())+"\n"+
@@ -57,6 +58,8 @@ public class TelegramReplyService implements ITelegramReplyService {
                                 (userToShow.isMale() ? "Male" : "Female")+"\n"+
                         "BirthDate: " +
                                 (userToShow.getBirthDate() == null ? "неизвестно" : userToShow.getBirthDate())+"\n"+
+                        "Phone: " +
+                                (userToShow.getPhone() == null ? "неизвестно" : userToShow.getPhone())+"\n"+
                         "ID: " +
                                 (userToShow.getId() == null ? "неизвестно" : userToShow.getId())+"\n"+
                         "ChatID: " +

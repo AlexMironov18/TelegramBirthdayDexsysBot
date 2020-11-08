@@ -24,31 +24,31 @@ public class TelegramController {
     private IWebProxyService webProxyService;
 
     @GetMapping
-    @ApiOperation(value = "find all users", notes = "returns a list of users")
+    @ApiOperation(value = "Find all users", notes = "Returns a list of users")
     public ResponseEntity<List<UserWebDTO>> getUsers() {
         return ResponseEntity.ok(webProxyService.getUsers());
     }
 
     @GetMapping("/{uuid}")
-    @ApiOperation(value = "find the user with this id", notes = "returns a user with a given id")
+    @ApiOperation(value = "Find a user by id", notes = "Returns a user with a given id")
     public ResponseEntity<UserWebDTO> getUser(@PathVariable("uuid") UUID uuid) {
         return ResponseEntity.ok(webProxyService.getUser(uuid));
     }
 
     @PostMapping
-    @ApiOperation(value = "create a user", notes = "creates a user")
+    @ApiOperation(value = "Create a user", notes = "Creates a user with given information")
     public ResponseEntity<String> createUser(@RequestBody UserWebDTO user) {
         return ResponseEntity.ok(webProxyService.createUser(user));
     }
 
     @PostMapping("/generate")
-    @ApiOperation(value = "generate a user", notes = "generates a user")
+    @ApiOperation(value = "Generate a user", notes = "Generates a user with random information")
     public ResponseEntity<UserMockDTO> generateUser() {
         return ResponseEntity.ok(webProxyService.generateUser());
     }
 
     @RequestMapping(value = "/{uuid}", method = RequestMethod.OPTIONS)
-    @ApiOperation(value = "find allowed options to the user", notes = "returns a list of the options")
+    @ApiOperation(value = "Find allowed options to the user", notes = "Returns a list of the options")
     public ResponseEntity<Set<HttpMethod>> getOptions(@PathVariable("uuid") UUID uuid) {
         return ResponseEntity.ok(webProxyService.getOptions(uuid));
     }

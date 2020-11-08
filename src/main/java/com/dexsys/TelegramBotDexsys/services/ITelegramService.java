@@ -11,4 +11,5 @@ public interface ITelegramService {
 
     SendMessage processMessage(UserDTO userDTO) throws TelegramApiException;
     SendMessage processAuthorizationMessage(UserDTO userDTO) throws TelegramApiException;
+
 }

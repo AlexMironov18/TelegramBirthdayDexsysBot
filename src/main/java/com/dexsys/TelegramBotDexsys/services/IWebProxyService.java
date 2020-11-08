@@ -15,4 +15,5 @@ public interface IWebProxyService {
     String createUser(UserWebDTO userWebDTO);
     UserMockDTO generateUser();
     Set<HttpMethod> getOptions(UUID uuid);
+
 }

@@ -1,8 +1,11 @@
+useMock: true
+mockURL: https://serene-coast-56441.herokuapp.com/api/users/
+
 db:
   driver: org.postgresql.Driver
-  password: c0f7c25d7e1634237482bb07e47e1374e9adc59222197e4741aa1ace43a7ad54
-  url: jdbc:postgresql://ec2-34-246-141-162.eu-west-1.compute.amazonaws.com:5432/dbfjm90l3ntrjr
-  username: zxnwojoxkugtym
+  password: 1d9cf3e01fe8e49b0125fbcc08405cfa1c56a25db98c03dca269df5c28a685c5
+  url: jdbc:postgresql://ec2-54-228-209-117.eu-west-1.compute.amazonaws.com:5432/dbto94h2bqfj9k
+  username: ncppuwgfnpiftv
 entitymanager:
   packagesToScan: com
 hibernate:
@@ -10,11 +13,11 @@ hibernate:
   hbm2ddl:
     auto: none
   show_sql: true
-mockURL: https://serene-coast-56441.herokuapp.com/api/users/
+
 spring:
   datasource:
-    base: jdbc:postgresql://ec2-34-246-141-162.eu-west-1.compute.amazonaws.com:5432/dbfjm90l3ntrjr
-    driver-class-name: org.postgresql.Driver
+    base: ${db.url}
+    driver-class-name: ${db.driver}
     password: ${db.password}
     tomcat:
       test-on-borrow: true
@@ -27,4 +30,3 @@ spring:
     password: ${spring.datasource.password}
     url: ${spring.datasource.url}
     user: ${spring.datasource.username}
-useMock: true
